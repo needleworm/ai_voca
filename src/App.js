@@ -3,6 +3,7 @@ import './App.css';
 import Books from "./components/books"
 import Websites from "./components/websites"
 import Quizgen from "./components/quizgen"
+import Reading from "./components/reading"
 import Papers from "./components/papers"
 import Contact from "./components/contact"
 
@@ -179,9 +180,38 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-regular fa-pencil"></i>&nbsp;Self Study
+        <i class="fa-regular fa-pencil"></i>&nbsp;도전 단어퀴즈
       </a>
     </li>
+
+
+    var reading = <li className="navigation__item">
+      <a href="#Reading" title="Reading" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "reading"){
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "reading",
+                latestButton: "reading"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;AI 영어독해(체험판)
+      </a>
+    </li>
+
 
     var quizgen = <li className="navigation__item">
       <a href="#Quizgen" title="Quizgen" className="panel-button projects-button"
@@ -206,7 +236,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;Test Gen.
+        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;시험지 생성
       </a>
     </li>
 
@@ -232,7 +262,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;Research
+        <i className="fas fa-graduation-cap"></i>&nbsp;연구성과
       </a>
     </li>
 
@@ -258,7 +288,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-envelope"></i>&nbsp;Contact
+        <i className="far fa-envelope"></i>&nbsp;협업문의
       </a>
     </li>
 
@@ -298,8 +328,9 @@ class App extends Component {
                 <div className="navigation-wrapper">
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
-                      {quizgen}
                       {websites}
+                      {reading}
+                      {quizgen}
                       {papers}
                       {books}
                       {contact}
@@ -355,6 +386,10 @@ class App extends Component {
     } else if (this.state.content === "quizgen"){
       return (
         <Quizgen/>
+      )
+    } else if (this.state.content === "reading"){
+      return (
+        <Reading/>
       )
     }
   }
