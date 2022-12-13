@@ -43,6 +43,7 @@ class Contact extends Component {
       <div className="row">
         <div className="col-lg-12 text-center">
             <h2 className="section-heading subpageHeading">Contact</h2>
+            <p>협업 관련 문의만 받습니다</p>
         </div>
       </div>
     )

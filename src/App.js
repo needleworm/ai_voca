@@ -272,8 +272,8 @@ class App extends Component {
                     <ul className="navigation">
                       {websites}
                       {papers}
-                      {contact}
                       {books}
+                      {contact}
                     </ul>
                   </nav>
                 </div>
