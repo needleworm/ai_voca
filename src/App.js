@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Books from "./components/books"
 import Websites from "./components/websites"
+import Quizgen from "./components/quizgen"
 import Papers from "./components/papers"
 import Contact from "./components/contact"
 
@@ -178,7 +179,34 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-laptop-code"></i>&nbsp;Web
+        <i class="fa-regular fa-pencil"></i>&nbsp;Self Study
+      </a>
+    </li>
+
+    var quizgen = <li className="navigation__item">
+      <a href="#Quizgen" title="Quizgen" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "quizgen"){
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "quizgen",
+                latestButton: "quizgen"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;Test Gen.
       </a>
     </li>
 
@@ -270,6 +298,7 @@ class App extends Component {
                 <div className="navigation-wrapper">
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
+                      {quizgen}
                       {websites}
                       {papers}
                       {books}
@@ -322,6 +351,10 @@ class App extends Component {
     } else if (this.state.content === "contact"){
       return (
         <Contact/>
+      )
+    } else if (this.state.content === "quizgen"){
+      return (
+        <Quizgen/>
       )
     }
   }

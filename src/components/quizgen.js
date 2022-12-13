@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './websites.css';
 
 
-class Websites extends Component {
+class Quizgen extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -13,7 +13,7 @@ class Websites extends Component {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
-            <h2 className="section-heading subpageHeading">Self Study</h2>
+            <h2 className="section-heading subpageHeading">Test Gen.</h2>
         </div>
       </div>
     )
@@ -38,4 +38,4 @@ class Websites extends Component {
   }
 }
   
-export default Websites;
+export default Quizgen;
