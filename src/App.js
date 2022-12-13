@@ -204,7 +204,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;Papers
+        <i className="fas fa-graduation-cap"></i>&nbsp;Research
       </a>
     </li>
 
@@ -270,10 +270,10 @@ class App extends Component {
                 <div className="navigation-wrapper">
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
-                      {books}
-                      {papers}
                       {websites}
+                      {papers}
                       {contact}
+                      {books}
                     </ul>
                   </nav>
                 </div>
