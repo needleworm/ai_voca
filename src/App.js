@@ -263,7 +263,7 @@ class App extends Component {
     return(
       <div>
         {mobileButtenMenu}
-        <header className="panel-cover" style={{background_image: "https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/background.jpg", maxWidth:'100%'}}>
+        <header className="panel-cover">
           <div className="panel-main">
             <div className="panel-main__inner panel-inverted">
               <div className="panel-main__content">
