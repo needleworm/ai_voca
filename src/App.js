@@ -114,7 +114,7 @@ class App extends Component {
   drawHeader(){
 
     var profilePicButton = <a href="#home" title="Home">
-      <img src="./images/profile_pic.gif" className="user-image" alt="My Profile"
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.gif" className="user-image" alt="My Profile"
         onClick={
           function(e){
 
