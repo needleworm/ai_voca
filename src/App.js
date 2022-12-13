@@ -28,13 +28,6 @@ class App extends Component {
           collections
       */
       content:"none",
-      sns:{
-        email: "bhban@kakao.com",
-        github:  "https://github.com/needleworm",
-        linkedin:  "https://www.linkedin.com/in/bhban",
-        youtube:  "https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1",
-        researchgate: "https://www.researchgate.net/profile/Byunghyun_Ban"
-      }
     }
     this.closeSideMenu = this._closeSideMenu.bind(this)
     this.openSideMenu = this._openSideMenu.bind(this)
@@ -121,7 +114,7 @@ class App extends Component {
   drawHeader(){
 
     var profilePicButton = <a href="#home" title="Home">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.png" className="user-image" alt="My Profile"
         onClick={
           function(e){
 
