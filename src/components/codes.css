@@ -1,0 +1,50 @@
+.codeContainer
+{display:block}
+.singleProjectCard
+{padding-top:auto;padding-bottom:auto}
+.projectImage
+{max-width:60vw;display:block;margin-top:auto;margin-bottom:auto;margin-left:auto;margin-right:auto}
+.separator
+{border-top:1px solid #ddd;width:80%}
+.projectIcons
+{display:grid;grid-template-rows:1fr 1fr}
+.gitIcons
+{text-align:right;font-family:"Roboto Slab",serif}
+.singleProjectContainer
+{width:90%;margin-left:auto;margin-right:auto}
+.firstCommitDate
+{text-align:right}
+.qwerqwer
+{margin-bottom:70px}
+@media (max-width:1000px)
+{.singleProjectCard
+{display:block;margin-bottom:100px;width:90%;margin-left:auto;margin-right:auto}
+.projectImage
+{width:40vw;max-width:250px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:auto;margin-right:auto;margin-bottom:40px}
+.projectIcons
+{display:grid;grid-template-columns:1fr 2fr}
+.projectText
+{margin-top:10px}
+}
+@media (min-width:1000px)
+{.singleProjectCard
+{display:grid;grid-template-columns:220px 1fr;margin-bottom:60px}
+.projectImage
+{width:200px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
+.projectIcons
+{display:grid;grid-template-columns:1fr 2fr}
+.projectText
+{margin-top:10px}
+}
+@media (min-width:1166px)
+{.singleProjectCard
+{display:grid;grid-template-columns:250px 1fr;margin-bottom:60px;width:80%;margin-left:auto;margin-right:auto}
+.projectImage
+{width:200px;margin-top:auto;margin-bottom:auto}
+.projectText
+{margin-top:10px}
+}
+@media (min-width:2300px)
+{.projects
+{display:grid;grid-template-columns:1fr 1fr}
+}

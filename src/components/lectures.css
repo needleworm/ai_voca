@@ -1,0 +1,15 @@
+.singleLectureContainer .websiteImage 
+{
+    max-height:500px;
+    max-width: 600px;
+    width:auto;
+    height:auto;
+}
+ .singleLectureContainer
+{width:60%;margin-left:auto;margin-right:auto;margin-bottom:100px}
+.gitIcons a
+{font-family:Raleway,sans-serif;color:#666;font-weight:100}
+ @media (min-width: 1100px) 
+{.singleLectureContainer
+{width:70%;}
+}

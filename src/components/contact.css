@@ -1,0 +1,32 @@
+#fs-frm
+{width:80%;min-width:300px;max-width:600px;margin-right:auto;margin-left:auto;text-align:center;margin-bottom:100px}
+#contact input,#contact textarea
+{margin-left:auto;margin-right:auto;width:80%}
+#contact input,#contact label
+{margin-left:auto;margin-right:auto}
+input,textarea
+{border:none;box-shadow:1.2px 1.2px 1px 1px #ddd}
+#fs-frm-inputs
+{margin-left:auto;margin-right:auto}
+.submitButton
+{border:0;outline:0;cursor:pointer;background-color:transparent;font-size:100%;font:inherit}
+.submitButton:focus,.submitButton:hover
+{animation-duration:5s;animation-name:rainbowLink;animation-iteration-count:infinite}
+@keyframes rainbowLink
+{0%
+{color:#ff2a2a}
+15%
+{color:#ff7a2a}
+30%
+{color:#ffc52a}
+45%
+{color:#43ff2a}
+60%
+{color:#2a89ff}
+75%
+{color:#202082}
+90%
+{color:#6b2aff}
+100%
+{color:#e82aff}
+}
