@@ -9,6 +9,10 @@
     margin-bottom:50px;
     min-width:200px;
 }
+.singleProjectContainer{
+    margin-left:auto;
+    margin-right:auto;
+}
 #websites .projectIcons
 {display:grid;grid-template-columns:1.5fr 1fr}
 .siteUrl
