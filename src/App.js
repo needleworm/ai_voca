@@ -180,7 +180,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-regular fa-pencil"></i>&nbsp;도전 단어퀴즈
+        <i class="fa-regular fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
       </a>
     </li>
 
@@ -208,7 +208,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;AI 영어독해(체험판)
+        <i class="fa-solid fa-robot"></i>&nbsp;AI 수능독해
       </a>
     </li>
 
@@ -236,7 +236,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;시험지 생성
+        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;교사용 메뉴
       </a>
     </li>
 

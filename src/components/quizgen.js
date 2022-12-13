@@ -20,7 +20,7 @@ class Quizgen extends Component {
   }
 
   drawWebsites(){
-
+    const passwd = "UYxe-JEHo-9G1T-DAOp"
 
     return (
       <div className="websitesContainer">
