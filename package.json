@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages @material-ui/core axios react-modal html2canvas",
+    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages @material-ui/core axios html2canvas react-modal",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

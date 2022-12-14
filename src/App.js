@@ -42,7 +42,7 @@ class App extends Component {
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
-          {'max-width': '530px', 'width': '40%'}, // from
+          {'max-width': '530px', 'width': '30%'}, // from
           {'width': '100%'}, // to
         ], { // options
           duration: 400,
@@ -52,7 +52,7 @@ class App extends Component {
     } else {
       panelCover.animate(
         [ // Keyframes
-          {'height': '40%'}, // from
+          {'height': '30%'}, // from
           {'height': '100%'}, // to
         ], { // options
           duration: 400,

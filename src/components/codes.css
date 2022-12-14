@@ -31,6 +31,8 @@
     grid-template-columns: 1fr;
     width:100%;
     margin-bottom:50px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 }
@@ -47,8 +49,10 @@
 .testTypeSelector1{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width:100%;
+    width:80%;;
     margin-bottom:50px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 }
@@ -147,4 +151,86 @@
 TextField {
     margin-left:auto;
     margin-right:auto;
+}
+
+.quizPrintContainer {
+    width:100%;
+}
+
+.quizHeader {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.checkOptions{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.selectorForTestGen{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.ModalPrintPage{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius:20px;
+    z-index:1200;
+    box-shadow: 0px 0px 60px rgba(0, 255, 255, 0.3);
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.insideModalField{
+    max-width: 90%;
+    min-width: 941px;
+    min-height: 1298px;
+    max-height: 1755px;
+    border: solid;
+    border-color: gray;
+    border-width: 0.1px;
+    margin-top: 30px;
+    aspect-ratio: 8.3 / 11.7;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttonArrayGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin-left:auto;
+    margin-right:0px;
+}
+
+.infoGrid{
+    display:grid;
+    grid-template-columns: 1fr 300px;
+    max-width:min(1245px, 90%);
+    min-width:941px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:auto;
+    padding-bottom:auto;
+}
+
+.mdbutton{
+    margin-right:0;
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+p {
+    margin-top: auto;
+    margin-bottom: auto;
 }

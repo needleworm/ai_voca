@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
-import modal from 'react-modal';
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root')
 
 const hashCode = function(s){
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
@@ -37,13 +39,30 @@ class Quizgen extends Component {
       min: 1,
       max: 1300,
       maxQ: 1300,
-      numQ: 40, //0,
+      numQ: 30, //0,
       option1: false,
-      option2: false,
+      option2: true,
       option3: false,
       option4: false,
-      gen_result: true //false
+      gen_result: true, //false
+      title: "수능 영단어 퀴즈",
+      showModal: true
     }
+
+    this.handleCloseModal = this.closeModal.bind(this)
+    this.handleOpenModal = this.openModal.bind(this)
+  }
+
+  closeModal(){
+    this.setState({
+      showModal: false
+    })
+  }
+
+  openModal(){
+    this.setState({
+      showModal: true
+    })
   }
 
   sectionTitle(){
@@ -95,6 +114,7 @@ class Quizgen extends Component {
             this.setState({
               mode:"voca_2022",
               logged_in: false,
+              title:"수능 영단어 퀴즈"
             })
             this.closeSideMenu()
           }.bind(this)
@@ -209,11 +229,23 @@ class Quizgen extends Component {
     let numQSelector = <div className="separ2">
       <strong className="col-lg-12 text-center">총 몇 문제를 출제할까요?</strong><br/><br/>
       최대 <u>{this.state.maxQ}</u> 개의 문제를 출제할 수 있습니다.
-      <TextField type="number" label="문항 개수" className="itemSelectorBox"
+      <TextField type="number" label="문항 개수" className="itemSelectorBox" value={this.state.numQ}
           onChange={
             function(e){
               this.setState({
                 numQ: Number(e.target.value)
+              })
+            }.bind(this)
+          }
+        />
+      <br/><br/><br/><br/>
+
+      <strong className="col-lg-12 text-center">시험지 제목을 입력해주세요</strong><br/><br/>
+      <TextField type="text" label="시험지 제목" className="itemSelectorBox" value={this.state.title}
+          onChange={
+            function(e){
+              this.setState({
+                title: e.target.value
               })
             }.bind(this)
           }
@@ -245,6 +277,44 @@ class Quizgen extends Component {
         </div>
       )
     }
+  }
+
+  draw_2022_voca_printable_page() {
+
+    let modalCloseButton = <button className="submitButton mdbutton"
+        onClick={this.handleCloseModal}
+      >창 닫기</button>
+
+    let testPDF = <button className="submitButton mdbutton"
+        onClick={this.handleCloseModal}
+      >시험지 PDF</button>
+
+    let solPDF = <button className="submitButton mdbutton"
+        onClick={this.handleCloseModal}
+      >답안지 PDF</button>
+
+    
+    let infogrid = <div className="infoGrid">
+      <p>데스크톱 컴퓨터 또는 태블릿 PC 사용을 권장합니다.</p>
+      <div className="buttonArrayGrid">
+        {testPDF}
+        {solPDF}
+        {modalCloseButton}
+      </div>
+    </div>
+
+    let headerGrid = <div className="testHeader">
+      헤더 그리드
+    </div>
+
+    return(
+      <div className="modalField">
+        {infogrid}
+        <div className="insideModalField">
+          {headerGrid}
+        </div>
+      </div>
+    )
   }
 
   draw_voca_2022(){
@@ -289,7 +359,7 @@ class Quizgen extends Component {
     let typeSelector = <div className="selectorForTestGen">
       <strong className="col-lg-12 text-center">문제 유형을 1개 이상 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
-        <div>
+        <div className="text-center checkOptions" >
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_1" onClick={
             function(e){
@@ -300,7 +370,7 @@ class Quizgen extends Component {
           }/>
           <label for="checker1_1">영단어와 빈칸</label>
         </div>
-        <div>
+        <div className="text-center checkOptions">
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_2" onClick={
             function(e){
@@ -311,7 +381,7 @@ class Quizgen extends Component {
           }/>
           <label for="checker1_2">빈칸과 한글 의미</label>
         </div>
-        <div>
+        <div className="text-center checkOptions">
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_3" onClick={
             function(e){
@@ -322,7 +392,7 @@ class Quizgen extends Component {
           }/>
           <label for="checker1_3">문장 내 빈칸채우기 (객관식)</label>
         </div>
-        <div>
+        <div className="text-center checkOptions">
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_4" onClick={
             function(e){
@@ -351,7 +421,8 @@ class Quizgen extends Component {
               alert("출제 시작값보다 종료값이 커야 합니다.")
             } else{
               this.setState({
-                gen_result: true
+                gen_result: true,
+                showModal: true
               })
             }
           }.bind(this)
@@ -397,6 +468,11 @@ class Quizgen extends Component {
               </div>
             </div>
             {test_gen_button}
+            <Modal id="modalForTest" isOpen={this.state.showModal} onRequestClose={this.handleCloseModal}
+              overlayClassName="overlay" className="ModalPrintPage"
+            >
+              {this.draw_2022_voca_printable_page()}
+            </Modal>
           </div>
         )
       }
@@ -409,18 +485,6 @@ class Quizgen extends Component {
     }
   }
 
-  draw_result_voca_2022() {
-    return (
-      <div className="codeContainer">
-        <div className="quizGenerator">
-          <div className="col-lg-12 text-center">
-            여기에 이제 시험지 제작 코드 들어감
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   drawWebsites(){
     if (this.state.mode === "main"){
       return (
@@ -429,19 +493,11 @@ class Quizgen extends Component {
         </div>
       )
     } else if (this.state.mode === "voca_2022"){
-      if (this.state.gen_result){
-        return (
-          <div className="websitesContainer">
-            {this.draw_result_voca_2022()}
-          </div>
-        )
-      } else {
-        return (
-          <div className="websitesContainer">
+      return (
+          <div className="quizPrintContainer">
             {this.draw_voca_2022()}
           </div>
         )
-        }
     }
   }
 

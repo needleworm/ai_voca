@@ -502,8 +502,8 @@ ul {
 
 .content-wrapper {
     z-index:800;
-    width:60%;
-    margin-left:40%
+    width:70%;
+    margin-left:30%
 }
 
 .content-wrapper__inner {
@@ -552,7 +552,7 @@ hr {
 }
 
 .panel-cover--collapsed {
-    width:40%;
+    width:30%;
 }
 
 .panel-cover--overlay {
@@ -647,7 +647,7 @@ hr {
 .btn-mobile-menu {
     display:none;
     position:fixed;
-    z-index:9999;
+    z-index:1000;
     top:0;
     right:0;
     left:0;
