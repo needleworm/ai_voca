@@ -66,6 +66,10 @@ class Papers extends Component {
               <a href="https://arxiv.org/abs/2211.15426" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/needleworm/bigdata_voca" target="_blank"  rel="noreferrer">
+                {gitLogo}
+              </a>
             </div>
           </div>
         </div>

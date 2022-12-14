@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import './codes.css';
-import { TextField } from "@material-ui/core"
+import { TextField, MenuItem } from "@material-ui/core"
+import axios from 'axios';
 
+const getJson = async(url) =>{
+  fetch(url)
+    .then( res => {
+      return res
+    })
+}
 
 const hashCode = function(s){
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
@@ -11,13 +18,10 @@ class Quizgen extends Component {
   constructor(props){
     super(props);
     this.state = {
-      mode: "voca_2022",
-      /*
-        main
-        voca_2022
-      */
-     logged_in: true,
-     serial : ""
+      mode: "voca_2022",  /*  main
+                              voca_2022   
+                          */
+      logged_in: true,
     }
   }
 
@@ -34,7 +38,6 @@ class Quizgen extends Component {
                   this.setState({
                     mode: "main",
                     logged_in: false,
-                    serial: ""
                   })           
                 }.bind(this)
               }
@@ -60,7 +63,8 @@ class Quizgen extends Component {
         onClick={
           function(e){
             this.setState({
-              mode:"voca_2022"
+              mode:"voca_2022",
+              logged_in: false,
             })
             this.closeSideMenu()
           }.bind(this)
@@ -83,7 +87,6 @@ class Quizgen extends Component {
 
     return(
       <div className="codeContainer">
-
         {project1}
       </div>
     )
@@ -91,6 +94,18 @@ class Quizgen extends Component {
 
   draw_voca_2022(){
     const hashed = -1693770398
+    let serial = ""
+    let quiz_options = {
+      type: -1, /*    0 : word -> ____
+                      1 : ____ -> word
+                      2 : 예문에 빈칸, 예문해석 제공, 아래에서 4지선다
+                      3 : 예문에 빈칸, 예문해석 제공, 주관식 단어기재   
+                */
+      range: -1,  /*  0 : 전체
+                      n : n번째 day   
+                  */
+      numQ: -1, // 출제 문항 개수. Day n의 단어개수가 값보다 적으면 적은만큼만 출제함. -1이면 해당 day 전체
+    }
 
     let login = <div className="quizGenerator">
       <div className="col-lg-12 text-center">
@@ -99,10 +114,8 @@ class Quizgen extends Component {
         <TextField label="XXXX-XXXX-XXXX-XXXX" fullwidth={true} className="getSerial"
           onChange={
             function(e){
-              this.setState({
-                serial: e.target.value
-              })
-            }.bind(this)
+              serial = e.target.value
+            }
           }
         />
       </p>
@@ -110,7 +123,7 @@ class Quizgen extends Component {
         onClick={
           function(e){
             e.preventDefault()
-            if (hashed !== hashCode(this.state.serial)){
+            if (hashed !== hashCode(serial)){
               alert("올바른 인증키가 아닙니다!")
             } else {
               this.setState({
@@ -146,6 +159,7 @@ class Quizgen extends Component {
   }
 
   drawWebsites(){
+    console.log(getJson("https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"))
     if (this.state.mode === "main"){
       return (
         <div className="websitesContainer">

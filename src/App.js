@@ -13,22 +13,13 @@ class App extends Component {
     super(props);
     
     this.state = {
-      latestButton:"none",
-      /* 
-        content
-          none
-          books
-          selftest
-          codes
-          research
-          lectures
-          designs
-          news
-          contact
-          media
-          socialContribution
-          collections
-      */
+      latestButton:"none",  /*  none
+                                books
+                                selftest
+                                codes
+                                research
+                                contact   
+                            */
       content:"none",
     }
     this.closeSideMenu = this._closeSideMenu.bind(this)
