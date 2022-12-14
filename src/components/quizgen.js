@@ -2,17 +2,33 @@ import React, {Component} from 'react';
 import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
+import modal from 'react-modal';
 
 const hashCode = function(s){
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
 }
+
+const day_words = [0, 
+  // Part 1 : day 1 ~ 23
+  30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+  30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+  30, 30, 32,
+  // Part 2 : day 24 ~ 31
+  30, 30, 30, 30, 30, 30, 30, 13,
+  // Part 3 : day 32 ~ 41
+  30, 30, 30, 30, 30, 30, 30, 30, 30, 10,
+  // Part 4 : day 42 ~ 45
+  30, 30, 30, 15
+]
+
+const num_words = [0, 692, 223, 280, 105]
 
 class Quizgen extends Component {
   constructor(props){
     super(props);
     this.state = {
       mode: "voca_2022",  /*  main
-                              voca_2022   
+                              voca_2022
                           */
       logged_in: true,
       select_mode: "index",
@@ -21,7 +37,12 @@ class Quizgen extends Component {
       min: 1,
       max: 1300,
       maxQ: 1300,
-      numQ: 0
+      numQ: 40, //0,
+      option1: false,
+      option2: false,
+      option3: false,
+      option4: false,
+      gen_result: true //false
     }
   }
 
@@ -38,6 +59,15 @@ class Quizgen extends Component {
                   this.setState({
                     mode: "main",
                     logged_in: false,
+                    select_mode: "index",
+                    from: 1,
+                    to:1300,
+                    min: 1,
+                    max: 1300,
+                    maxQ: 1300,
+                    numQ: 0,
+                    options: "",
+                    gen_result: false
                   })           
                 }.bind(this)
               }
@@ -93,21 +123,6 @@ class Quizgen extends Component {
   }
 
   draw_rangeSelector_2022voca(){
-    const day_words = [0, 
-      // Part 1 : day 1 ~ 23
-      30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
-      30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
-      30, 30, 32,
-      // Part 2 : day 24 ~ 31
-      30, 30, 30, 30, 30, 30, 30, 13,
-      // Part 3 : day 32 ~ 41
-      30, 30, 30, 30, 30, 30, 30, 30, 30, 10,
-      // Part 4 : day 42 ~ 45
-      30, 30, 30, 15
-    ]
-
-    const num_words = [0, 692, 223, 280, 105]
-
     let selector1 = <TextField select label="구분" className="itemSelectorBox" value={this.state.select_mode}
           onChange={
             function(e){
@@ -198,7 +213,7 @@ class Quizgen extends Component {
           onChange={
             function(e){
               this.setState({
-                numQ: e.target.value
+                numQ: Number(e.target.value)
               })
             }.bind(this)
           }
@@ -237,16 +252,6 @@ class Quizgen extends Component {
     const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"
 
     let serial = ""
-    let quiz_options = {
-      type: [false, false, false, false], /*    1 : word -> ____
-                                                2 : ____ -> word
-                                                3 : 예문에 빈칸, 예문해석 제공, 아래에서 4지선다
-                                                4 : 예문에 빈칸, 예문해석 제공, 주관식 단어기재   
-                                          */
-      from: -1,
-      to: -1,
-      numQ: -1, // 출제 문항 개수. Day n의 단어개수가 값보다 적으면 적은만큼만 출제함. -1이면 해당 day 전체
-    }
 
     let login = <div className="quizGenerator">
       <div className="col-lg-12 text-center">
@@ -285,51 +290,58 @@ class Quizgen extends Component {
       <strong className="col-lg-12 text-center">문제 유형을 1개 이상 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
         <div>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_options.type[0]"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_1" onClick={
             function(e){
-              quiz_options.type[0] = !quiz_options.type[0]
-            }
+              this.setState({
+                option1: !this.state.option1
+              })
+            }.bind(this)
           }/>
           <label for="checker1_1">영단어와 빈칸</label>
         </div>
         <div>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_options.type[0]"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_2" onClick={
             function(e){
-              quiz_options.type[1] = !quiz_options.type[1]
-            }
+              this.setState({
+                option2: !this.state.option2
+              })
+            }.bind(this)
           }/>
           <label for="checker1_2">빈칸과 한글 의미</label>
         </div>
         <div>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_options.type[0]"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_3" onClick={
             function(e){
-              quiz_options.type[2] = !quiz_options.type[2]
-            }
+              this.setState({
+                option3: !this.state.option3
+              })
+            }.bind(this)
           }/>
           <label for="checker1_3">문장 내 빈칸채우기 (객관식)</label>
         </div>
         <div>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_options.type[0]"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_4" onClick={
             function(e){
-              quiz_options.type[3] = !quiz_options.type[3]
-            }
+              this.setState({
+                option4: !this.state.option4
+              })
+            }.bind(this)
           }/>
           <label for="checker1_4">문장 내 빈칸채우기 (주관식)</label>
         </div>
       </div>
     </div>
 
-    
-
-    let test_get_button = <button className="submitButton"
+    let test_gen_button = <div className="col-lg-12 text-center">
+      <button className="submitButton"
         onClick={
           function(e){
             e.preventDefault()
-            if (! (quiz_options.type[0] || quiz_options.type[1] || quiz_options.type[2] || quiz_options.type[3])){
+            if (! (this.state.option1 || this.state.option2 || this.state.option3 || this.state.option4)){
               alert("1개 이상의 시험 유형을 선택해주세요.")
             } else if (this.state.from < this.state.min){
               alert("출제 시작값이 너무 작습니다.")
@@ -337,27 +349,57 @@ class Quizgen extends Component {
               alert("출제 종료값이 너무 큽니다.")
             } else if (this.state.from >= this.state.to){
               alert("출제 시작값보다 종료값이 커야 합니다.")
+            } else{
+              this.setState({
+                gen_result: true
+              })
             }
           }.bind(this)
         }
       >시험지 생성</button>
-
-    let quiz_2022 = <div className="quizGenerator">
-      <div className="col-lg-12 text-center">
-        {typeSelector}
-        <div className="separator"/>
-        {this.draw_rangeSelector_2022voca()}
-        <div className="separator"/>
-        {test_get_button}
-      </div>
     </div>
 
     if (this.state.logged_in){
-      return(
-        <div className="codeContainer">
-          {quiz_2022}
-        </div>
-      )
+      if (! (this.state.option1 || this.state.option2 || this.state.option3 || this.state.option4)){
+        return (
+          <div className="codeContainer">
+            <div className="quizGenerator">
+              <div className="col-lg-12 text-center">
+                {typeSelector}
+                <div className="separator"/>
+              </div>
+            </div>
+          </div>
+        )
+      }
+      else if (this.state.numQ <= 0){
+        return(
+          <div className="codeContainer">
+            <div className="quizGenerator">
+              <div className="col-lg-12 text-center">
+                {typeSelector}
+                <div className="separator"/>
+                {this.draw_rangeSelector_2022voca()}
+                <div className="separator"/>
+              </div>
+            </div>
+          </div>
+        )
+      } else {
+        return(
+          <div className="codeContainer">
+            <div className="quizGenerator">
+              <div className="col-lg-12 text-center">
+                {typeSelector}
+                <div className="separator"/>
+                {this.draw_rangeSelector_2022voca()}
+                <div className="separator"/>
+              </div>
+            </div>
+            {test_gen_button}
+          </div>
+        )
+      }
     } else {
       return(
         <div className="codeContainer">
@@ -365,7 +407,18 @@ class Quizgen extends Component {
         </div>
       )
     }
-    
+  }
+
+  draw_result_voca_2022() {
+    return (
+      <div className="codeContainer">
+        <div className="quizGenerator">
+          <div className="col-lg-12 text-center">
+            여기에 이제 시험지 제작 코드 들어감
+          </div>
+        </div>
+      </div>
+    )
   }
 
   drawWebsites(){
@@ -376,11 +429,19 @@ class Quizgen extends Component {
         </div>
       )
     } else if (this.state.mode === "voca_2022"){
-      return (
-        <div className="websitesContainer">
-          {this.draw_voca_2022()}
-        </div>
-      )
+      if (this.state.gen_result){
+        return (
+          <div className="websitesContainer">
+            {this.draw_result_voca_2022()}
+          </div>
+        )
+      } else {
+        return (
+          <div className="websitesContainer">
+            {this.draw_voca_2022()}
+          </div>
+        )
+        }
     }
   }
 
