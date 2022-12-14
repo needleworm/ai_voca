@@ -24,9 +24,9 @@ class Papers extends Component {
   }
 
   drawWebsites(){
-    var gitLogo = <i className="fab fa-github"></i>
+    let gitLogo = <i className="fab fa-github"></i>
     
-    var paper11 = <div className="singleProjectContainer">
+    let paper11 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/papers/2022_sunung.png" alt="projectimage"/>
       <div className="projectText">
@@ -46,7 +46,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Ban, Byunghyun, et al. "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." arXiv preprint arXiv:2211.15426 (2022).'
                 dummy.select();

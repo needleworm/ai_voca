@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './websites.css';
 
 
-class Websites extends Component {
+class Selftest extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -19,7 +19,7 @@ class Websites extends Component {
     )
   }
 
-  drawWebsites(){
+  drawSelftest(){
 
 
     return (
@@ -30,12 +30,12 @@ class Websites extends Component {
 
   render() {
     return (
-      <section id="websites" className="animated bounceInDown">
+      <section id="selftest" className="animated bounceInDown">
           {this.sectionTitle()}
-          {this.drawWebsites()}
+          {this.drawSelftest()}
       </section>
     );
   }
 }
   
-export default Websites;
+export default Selftest;

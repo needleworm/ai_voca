@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Books from "./components/books"
-import Websites from "./components/websites"
+import Selftest from "./components/selftest"
 import Quizgen from "./components/quizgen"
 import Reading from "./components/reading"
 import Papers from "./components/papers"
@@ -18,7 +18,7 @@ class App extends Component {
         content
           none
           books
-          websites
+          selftest
           codes
           research
           lectures
@@ -36,18 +36,18 @@ class App extends Component {
   }
 
   _closeSideMenu(){
-    var contentWrapper = document.querySelector('.content-wrapper')
+    let contentWrapper = document.querySelector('.content-wrapper')
     if (!contentWrapper.classList.contains('showing')){
       return
     }
 
-    var panelCover = document.querySelector('.panel-cover')
+    let panelCover = document.querySelector('.panel-cover')
     panelCover.classList.remove('panel-cover--collapsed')
     panelCover.style.maxWidth = '100%'
 
-    var window = document.querySelector('html')
+    let window = document.querySelector('html')
 
-    var currentWidth = window.clientWidth
+    let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -77,17 +77,17 @@ class App extends Component {
   }
 
   _openSideMenu(){
-    var contentWrapper = document.querySelector('.content-wrapper')
+    let contentWrapper = document.querySelector('.content-wrapper')
     if (contentWrapper.classList.contains('showing')){
       return
     }
 
-    var panelCover = document.querySelector('.panel-cover')
+    let panelCover = document.querySelector('.panel-cover')
     panelCover.classList.add('panel-cover--collapsed')
 
-    var window = document.querySelector('html')
+    let window = document.querySelector('html')
 
-    var currentWidth = window.clientWidth
+    let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -115,7 +115,7 @@ class App extends Component {
 
   drawHeader(){
 
-    var profilePicButton = <a href="#home" title="Home">
+    let profilePicButton = <a href="#home" title="Home">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.gif" className="user-image" alt="My Profile"
         onClick={
           function(e){
@@ -130,7 +130,7 @@ class App extends Component {
       />
     </a>
 
-    var books = <li className="navigation__item">
+    let books = <li className="navigation__item">
       <a href="#books" title="Books" className="panel-button projects-button"
         onClick={
           function(e){
@@ -142,8 +142,8 @@ class App extends Component {
                 latestButton: "books"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -157,20 +157,20 @@ class App extends Component {
       </a>
     </li>
 
-    var websites = <li className="navigation__item">
-      <a href="#websites" title="Websites" className="panel-button projects-button"
+    let selftest = <li className="navigation__item">
+      <a href="#selftest" title="Selftest" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "websites"){
+            if (this.state.latestButton === "selftest"){
               this.closeSideMenu()
             } else{
               this.setState({
-                content: "websites",
-                latestButton: "websites"
+                content: "selftest",
+                latestButton: "selftest"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -185,7 +185,7 @@ class App extends Component {
     </li>
 
 
-    var reading = <li className="navigation__item">
+    let reading = <li className="navigation__item">
       <a href="#Reading" title="Reading" className="panel-button projects-button"
         onClick={
           function(e){
@@ -197,8 +197,8 @@ class App extends Component {
                 latestButton: "reading"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -213,7 +213,7 @@ class App extends Component {
     </li>
 
 
-    var quizgen = <li className="navigation__item">
+    let quizgen = <li className="navigation__item">
       <a href="#Quizgen" title="Quizgen" className="panel-button projects-button"
         onClick={
           function(e){
@@ -225,8 +225,8 @@ class App extends Component {
                 latestButton: "quizgen"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -240,7 +240,7 @@ class App extends Component {
       </a>
     </li>
 
-    var papers = <li className="navigation__item">
+    let papers = <li className="navigation__item">
       <a href="#papers" title="Papers" className="panel-button projects-button"
         onClick={
           function(e){
@@ -252,8 +252,8 @@ class App extends Component {
                 latestButton: "papers"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -266,7 +266,7 @@ class App extends Component {
       </a>
     </li>
 
-    var contact = <li className="navigation__item">
+    let contact = <li className="navigation__item">
       <a href="#contact" title="Contact Me"
         onClick={
           function(e){
@@ -278,8 +278,8 @@ class App extends Component {
                 latestButton: "contact"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -292,11 +292,11 @@ class App extends Component {
       </a>
     </li>
 
-    var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
+    let mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
         function(e){
-          var navigationWrapper = document.querySelector('.navigation-wrapper')
-          var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+          let navigationWrapper = document.querySelector('.navigation-wrapper')
+          let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
           navigationWrapper.classList.toggle('visible')
           navigationWrapper.classList.toggle('bounceInDown')
           navigationWrapper.classList.toggle('animated')
@@ -328,7 +328,7 @@ class App extends Component {
                 <div className="navigation-wrapper">
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
-                      {websites}
+                      {selftest}
                       {reading}
                       {quizgen}
                       {papers}
@@ -347,7 +347,7 @@ class App extends Component {
   }
 
   drawBody(){
-    var footer = <footer className="footer">
+    let footer = <footer className="footer">
         <span className="footer__copyright">&copy; 2022. Proj. Sense of Balance All rights reserved.</span>
     </footer>
     
@@ -356,8 +356,8 @@ class App extends Component {
       <div className="content-wrapper">
         <div className="content-wrapper__inner">
           {this.drawContents()}
-          {footer}
         </div>
+        {footer}
     </div>
     )
   }
@@ -371,9 +371,9 @@ class App extends Component {
         return (
           <Books/>
         )
-    } else if (this.state.content === "websites"){
+    } else if (this.state.content === "selftest"){
       return (
-        <Websites/>
+        <Selftest/>
       )
     } else if (this.state.content === "papers"){
       return (

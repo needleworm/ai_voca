@@ -1,7 +1,7 @@
 .codeContainer
-{display:block}
+{display:block; margin-top: 100px;}
 .singleProjectCard
-{padding-top:auto;padding-bottom:auto}
+{padding-top:auto;padding-bottom:auto; width:100%;}
 .projectImage
 {max-width:60vw;display:block;margin-top:auto;margin-bottom:auto;margin-left:auto;margin-right:auto}
 .separator
@@ -11,14 +11,14 @@
 .gitIcons
 {text-align:right;font-family:"Roboto Slab",serif}
 .singleProjectContainer
-{width:90%;margin-left:auto;margin-right:auto}
+{width:100%;margin-left:auto;margin-right:auto}
 .firstCommitDate
 {text-align:right}
 .qwerqwer
 {margin-bottom:70px}
 @media (max-width:1000px)
 {.singleProjectCard
-{display:block;margin-bottom:100px;width:90%;margin-left:auto;margin-right:auto}
+{display:block;margin-bottom:100px;width:100%;margin-left:auto;margin-right:auto}
 .projectImage
 {width:40vw;max-width:250px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:auto;margin-right:auto;margin-bottom:40px}
 .projectIcons
@@ -28,9 +28,9 @@
 }
 @media (min-width:1000px)
 {.singleProjectCard
-{display:grid;grid-template-columns:220px 1fr;margin-bottom:60px}
+{display:grid;grid-template-columns:200px 1fr;margin-bottom:60px}
 .projectImage
-{width:200px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
+{width:180px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
 .projectIcons
 {display:grid;grid-template-columns:1fr 2fr}
 .projectText
@@ -38,13 +38,28 @@
 }
 @media (min-width:1166px)
 {.singleProjectCard
-{display:grid;grid-template-columns:250px 1fr;margin-bottom:60px;width:80%;margin-left:auto;margin-right:auto}
+{display:grid;grid-template-columns:200px 1fr;margin-bottom:60px;width:100%;margin-left:auto;margin-right:auto}
 .projectImage
-{width:200px;margin-top:auto;margin-bottom:auto}
+{width:180px;margin-top:auto;margin-bottom:auto}
 .projectText
 {margin-top:10px}
 }
 @media (min-width:2300px)
 {.projects
 {display:grid;grid-template-columns:1fr 1fr}
+}
+
+.singleProjectCard {
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: solid;
+    border-color: gray;
+    border-width: 0.1px;
+    border-radius:10px;
+}
+
+.getSerial{
+    width:50%;
 }

@@ -20,8 +20,6 @@ class Reading extends Component {
   }
 
   drawWebsites(){
-
-
     return (
       <div className="websitesContainer">
       </div>

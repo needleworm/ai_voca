@@ -922,9 +922,10 @@ i {
 .user-image {
     margin-bottom:1.2em;
     position:relative;
-    width:200px;
-    height:200px;
-    border-radius:100%
+    width:250px;
+    height:250px;
+    border-radius:100%;
 }
-
-
+.content-wrapper__inner{
+    min-height:600px;
+}

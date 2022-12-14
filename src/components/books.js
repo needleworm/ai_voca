@@ -10,7 +10,7 @@ class Books extends Component {
   }
 
   drawBooks(){
-    var bookSection1 = <div className="singleBookContainer">
+    let bookSection1 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="book1" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
           6개월 치 업무를 하루 만에 끝내는 업무자동화 <i className="fas fa-external-link-alt"></i>
@@ -29,7 +29,7 @@ class Books extends Component {
       </ul>
     </div>
 
-    var bookSection2 = <div className="singleBookContainer">
+    let bookSection2 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="book2" className="bookCoverImage"/>
       <h5>공학자의 오경묵상</h5>
       <p className="bookDescription">2020.11. BOOKK(부크크)</p>
@@ -45,7 +45,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection3 = <div className="singleBookContainer">
+    let bookSection3 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="book3" className="bookCoverImage"/>
       <h5>공학자의 지혜묵상</h5>
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
@@ -61,7 +61,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection4 = <div className="singleBookContainer">
+    let bookSection4 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="book4" className="bookCoverImage"/>
       <h5>나는 아직 잊힐 준비가 되지 않았어요</h5>
       <p className="bookDescription">2020.08. BOOKK(부크크)</p>
@@ -77,7 +77,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection5 = <div className="singleBookContainer">
+    let bookSection5 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/5.jpg" alt="book5" className="bookCoverImage"/>
       <h5>법대로 합시다</h5>
       <p className="bookDescription">2016.02. 지식과감성#</p>
@@ -91,7 +91,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection6 = <div className="singleBookContainer">
+    let bookSection6 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/6.jpg" alt="book6" className="bookCoverImage"/>
       <h5>실전 민사소송법</h5>
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
@@ -107,7 +107,7 @@ class Books extends Component {
       </ul>
     </div>
 
-    var bookSection7 = <div className="singleBookContainer">
+    let bookSection7 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/7.jpg" alt="book7" className="bookCoverImage"/>
       <h5>코딩하는 공익</h5>
       <p className="bookDescription">2020.04. 세창출판사</p>
@@ -123,7 +123,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection8 = <div className="singleBookContainer">
+    let bookSection8 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg" alt="book8" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
         쉬운 딥러닝 <i className="fas fa-external-link-alt"></i>
@@ -142,7 +142,7 @@ class Books extends Component {
       </ul>
     </div>
 
-    var bookSection9 = <div className="singleBookContainer">
+    let bookSection9 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg" alt="book9" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
           내 자산 자동으로 관리하기 <i className="fas fa-external-link-alt"></i>
@@ -159,7 +159,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection10 = <div className="singleBookContainer">
+    let bookSection10 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg" alt="book10" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
           101가지 컴퓨터 활용팁 <i className="fas fa-external-link-alt"></i>
@@ -178,7 +178,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection11 = <div className="singleBookContainer">
+    let bookSection11 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpeg" alt="book11" className="bookCoverImage"/>
       <h5>Cheesecake Vol.1</h5>
       <p className="bookDescription">2021.10. BOOKK (부크크)</p>
@@ -192,7 +192,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection12 = <div className="singleBookContainer">
+    let bookSection12 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
           HTML, CSS, 자바스크립트 <i className="fas fa-external-link-alt"></i>
@@ -211,7 +211,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection13 = <div className="singleBookContainer">
+    let bookSection13 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
           142가지 데이터셋 <i className="fas fa-external-link-alt"></i>
@@ -230,7 +230,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection14 = <div className="singleBookContainer">
+    let bookSection14 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/14.jpg" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">
           가상자산 수업 <i className="fas fa-external-link-alt"></i>
@@ -249,7 +249,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection15 = <div className="singleBookContainer">
+    let bookSection15 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/15.jpg" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
           별처럼 찬란히 빛나는 꿈으로 <i className="fas fa-external-link-alt"></i>
@@ -268,7 +268,7 @@ class Books extends Component {
       </ul>
     </div>
     
-    var bookSection16 = <div className="singleBookContainer">
+    let bookSection16 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.png" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">
         비전공이지만 개발자로 먹고삽니다 <i className="fas fa-external-link-alt"></i>
