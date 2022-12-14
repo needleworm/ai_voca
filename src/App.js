@@ -105,7 +105,6 @@ class App extends Component {
   }
 
   drawHeader(){
-
     let profilePicButton = <a href="#home" title="Home">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.gif" className="user-image" alt="My Profile"
         onClick={
@@ -171,10 +170,9 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i class="fa-regular fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
+        <i class="fa-solid fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
       </a>
     </li>
-
 
     let reading = <li className="navigation__item">
       <a href="#Reading" title="Reading" className="panel-button projects-button"
@@ -202,7 +200,6 @@ class App extends Component {
         <i class="fa-solid fa-robot"></i>&nbsp;AI 수능독해
       </a>
     </li>
-
 
     let quizgen = <li className="navigation__item">
       <a href="#Quizgen" title="Quizgen" className="panel-button projects-button"
@@ -303,37 +300,35 @@ class App extends Component {
     </span>
 
     return(
-      <div>
+      <header className="panel-cover">
         {mobileButtenMenu}
-        <header className="panel-cover">
-          <div className="panel-main">
-            <div className="panel-main__inner panel-inverted">
-              <div className="panel-main__content">
-                {profilePicButton}
-                <h1 className="panel-cover__title panel-title">Sense of Balance</h1>
-                  <h2>프로젝트 균형감각</h2>
-                <hr className="panel-cover__divider"/>
-                <p className="panel-cover__description">AI, 사교육, 공교육 전문가가 모여</p>
-                <p className="panel-cover__description">첨단기술로 교육의 혁신을 꿈꾸는 프로젝트입니다.</p>
-                <hr className="panel-cover__divider panel-cover__divider--secondary"/>
-                <div className="navigation-wrapper">
-                  <nav className="cover-navigation navigation--social">
-                    <ul className="navigation">
-                      {selftest}
-                      {reading}
-                      {quizgen}
-                      {papers}
-                      {books}
-                      {contact}
-                    </ul>
-                  </nav>
-                </div>
+        <div className="panel-main">
+          <div className="panel-main__inner panel-inverted">
+            <div className="panel-main__content">
+              {profilePicButton}
+              <h1 className="panel-cover__title panel-title">Sense of Balance</h1>
+                <h2>프로젝트 균형감각</h2>
+              <hr className="panel-cover__divider"/>
+              <p className="panel-cover__description">AI, 사교육, 공교육 전문가가 모여</p>
+              <p className="panel-cover__description">첨단기술로 교육의 혁신을 꿈꾸는 프로젝트입니다.</p>
+              <hr className="panel-cover__divider panel-cover__divider--secondary"/>
+              <div className="navigation-wrapper">
+                <nav className="cover-navigation navigation--social">
+                  <ul className="navigation">
+                    {selftest}
+                    {reading}
+                    {quizgen}
+                    {papers}
+                    {books}
+                    {contact}
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
-          <div className="panel-cover--overlay"></div>
-        </header>
-      </div>
+        </div>
+        <div className="panel-cover--overlay"></div>
+      </header>
     )
   }
 
@@ -341,14 +336,13 @@ class App extends Component {
     let footer = <footer className="footer">
         <span className="footer__copyright">&copy; 2022. Proj. Sense of Balance All rights reserved.</span>
     </footer>
-    
 
     return (
       <div className="content-wrapper">
         <div className="content-wrapper__inner">
           {this.drawContents()}
+          {footer}
         </div>
-        {footer}
     </div>
     )
   }

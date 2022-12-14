@@ -3,13 +3,6 @@ import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
 
-const getJson = async(url) =>{
-  fetch(url)
-    .then( res => {
-      return res
-    })
-}
-
 const hashCode = function(s){
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
 }
@@ -22,6 +15,7 @@ class Quizgen extends Component {
                               voca_2022   
                           */
       logged_in: true,
+      word_data: {}
     }
   }
 
@@ -94,6 +88,8 @@ class Quizgen extends Component {
 
   draw_voca_2022(){
     const hashed = -1693770398
+    const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"
+
     let serial = ""
     let quiz_options = {
       type: -1, /*    0 : word -> ____
@@ -109,30 +105,33 @@ class Quizgen extends Component {
 
     let login = <div className="quizGenerator">
       <div className="col-lg-12 text-center">
-      <p>
-        도서와 함께 제공된 시리얼을 입력하세요<br/>
-        <TextField label="XXXX-XXXX-XXXX-XXXX" fullwidth={true} className="getSerial"
+        <p>도서와 함께 제공된 시리얼을 입력하세요</p>
+        <TextField label="XXXX-XXXX-XXXX-XXXX" className="getSerial"
           onChange={
             function(e){
               serial = e.target.value
             }
           }
         />
-      </p>
-      <button className="submitButton"
-        onClick={
-          function(e){
-            e.preventDefault()
-            if (hashed !== hashCode(serial)){
-              alert("올바른 인증키가 아닙니다!")
-            } else {
-              this.setState({
-                logged_in : true
-              })
-            }
-          }.bind(this)
-        }
-      >Access</button>
+        <br/><br/>
+        <button className="submitButton"
+          onClick={
+            function(e){
+              e.preventDefault()
+              if (hashed !== hashCode(serial)){
+                alert("올바른 인증키가 아닙니다!")
+              } else {
+                axios.get(dataUrl)
+                .then(data => {
+                  this.setState({
+                    logged_in: true,
+                    word_data: data,
+                  })
+                })
+              }
+            }.bind(this)
+          }
+        >Access</button>
       </div>
     </div>
 
@@ -159,7 +158,6 @@ class Quizgen extends Component {
   }
 
   drawWebsites(){
-    console.log(getJson("https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"))
     if (this.state.mode === "main"){
       return (
         <div className="websitesContainer">
