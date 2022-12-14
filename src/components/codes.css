@@ -25,6 +25,14 @@
 {display:grid;grid-template-columns:1fr 2fr}
 .projectText
 {margin-top:10px}
+
+.testTypeSelector1{
+    display:grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    margin-bottom:50px;
+}
+
 }
 @media (min-width:1000px)
 {.singleProjectCard
@@ -35,6 +43,14 @@
 {display:grid;grid-template-columns:1fr 2fr}
 .projectText
 {margin-top:10px}
+
+.testTypeSelector1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    margin-bottom:50px;
+}
+
 }
 @media (min-width:1166px)
 {.singleProjectCard
@@ -47,6 +63,14 @@
 @media (min-width:2300px)
 {.projects
 {display:grid;grid-template-columns:1fr 1fr}
+
+.testTypeSelector1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:100%;
+    margin-bottom:50px;
+}
+
 }
 
 .singleProjectCard {
@@ -62,4 +86,65 @@
 
 .getSerial{
     width:50%;
+}
+
+.testSelectorItem{
+    height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:40px;
+}
+
+#quizgen{
+    margin-bottom:100px;
+}
+
+.testSelectorGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.itemSelectorBox{
+    min-width:50px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.quizGenerator .separator{
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 100px;
+    margin-top:100px;
+}
+
+.separ{
+    display:grid;
+    width: 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.itemSelectorBox{
+    width:90%;
+}
+
+.setOkButton{
+    margin-top:auto;
+    margin-bottom:0;
+}
+
+.separ2{
+    width: 400px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+TextField {
+    margin-left:auto;
+    margin-right:auto;
 }

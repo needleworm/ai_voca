@@ -518,7 +518,6 @@ ul {
     font-size:.7em;
     color:#b3b3b3;
     bottom : 0;
-    position:absolute;
 }
 
 .footer__copyright {
@@ -926,7 +925,4 @@ i {
     width:250px;
     height:250px;
     border-radius:100%;
-}
-.content-wrapper__inner{
-    min-height:600px;
 }

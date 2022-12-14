@@ -341,8 +341,9 @@ class App extends Component {
       <div className="content-wrapper">
         <div className="content-wrapper__inner">
           {this.drawContents()}
-          {footer}
         </div>
+        {footer}
+
     </div>
     )
   }
