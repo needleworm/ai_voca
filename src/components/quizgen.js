@@ -303,8 +303,14 @@ class Quizgen extends Component {
       </div>
     </div>
 
-    let headerGrid = <div className="testHeader">
-      헤더 그리드
+    let headerGrid = <div className="testHeaderGrid">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/logo.png" className="linear_logo" alt="균형감각"/>
+      <span className="text-center testTitle">{this.state.title}</span>
+      <div className="studentInfo">
+        학반 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
+        번호 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
+        이름 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
     </div>
 
     return(
