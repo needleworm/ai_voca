@@ -183,7 +183,7 @@ TextField {
     overflow-x: auto;
     border-radius:20px;
     z-index:1200;
-    box-shadow: 0px 0px 60px rgba(0, 255, 255, 0.3);
+    box-shadow: 0px 0px 60px gray;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:50px;
@@ -191,15 +191,13 @@ TextField {
 }
 
 .insideModalField{
-    max-width: 90%;
+    max-width: 1245px;
     min-width: 941px;
     min-height: 1298px;
-    max-height: 1755px;
     border: solid;
     border-color: gray;
     border-width: 0.1px;
     margin-top: 30px;
-    aspect-ratio: 8.3 / 11.7;
     margin-left:auto;
     margin-right:auto;
     color: black;
@@ -216,7 +214,7 @@ TextField {
 .infoGrid{
     display:grid;
     grid-template-columns: 1fr 300px;
-    max-width:min(1245px, 90%);
+    max-width:1245px;
     min-width:941px;
     margin-left:auto;
     margin-right: auto;
@@ -236,7 +234,7 @@ p {
     margin-bottom: auto;
 }
 
-.linear_logo{
+.linear_logo {
     width:200px;
     margin-top:auto;
     margin-bottom:auto;
@@ -258,8 +256,28 @@ p {
     text-decoration: underline 0.1px black;
 }
 
-.testTitle{
+.testTitle {
     font-size:2em;
     margin-top:auto;
     margin-bottom:auto;
+}
+
+.hubos{
+    padding-left:50px;
+}
+
+.orderedTest{
+    padding-left: 100px;
+    font-size: 25px;
+    font-weight: 0.1px;
+}
+
+.testText {
+    padding-left:10px;
+    margin-bottom:10px;
+    top: 0px;
+}
+
+.singleQuiz{
+    margin-bottom: 30px;
 }

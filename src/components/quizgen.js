@@ -23,6 +23,31 @@ const day_words = [0,
   30, 30, 30, 15
 ]
 
+const sample_words = {
+  1:{
+    word: "apple",
+    meaning: "사과",
+    sentence:[
+      "I ate an",
+      "pie for dinner"
+    ],
+    translatioin: [
+      "나는 저녁으로 애플파이를 먹었어요."
+    ]
+  }, 
+  2:{
+    word: "approve",
+    meaning: "승인하다",
+    sentence:[
+      "I'd like to ask you to",
+      "our plan for 2023."
+    ],
+    translatioin: [
+      "2023년도 계획안을 승인해주십사 요청드리고 싶습니다."
+    ]
+  }
+}
+
 const num_words = [0, 692, 223, 280, 105]
 
 class Quizgen extends Component {
@@ -40,13 +65,14 @@ class Quizgen extends Component {
       max: 1300,
       maxQ: 1300,
       numQ: 30, //0,
-      option1: false,
+      option1: true,
       option2: true,
-      option3: false,
-      option4: false,
+      option3: true,
+      option4: true,
       gen_result: true, //false
       title: "수능 영단어 퀴즈",
-      showModal: true
+      showModal: true,
+      sample_no: []
     }
 
     this.handleCloseModal = this.closeModal.bind(this)
@@ -64,6 +90,11 @@ class Quizgen extends Component {
       showModal: true
     })
   }
+
+  prepare_2022_voca_test () {
+
+  }
+
 
   sectionTitle(){
     if (this.state.mode !== "main"){
@@ -144,46 +175,46 @@ class Quizgen extends Component {
 
   draw_rangeSelector_2022voca(){
     let selector1 = <TextField select label="구분" className="itemSelectorBox" value={this.state.select_mode}
-          onChange={
-            function(e){
-              if (e.target.value === "total"){
-                this.setState({
-                  select_mode: "total",
-                  from: 1,
-                  to: 1300,
-                  maxQ: 1300
-                })
-              } else if (e.target.value === "index"){
-                this.setState({
-                  select_mode: e.target.value,
-                  min:1,
-                  max:1300,
-                })
-              } else if (e.target.value === "part"){
-                this.setState({
-                  select_mode: e.target.value,
-                  min:1,
-                  max:4,
-                  from:1,
-                  to:4
-                })
-              } else if (e.target.value === "day"){
-                this.setState({
-                  select_mode: e.target.value,
-                  min:1,
-                  max:45,
-                  from:1,
-                  to:45
-                })
-              }
-            }.bind(this)
+      onChange={
+        function(e){
+          if (e.target.value === "total"){
+            this.setState({
+              select_mode: "total",
+              from: 1,
+              to: 1300,
+              maxQ: 1300
+            })
+          } else if (e.target.value === "index"){
+            this.setState({
+              select_mode: e.target.value,
+              min:1,
+              max:1300,
+            })
+          } else if (e.target.value === "part"){
+            this.setState({
+              select_mode: e.target.value,
+              min:1,
+              max:4,
+              from:1,
+              to:4
+            })
+          } else if (e.target.value === "day"){
+            this.setState({
+              select_mode: e.target.value,
+              min:1,
+              max:45,
+              from:1,
+              to:45
+            })
           }
-        >
-          <MenuItem value={"day"} key={"day"}>Day</MenuItem>
-          <MenuItem value={"part"} key={"part"}>Part</MenuItem>
-          <MenuItem value={"index"} key={"index"}>Index</MenuItem>
-          <MenuItem value={"total"} key={"total"}>책 전체</MenuItem>
-        </TextField>
+        }.bind(this)
+      }
+    >
+      <MenuItem value={"day"} key={"day"}>Day</MenuItem>
+      <MenuItem value={"part"} key={"part"}>Part</MenuItem>
+      <MenuItem value={"index"} key={"index"}>Index</MenuItem>
+      <MenuItem value={"total"} key={"total"}>책 전체</MenuItem>
+    </TextField>
 
     let selector2 = <TextField type="number" label="~부터" className="itemSelectorBox" value={this.state.from}
           InputProps={{ inputProps: { min: this.state.min, max: this.state.max } }}
@@ -279,8 +310,95 @@ class Quizgen extends Component {
     }
   }
 
-  draw_2022_voca_printable_page() {
+  draw_2022_type_1(idx) {
+    let word = sample_words[idx]
 
+    return (
+      <li className="singleQuiz">
+        <span className="testText">{word.word} : &nbsp;&nbsp;
+          <span className="underline">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+        </span>
+      </li>
+    )
+  }
+
+  draw_2022_type_2(idx) {
+    let word = sample_words[idx]
+
+    return (
+      <li className="singleQuiz">
+        <span className="testText">{word.meaning} : &nbsp;&nbsp;
+          <span className="underline">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+        </span>
+      </li>
+    )
+  }
+
+  draw_2022_type_3(idx) {
+    let word = sample_words[idx]
+
+    let samples = [
+      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
+      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
+      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
+      word.word
+    ]
+    
+    samples.sort(() => Math.random() - 0.5);
+
+    return (
+      <li className="singleQuiz">
+        <div className="testText">{word.translatioin}</div>
+        <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
+          <span className="underline">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span> &nbsp;&nbsp;
+          {word.sentence[1]}
+        </div>
+        <ol className="hubos">
+          <li>{samples[0]}</li>
+          <li>{samples[1]}</li>
+          <li>{samples[2]}</li>
+          <li>{samples[3]}</li>
+        </ol>
+      </li>
+    )
+    
+  }
+
+  draw_2022_type_4(idx) {
+    let word = sample_words[idx]
+
+    return (
+      <li className="singleQuiz">
+        <div className="testText">{word.translatioin}</div>
+        <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
+          <span className="underline">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span> &nbsp;&nbsp;
+          {word.sentence[1]}
+        </div>
+      </li>
+    )
+  }
+
+  draw_2022_voca_printable_page() {
     let modalCloseButton = <button className="submitButton mdbutton"
         onClick={this.handleCloseModal}
       >창 닫기</button>
@@ -318,6 +436,12 @@ class Quizgen extends Component {
         {infogrid}
         <div className="insideModalField">
           {headerGrid}
+          <ol className="orderedTest">
+            {this.draw_2022_type_1(1)}
+            {this.draw_2022_type_2(2)}
+            {this.draw_2022_type_3(1)}
+            {this.draw_2022_type_4(2)}
+          </ol>
         </div>
       </div>
     )
@@ -430,6 +554,7 @@ class Quizgen extends Component {
                 gen_result: true,
                 showModal: true
               })
+              this.prepare_2022_voca_test()
             }
           }.bind(this)
         }
