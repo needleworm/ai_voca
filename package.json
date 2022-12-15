@@ -10,6 +10,7 @@
     "axios": "^0.26.1",
     "chart.js": "^3.9.1",
     "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "react": "^17.0.2",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^17.0.2",
@@ -18,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages @material-ui/core axios html2canvas react-modal",
+    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages @material-ui/core axios html2canvas react-modal jspdf",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

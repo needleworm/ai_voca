@@ -3,6 +3,9 @@ import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
 import Modal from 'react-modal';
+import html2canvas from 'html2canvas';
+import jsPDF from "jspdf";
+import LOGOFILE from "../images/logo.png";
 
 Modal.setAppElement('#root')
 
@@ -72,7 +75,12 @@ class Quizgen extends Component {
       gen_result: true, //false
       title: "수능 영단어 퀴즈",
       showModal: true,
-      sample_no: []
+      sample_no: [
+        [1, 2, 1, 2, 1, 1],
+        [1, 2, 2, 2, 2, 2,],
+        [1, 1, 2, 1, 1, 1,],
+        [2, 1, 2, 2, 2, 2,]
+      ]
     }
 
     this.handleCloseModal = this.closeModal.bind(this)
@@ -316,12 +324,7 @@ class Quizgen extends Component {
     return (
       <li className="singleQuiz">
         <span className="testText">{word.word} : &nbsp;&nbsp;
-          <span className="underline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
+        <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </span>
       </li>
     )
@@ -333,12 +336,7 @@ class Quizgen extends Component {
     return (
       <li className="singleQuiz">
         <span className="testText">{word.meaning} : &nbsp;&nbsp;
-          <span className="underline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
+        <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </span>
       </li>
     )
@@ -360,20 +358,16 @@ class Quizgen extends Component {
       <li className="singleQuiz">
         <div className="testText">{word.translatioin}</div>
         <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
-          <span className="underline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span> &nbsp;&nbsp;
+        <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          &nbsp;&nbsp;
           {word.sentence[1]}
         </div>
-        <ol className="hubos">
-          <li>{samples[0]}</li>
-          <li>{samples[1]}</li>
-          <li>{samples[2]}</li>
-          <li>{samples[3]}</li>
-        </ol>
+        <div className="hubos">
+          <span>(a) {samples[0]}</span>
+          <span>(b) {samples[1]}</span>
+          <span>(c) {samples[2]}</span>
+          <span>(d) {samples[3]}</span>
+        </div>
       </li>
     )
     
@@ -386,12 +380,8 @@ class Quizgen extends Component {
       <li className="singleQuiz">
         <div className="testText">{word.translatioin}</div>
         <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
-          <span className="underline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span> &nbsp;&nbsp;
+          <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          &nbsp;&nbsp;
           {word.sentence[1]}
         </div>
       </li>
@@ -404,44 +394,169 @@ class Quizgen extends Component {
       >창 닫기</button>
 
     let testPDF = <button className="submitButton mdbutton"
-        onClick={this.handleCloseModal}
+        onClick={
+          function(e){
+            html2canvas(document.querySelector(".insideModalField"))
+              .then(canvas => {
+                let today = new Date()
+                let year = today.getFullYear()
+                let month = ('0' + (today.getMonth() + 1)).slice(-2)
+                let day = ('0' + today.getDate()).slice(-2)
+                let dateString = year + '-' + month  + '-' + day
+                let imgData = canvas.toDataURL('image/png')
+
+                let filename = dateString + " 수능영단어 시험지.pdf"
+                let doc = new jsPDF('p', 'mm', 'a4')
+
+                let pageWidth = 210
+                let pageHeight = 297
+
+                let padding = 75 * pageWidth / canvas.width
+
+                let imgHeight = canvas.height * pageWidth / canvas.width
+                var heightLeft = imgHeight
+
+                let currentPageHeight = 0 
+
+                let elementHeights = []
+                elementHeights = elementHeights.concat(padding)
+                elementHeights = elementHeights.concat(266 * pageWidth / canvas.width * 2690/1245)
+
+                // 문제의 높이만큼 삽입
+                if (this.state.option1){
+                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
+                  this.state.sample_no[0].map(function(){
+                    elementHeights = elementHeights.concat(75 * pageWidth / canvas.width * 2690/1245)
+                    return NaN
+                  })
+                }if (this.state.option2){
+                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
+                  this.state.sample_no[1].map(function(){
+                    elementHeights = elementHeights.concat(75 * pageWidth / canvas.width * 2690/1245)
+                    return NaN
+                  })
+                }if (this.state.option3){
+                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
+                  this.state.sample_no[2].map(function(){
+                    elementHeights = elementHeights.concat(180 * pageWidth / canvas.width * 2690/1245)
+                    return NaN
+                  })
+                }if (this.state.option4){
+                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
+                  this.state.sample_no[3].map(function(){
+                    elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
+                    return NaN
+                  })
+                }
+
+                elementHeights.reverse()
+
+                // 무한루프 생겼음
+                while (heightLeft >= 0){
+                  while (currentPageHeight + padding * 2 < pageHeight){
+                    if (elementHeights.length === 0){
+                      break
+                    } else if (currentPageHeight + elementHeights[elementHeights.length-1] < pageHeight - padding * 2){
+                      currentPageHeight += elementHeights.pop()
+                    } else {
+                      currentPageHeight = 0
+                      break
+                    }
+                  }
+
+                  if (currentPageHeight === 0){
+                    break
+                  }
+                  currentPageHeight = parseInt(currentPageHeight)
+                  doc.addImage(imgData, "PNG", padding, heightLeft - imgHeight, pageWidth - padding * 2, imgHeight)
+                  heightLeft -= currentPageHeight
+                  if (heightLeft > 0){
+                    doc.addPage()
+                  }
+                }
+                doc.save(filename); 
+              }
+            )
+          }.bind(this)
+        }
       >시험지 PDF</button>
 
-    let solPDF = <button className="submitButton mdbutton"
-        onClick={this.handleCloseModal}
-      >답안지 PDF</button>
-
-    
     let infogrid = <div className="infoGrid">
       <p>데스크톱 컴퓨터 또는 태블릿 PC 사용을 권장합니다.</p>
       <div className="buttonArrayGrid">
         {testPDF}
-        {solPDF}
         {modalCloseButton}
       </div>
     </div>
 
     let headerGrid = <div className="testHeaderGrid">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/logo.png" className="linear_logo" alt="균형감각"/>
+      <img src={LOGOFILE} className="linear_logo" alt="균형감각"/>
       <span className="text-center testTitle">{this.state.title}</span>
       <div className="studentInfo">
-        학반 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
-        번호 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
-        이름 : <span className="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        학반 : <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
+        번호 : <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
+        이름 : <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </div>
     </div>
+
+    let Q1 = <div></div>
+    let Q2 = <div></div>
+    let Q3 = <div></div>
+    let Q4 = <div></div>
+
+    if (this.state.option1){
+      Q1 = <div>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 단어의 의미를 빈 칸에 적어주세요.<br/><br/><br/></strong>
+        {this.state.sample_no[0].map(function(idx){
+                    return this.draw_2022_type_1(idx)
+                  }.bind(this))
+        }
+      </div>
+    }
+
+    if (this.state.option2){
+      Q2 = <div>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 의미에 해당하는 단어를 빈 칸에 적어주세요.<br/><br/><br/></strong>
+        {this.state.sample_no[1].map(function(idx){
+                    return this.draw_2022_type_2(idx)
+                  }.bind(this))
+        }
+      </div>
+    }
+
+    if (this.state.option3){
+      Q3 = <div>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 고르세요.<br/><br/><br/></strong>
+        {this.state.sample_no[2].map(function(idx){
+                    return this.draw_2022_type_3(idx)
+                  }.bind(this))
+        }
+      </div>
+    }
+
+    if (this.state.option4){
+      Q4 = <div>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 적으세요.<br/><br/><br/></strong>
+        {this.state.sample_no[3].map(function(idx){
+                    return this.draw_2022_type_4(idx)
+                  }.bind(this))
+        }
+      </div>
+    }
 
     return(
       <div className="modalField">
         {infogrid}
         <div className="insideModalField">
-          {headerGrid}
-          <ol className="orderedTest">
-            {this.draw_2022_type_1(1)}
-            {this.draw_2022_type_2(2)}
-            {this.draw_2022_type_3(1)}
-            {this.draw_2022_type_4(2)}
-          </ol>
+          <div id="printable">
+            {headerGrid}
+            <ol className="orderedTest">
+              {Q1}
+              {Q2}
+              {Q3}
+              {Q4}
+            </ol>
+          </div>
         </div>
       </div>
     )

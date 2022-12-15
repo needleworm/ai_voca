@@ -191,29 +191,29 @@ TextField {
 }
 
 .insideModalField{
-    max-width: 1245px;
-    min-width: 941px;
+    width: 1245px;
     min-height: 1298px;
-    border: solid;
-    border-color: gray;
-    border-width: 0.1px;
     margin-top: 30px;
     margin-left:auto;
     margin-right:auto;
     color: black;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 .buttonArrayGrid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 300px;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
     margin-left:auto;
     margin-right:0px;
 }
 
 .infoGrid{
     display:grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 200px;
     max-width:1245px;
     min-width:941px;
     margin-left:auto;
@@ -253,7 +253,7 @@ p {
 }
 
 .underline {
-    text-decoration: underline 0.1px black;
+    text-decoration: underline 1px black;
 }
 
 .testTitle {
@@ -264,6 +264,9 @@ p {
 
 .hubos{
     padding-left:50px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30px 30px;
 }
 
 .orderedTest{
@@ -279,5 +282,30 @@ p {
 }
 
 .singleQuiz{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#printable {
+    width:90%;
+    height: 90%;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.underlineBox{
+    border-bottom:solid;
+    color:red;
+    border-bottom-width:1px;
+    border-bottom-color:black;
+    min-width:300px;
+    height:10px;
+    display:inline;
+}
+
+.testQuestionseparator{
+    padding-top:30px;
+    padding-bottom:30px;
+    display:block;
 }
