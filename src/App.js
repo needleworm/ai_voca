@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Books from "./components/books"
 import Selftest from "./components/selftest"
@@ -8,25 +8,17 @@ import Papers from "./components/papers"
 import Contact from "./components/contact"
 
 
-class App extends Component {
-  constructor(props){
-    super(props);
-    
-    this.state = {
-      latestButton:"none",  /*  none
-                                books
-                                selftest
-                                codes
-                                research
-                                contact   
-                            */
-      content:"none",
-    }
-    this.closeSideMenu = this._closeSideMenu.bind(this)
-    this.openSideMenu = this._openSideMenu.bind(this)
-  }
+function App() {
+  const [latestButton, setLatestButton] = useState("none")  /*  none
+                                                                books
+                                                                selftest
+                                                                codes
+                                                                research
+                                                                contact   
+                                                            */
+  const [content, setContent] = useState("none")
 
-  _closeSideMenu(){
+  const closeSideMenu = () => {
     let contentWrapper = document.querySelector('.content-wrapper')
     if (!contentWrapper.classList.contains('showing')){
       return
@@ -61,13 +53,21 @@ class App extends Component {
       )
     }
     contentWrapper.classList.remove('showing')
-    this.setState({
-      latestButton: "none",
-      content: "none"
-    })
+    setLatestButton("none")
+    setContent("none")
   }
 
-  _openSideMenu(){
+  const bouncing = () => {
+    let navigationWrapper = document.querySelector('.navigation-wrapper')
+    let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+    navigationWrapper.classList.toggle('visible')
+    btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+    btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+    btnMobileMenuIcon.classList.toggle('animated')
+    btnMobileMenuIcon.classList.toggle('fadeIn')
+  }
+
+  const openSideMenu = () => {
     let contentWrapper = document.querySelector('.content-wrapper')
     if (contentWrapper.classList.contains('showing')){
       return
@@ -104,18 +104,15 @@ class App extends Component {
     contentWrapper.classList.add('showing')
   }
 
-  drawHeader(){
+  const drawHeader = () => {
     let profilePicButton = <a href="#home" title="Home">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/profile_pic.gif" className="user-image" alt="My Profile"
         onClick={
           function(e){
-
-            this.setState({
-              latestButton: "none",
-              content:"none"
-            })
-            this.closeSideMenu()
-          }.bind(this)
+            setLatestButton("none")
+            content("none")
+            closeSideMenu()
+          }
         }
       />
     </a>
@@ -124,23 +121,15 @@ class App extends Component {
       <a href="#books" title="Books" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "books"){
-              this.closeSideMenu()
+            if (latestButton === "books"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "books",
-                latestButton: "books"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("books")
+              setLatestButton("books")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }
       >
         <i className="fas fa-book"></i>&nbsp;Books
@@ -151,23 +140,15 @@ class App extends Component {
       <a href="#selftest" title="Selftest" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "selftest"){
-              this.closeSideMenu()
+            if (latestButton === "selftest"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "selftest",
-                latestButton: "selftest"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("selftest")
+              setLatestButton("selftest")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }
       >
         <i class="fa-solid fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
@@ -178,23 +159,15 @@ class App extends Component {
       <a href="#Reading" title="Reading" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "reading"){
-              this.closeSideMenu()
+            if (latestButton === "reading"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "reading",
-                latestButton: "reading"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("reading")
+              setLatestButton("reading")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }
       >
         <i class="fa-solid fa-robot"></i>&nbsp;AI 수능독해
@@ -205,23 +178,15 @@ class App extends Component {
       <a href="#Quizgen" title="Quizgen" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "quizgen"){
-              this.closeSideMenu()
+            if (latestButton === "quizgen"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "quizgen",
-                latestButton: "quizgen"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("quizgen")
+              setLatestButton("quizgen")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }
       >
         <i class="fa-solid fa-chalkboard-user"></i>&nbsp;교사용 메뉴
@@ -232,23 +197,15 @@ class App extends Component {
       <a href="#papers" title="Papers" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "papers"){
-              this.closeSideMenu()
+            if (latestButton === "papers"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "papers",
-                latestButton: "papers"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("papers")
+              setLatestButton("papers")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }>
         <i className="fas fa-graduation-cap"></i>&nbsp;연구성과
       </a>
@@ -258,23 +215,15 @@ class App extends Component {
       <a href="#contact" title="Contact Me"
         onClick={
           function(e){
-            if (this.state.latestButton === "contact"){
-              this.closeSideMenu()
+            if (latestButton === "contact"){
+              closeSideMenu()
             } else{
-              this.setState({
-                content: "contact",
-                latestButton: "contact"
-              })
-              this.openSideMenu()
-              let navigationWrapper = document.querySelector('.navigation-wrapper')
-              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-              navigationWrapper.classList.toggle('visible')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-              btnMobileMenuIcon.classList.toggle('animated')
-              btnMobileMenuIcon.classList.toggle('fadeIn')
+              setContent("contact")
+              setLatestButton("contact")
+              openSideMenu()
+              bouncing()
             }
-          }.bind(this)
+          }
         }>
         <i className="far fa-envelope"></i>&nbsp;협업문의
       </a>
@@ -332,7 +281,7 @@ class App extends Component {
     )
   }
 
-  drawBody(){
+  const drawBody = () => {
     let footer = <footer className="footer">
         <span className="footer__copyright">&copy; 2022. Proj. Sense of Balance All rights reserved.</span>
     </footer>
@@ -340,7 +289,7 @@ class App extends Component {
     return (
       <div className="content-wrapper">
         <div className="content-wrapper__inner">
-          {this.drawContents()}
+          {drawContents()}
         </div>
         {footer}
 
@@ -348,46 +297,45 @@ class App extends Component {
     )
   }
 
-  drawContents(){
-    if (this.state.content === "none"){
+  const drawContents = () => {
+    if (content === "none"){
       return (
         <div></div>
       )
-    } else if (this.state.content === "books"){
+    } else if (content === "books"){
         return (
           <Books/>
         )
-    } else if (this.state.content === "selftest"){
+    } else if (content === "selftest"){
       return (
         <Selftest/>
       )
-    } else if (this.state.content === "papers"){
+    } else if (content === "papers"){
       return (
         <Papers/>
       )
-    } else if (this.state.content === "contact"){
+    } else if (content === "contact"){
       return (
         <Contact/>
       )
-    } else if (this.state.content === "quizgen"){
+    } else if (content === "quizgen"){
       return (
         <Quizgen/>
       )
-    } else if (this.state.content === "reading"){
+    } else if (content === "reading"){
       return (
         <Reading/>
       )
     }
   }
 
-  render() {
-    return (
-      <div className="App">
-        {this.drawHeader()}
-        {this.drawBody()}
-      </div>
-    );
-  }
+
+  return (
+    <div className="App">
+      {drawHeader()}
+      {drawBody()}
+    </div>
+  );
 }
 
 export default App;

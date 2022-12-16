@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import './websites.css';
 
 
-class Reading extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Reading() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,21 +14,20 @@ class Reading extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     return (
       <div className="websitesContainer">
       </div>
     )
   }
 
-  render() {
+
     return (
       <section id="websites" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
+          {sectionTitle()}
+          {drawWebsites()}
       </section>
     );
-  }
 }
   
 export default Reading;

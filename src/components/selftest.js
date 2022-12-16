@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import './websites.css';
 
 
-class Selftest extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Selftest() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Selftest extends Component {
     )
   }
 
-  drawSelftest(){
+  const drawSelftest = () => {
 
 
     return (
@@ -28,14 +23,13 @@ class Selftest extends Component {
     )
   }
 
-  render() {
+
     return (
       <section id="selftest" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawSelftest()}
+          {sectionTitle()}
+          {drawSelftest()}
       </section>
     );
-  }
 }
   
 export default Selftest;

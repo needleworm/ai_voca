@@ -1,16 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './contact.css';
 
 
-class Contact extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      status: ""
-    };
-  }
-
-  submitForm() {
+function Contact() {
+  const submitForm = () => {
     return (
       <form id="fs-frm" name="complaint-form" acceptCharset="utf-8" action="https://formspree.io/f/xaylgyzq" method="post">
         <fieldset id="fs-frm-inputs">
@@ -37,25 +30,22 @@ class Contact extends Component {
     )
   }
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
             <h2 className="section-heading subpageHeading">Contact</h2>
-            <p>협업 관련 문의만 받습니다</p>
         </div>
       </div>
     )
   }
 
-  render() {
-    return (
+  return (
       <section id="contact" className="animated bounceInDown">
-        {this.sectionTitle()}
-        {this.submitForm()}
-      </section>
-    );
-  }
+        {sectionTitle()}
+        {submitForm()}
+    </section>
+  );
 }
   
 export default Contact;
