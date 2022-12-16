@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component, useRef, useState } from 'react';
 import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 import html2canvas from 'html2canvas';
 import jsPDF from "jspdf";
 import LOGOFILE from "../images/logo.png";
+import ReactToPrint from "react-to-print";
 
 Modal.setAppElement('#root')
 
@@ -26,7 +27,7 @@ const day_words = [0,
   30, 30, 30, 15
 ]
 
-const sample_words = {
+let word_data = {
   1:{
     word: "apple",
     meaning: "사과",
@@ -53,59 +54,47 @@ const sample_words = {
 
 const num_words = [0, 692, 223, 280, 105]
 
-class Quizgen extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      mode: "voca_2022",  /*  main
-                              voca_2022
-                          */
-      logged_in: true,
-      select_mode: "index",
-      from: 1,
-      to:1300,
-      min: 1,
-      max: 1300,
-      maxQ: 1300,
-      numQ: 30, //0,
-      option1: true,
-      option2: true,
-      option3: true,
-      option4: true,
-      gen_result: true, //false
-      title: "수능 영단어 퀴즈",
-      showModal: true,
-      sample_no: [
+function Quizgen (props) {
+  const [mode, setMode] = useState("voca_2022")    /*  main
+                                          voca_2022
+                                        */
+  const [logged_in, setLogged_in] = useState(true)// false
+  const [select_mode, setSelect_Mode] = useState("index") // index
+  const [from, setFrom] = useState(1)
+  const [min, setMin] = useState(1)
+  const [to, setTo] = useState(1300)
+  const [max, setMax] = useState(1300)
+  const [maxQ, setMaxQ] = useState(1300)
+  const [numQ, setNumQ] = useState(30)
+  const [option1, setOption1] = useState(true) //false
+  const [option2, setOption4] = useState(true) //false
+  const [option3, setOption3] = useState(true) //false
+  const [option4, setOption2] = useState(true) //false
+  const [showModal, setShowModal] = useState(true) //false
+  const [title, setTitle] = useState("수능 영단어 퀴즈") // ""
+  const [sample_no, setSampleNo] = useState(
+        [
         [1, 2, 1, 2, 1, 1],
         [1, 2, 2, 2, 2, 2,],
         [1, 1, 2, 1, 1, 1,],
         [2, 1, 2, 2, 2, 2,]
       ]
-    }
+    )
 
-    this.handleCloseModal = this.closeModal.bind(this)
-    this.handleOpenModal = this.openModal.bind(this)
+  const closeModal = () => {
+    setShowModal(false)
   }
 
-  closeModal(){
-    this.setState({
-      showModal: false
-    })
+  const openModal = () => {
+    setShowModal(true)
   }
 
-  openModal(){
-    this.setState({
-      showModal: true
-    })
-  }
-
-  prepare_2022_voca_test () {
+  const prepare_2022_voca_test = () => {
 
   }
 
-
-  sectionTitle(){
-    if (this.state.mode !== "main"){
+  const sectionTitle = () => {
+    if (mode !== "main"){
       return(
         <div className="row">
           <div className="col-lg-12 text-center">
@@ -114,20 +103,16 @@ class Quizgen extends Component {
             <button className="submitButton"
               onClick={
                 function(e){
-                  this.setState({
-                    mode: "main",
-                    logged_in: false,
-                    select_mode: "index",
-                    from: 1,
-                    to:1300,
-                    min: 1,
-                    max: 1300,
-                    maxQ: 1300,
-                    numQ: 0,
-                    options: "",
-                    gen_result: false
-                  })           
-                }.bind(this)
+                    setMode("main")
+                    setLogged_in(false)
+                    setSelect_Mode("index")
+                    setFrom(1)
+                    setTo(1300)
+                    setMin(1)
+                    setMax(1300)
+                    setMaxQ(1300)
+                    setNumQ(0)
+                }
               }
             >처음으로</button>
           </div>
@@ -145,18 +130,15 @@ class Quizgen extends Component {
     }
   }
 
-  drawMain(){
+  const drawMain = () => {
     let project1 = <div className="singleProjectContainer">
       <div className="singleProjectCard citation" 
         onClick={
           function(e){
-            this.setState({
-              mode:"voca_2022",
-              logged_in: false,
-              title:"수능 영단어 퀴즈"
-            })
-            this.closeSideMenu()
-          }.bind(this)
+              setMode("voca_2022")
+              setLogged_in(false)
+              setTitle("수능 영단어 퀴즈")
+          }
         }>
         <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg"  alt="projectimage"/>
         <div className="projectText">
@@ -181,41 +163,33 @@ class Quizgen extends Component {
     )
   }
 
-  draw_rangeSelector_2022voca(){
-    let selector1 = <TextField select label="구분" className="itemSelectorBox" value={this.state.select_mode}
+  const draw_rangeSelector_2022voca = () => {
+    let selector1 = <TextField select label="구분" className="itemSelectorBox" value={select_mode}
       onChange={
         function(e){
           if (e.target.value === "total"){
-            this.setState({
-              select_mode: "total",
-              from: 1,
-              to: 1300,
-              maxQ: 1300
-            })
+              setSelect_Mode("total")
+              setFrom(1)
+              setTo(1300)
+              setMaxQ(1300)
           } else if (e.target.value === "index"){
-            this.setState({
-              select_mode: e.target.value,
-              min:1,
-              max:1300,
-            })
+              setSelect_Mode(e.target.value)
+              setMin(1)
+              setMax(1300)
           } else if (e.target.value === "part"){
-            this.setState({
-              select_mode: e.target.value,
-              min:1,
-              max:4,
-              from:1,
-              to:4
-            })
+              setSelect_Mode(e.target.value)
+              setMin(1)
+              setMax(4)
+              setFrom(1)
+              setTo(4)
           } else if (e.target.value === "day"){
-            this.setState({
-              select_mode: e.target.value,
-              min:1,
-              max:45,
-              from:1,
-              to:45
-            })
+              setSelect_Mode(e.target.value)
+              setMin(1)
+              setMax(45)
+              setFrom(1)
+              setTo(45)
           }
-        }.bind(this)
+        }
       }
     >
       <MenuItem value={"day"} key={"day"}>Day</MenuItem>
@@ -224,74 +198,60 @@ class Quizgen extends Component {
       <MenuItem value={"total"} key={"total"}>책 전체</MenuItem>
     </TextField>
 
-    let selector2 = <TextField type="number" label="~부터" className="itemSelectorBox" value={this.state.from}
-          InputProps={{ inputProps: { min: this.state.min, max: this.state.max } }}
+    let selector2 = <TextField type="number" label="~부터" className="itemSelectorBox" value={from}
+          InputProps={{ inputProps: { min: min, max: max } }}
           onChange={
             function(e){
-              this.setState({
-                from: Number(e.target.value)
-              })
-            }.bind(this)
+              setFrom(Number(e.target.value))
+            }
           }
         />
 
-    let selector3 =  <TextField type="number" label="~까지" className="itemSelectorBox" value={this.state.to}
-        InputProps={{ inputProps: { min: this.state.min, max: this.state.max } }}
+    let selector3 =  <TextField type="number" label="~까지" className="itemSelectorBox" value={to}
+        InputProps={{ inputProps: { min: min, max: max } }}
           onInput={
             function(e){
               var L = Number(e.target.value)
-              if (this.state.select_mode === "index"){
-                this.setState({
-                  to: L,
-                  maxQ: L + 1 - this.state.from
-                })
-              } else if (this.state.select_mode === "day"){
-                this.setState({
-                  to: L,
-                  maxQ: day_words.slice(this.state.from, L + 1).reduce((a,b) => (a+b))
-                })
-              } else if (this.state.select_mode === "part"){
-                this.setState({
-                  to: L,
-                  maxQ: num_words.slice(this.state.from, L + 1).reduce((a,b) => (a+b))
-                })
+              if (select_mode === "index"){
+                  setTo(L)
+                  setMaxQ(L + 1 - from)
+              } else if (select_mode === "day"){
+                  setTo(L)
+                  setMaxQ(day_words.slice(from, L + 1).reduce((a,b) => (a+b)))
+              } else if (select_mode === "part"){
+                  setTo(L)
+                  setMaxQ(num_words.slice(from, L + 1).reduce((a,b) => (a+b)))
               } else {
-                this.setState({
-                  to: L,
-                  maxQ: 0
-                })
+                  setTo(L)
+                  setMaxQ(0)
               }
-            }.bind(this)
+            }
           }
         />
     
     let numQSelector = <div className="separ2">
       <strong className="col-lg-12 text-center">총 몇 문제를 출제할까요?</strong><br/><br/>
-      최대 <u>{this.state.maxQ}</u> 개의 문제를 출제할 수 있습니다.
-      <TextField type="number" label="문항 개수" className="itemSelectorBox" value={this.state.numQ}
+      최대 <u>{maxQ}</u> 개의 문제를 출제할 수 있습니다.
+      <TextField type="number" label="문항 개수" className="itemSelectorBox" value={numQ}
           onChange={
             function(e){
-              this.setState({
-                numQ: Number(e.target.value)
-              })
-            }.bind(this)
+              setNumQ(Number(e.target.value))
+            }
           }
         />
       <br/><br/><br/><br/>
 
       <strong className="col-lg-12 text-center">시험지 제목을 입력해주세요</strong><br/><br/>
-      <TextField type="text" label="시험지 제목" className="itemSelectorBox" value={this.state.title}
+      <TextField type="text" label="시험지 제목" className="itemSelectorBox" value={title}
           onChange={
             function(e){
-              this.setState({
-                title: e.target.value
-              })
-            }.bind(this)
+              setTitle(e.target.value)
+            }
           }
         />
     </div>
 
-    if (this.state.select_mode === "total") {
+    if (select_mode === "total") {
       return (
         <div className="selectorForTestGen1">
           <strong className="col-lg-12 text-center">출제 범위를 선택해주세요</strong><br/><br/>
@@ -306,7 +266,7 @@ class Quizgen extends Component {
       return (
         <div className="selectorForTestGen">
           <strong className="col-lg-12 text-center">출제 범위를 선택해주세요</strong><br/><br/>
-          {this.state.min}부터 {this.state.max}까지 선택하실 수 있습니다.<br/><br/>
+          {min}부터 {max}까지 선택하실 수 있습니다.<br/><br/>
           <div className="separ">
             {selector1}
             {selector2}
@@ -318,8 +278,8 @@ class Quizgen extends Component {
     }
   }
 
-  draw_2022_type_1(idx) {
-    let word = sample_words[idx]
+  const draw_2022_type_1 = (idx) => {
+    let word = word_data[idx]
 
     return (
       <li className="singleQuiz">
@@ -330,8 +290,8 @@ class Quizgen extends Component {
     )
   }
 
-  draw_2022_type_2(idx) {
-    let word = sample_words[idx]
+  const draw_2022_type_2 = (idx) => {
+    let word = word_data[idx]
 
     return (
       <li className="singleQuiz">
@@ -342,13 +302,13 @@ class Quizgen extends Component {
     )
   }
 
-  draw_2022_type_3(idx) {
-    let word = sample_words[idx]
+  const draw_2022_type_3 = (idx) => {
+    let word = word_data[idx]
 
     let samples = [
-      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
-      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
-      sample_words[parseInt(Math.random() * Object.keys(sample_words).length) + 1].word,
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
       word.word
     ]
     
@@ -373,8 +333,8 @@ class Quizgen extends Component {
     
   }
 
-  draw_2022_type_4(idx) {
-    let word = sample_words[idx]
+  const draw_2022_type_4 = (idx) => {
+    let word = word_data[idx]
 
     return (
       <li className="singleQuiz">
@@ -388,101 +348,29 @@ class Quizgen extends Component {
     )
   }
 
-  draw_2022_voca_printable_page() {
+  const Draw_2022_voca_printable_page = () => {
     let modalCloseButton = <button className="submitButton mdbutton"
-        onClick={this.handleCloseModal}
+        onClick={closeModal}
       >창 닫기</button>
 
-    let testPDF = <button className="submitButton mdbutton"
-        onClick={
-          function(e){
-            html2canvas(document.querySelector(".insideModalField"))
-              .then(canvas => {
-                let today = new Date()
-                let year = today.getFullYear()
-                let month = ('0' + (today.getMonth() + 1)).slice(-2)
-                let day = ('0' + today.getDate()).slice(-2)
-                let dateString = year + '-' + month  + '-' + day
-                let imgData = canvas.toDataURL('image/png')
+    const ref = useRef()
 
-                let filename = dateString + " 수능영단어 시험지.pdf"
-                let doc = new jsPDF('p', 'mm', 'a4')
+    let today = new Date()
+    let year = today.getFullYear()
+    let month = ('0' + (today.getMonth() + 1)).slice(-2)
+    let day = ('0' + today.getDate()).slice(-2)
+    let dateString = year + '-' + month  + '-' + day
 
-                let pageWidth = 210
-                let pageHeight = 297
-
-                let padding = 75 * pageWidth / canvas.width
-
-                let imgHeight = canvas.height * pageWidth / canvas.width
-                var heightLeft = imgHeight
-
-                let currentPageHeight = 0 
-
-                let elementHeights = []
-                elementHeights = elementHeights.concat(padding)
-                elementHeights = elementHeights.concat(266 * pageWidth / canvas.width * 2690/1245)
-
-                // 문제의 높이만큼 삽입
-                if (this.state.option1){
-                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
-                  this.state.sample_no[0].map(function(){
-                    elementHeights = elementHeights.concat(75 * pageWidth / canvas.width * 2690/1245)
-                    return NaN
-                  })
-                }if (this.state.option2){
-                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
-                  this.state.sample_no[1].map(function(){
-                    elementHeights = elementHeights.concat(75 * pageWidth / canvas.width * 2690/1245)
-                    return NaN
-                  })
-                }if (this.state.option3){
-                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
-                  this.state.sample_no[2].map(function(){
-                    elementHeights = elementHeights.concat(180 * pageWidth / canvas.width * 2690/1245)
-                    return NaN
-                  })
-                }if (this.state.option4){
-                  elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
-                  this.state.sample_no[3].map(function(){
-                    elementHeights = elementHeights.concat(80 * pageWidth / canvas.width * 2690/1245)
-                    return NaN
-                  })
-                }
-
-                elementHeights.reverse()
-
-                // 무한루프 생겼음
-                while (heightLeft >= 0){
-                  while (currentPageHeight + padding * 2 < pageHeight){
-                    if (elementHeights.length === 0){
-                      break
-                    } else if (currentPageHeight + elementHeights[elementHeights.length-1] < pageHeight - padding * 2){
-                      currentPageHeight += elementHeights.pop()
-                    } else {
-                      currentPageHeight = 0
-                      break
-                    }
-                  }
-
-                  if (currentPageHeight === 0){
-                    break
-                  }
-                  currentPageHeight = parseInt(currentPageHeight)
-                  doc.addImage(imgData, "PNG", padding, heightLeft - imgHeight, pageWidth - padding * 2, imgHeight)
-                  heightLeft -= currentPageHeight
-                  if (heightLeft > 0){
-                    doc.addPage()
-                  }
-                }
-                doc.save(filename); 
-              }
-            )
-          }.bind(this)
-        }
-      >시험지 PDF</button>
+    let filename = dateString + " 수능영단어 시험지.pdf"
+    
+    let testPDF = <ReactToPrint
+      trigger={() => <button className="submitButton mdbutton">시험지 인쇄</button>}
+      content={() => ref.current}
+      documentTitle={filename}
+    />
 
     let infogrid = <div className="infoGrid">
-      <p>데스크톱 컴퓨터 또는 태블릿 PC 사용을 권장합니다.</p>
+      <p>인쇄 기능은 PC 버전 Chrome 브라우저에 최적화되어 있습니다.</p>
       <div className="buttonArrayGrid">
         {testPDF}
         {modalCloseButton}
@@ -491,7 +379,7 @@ class Quizgen extends Component {
 
     let headerGrid = <div className="testHeaderGrid">
       <img src={LOGOFILE} className="linear_logo" alt="균형감각"/>
-      <span className="text-center testTitle">{this.state.title}</span>
+      <span className="text-center testTitle">{title}</span>
       <div className="studentInfo">
         학반 : <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
         번호 : <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
@@ -504,42 +392,42 @@ class Quizgen extends Component {
     let Q3 = <div></div>
     let Q4 = <div></div>
 
-    if (this.state.option1){
+    if (option1){
       Q1 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 단어의 의미를 빈 칸에 적어주세요.<br/><br/><br/></strong>
-        {this.state.sample_no[0].map(function(idx){
-                    return this.draw_2022_type_1(idx)
-                  }.bind(this))
+        {sample_no[0].map(function(idx){
+                    return draw_2022_type_1(idx)
+                  })
         }
       </div>
     }
 
-    if (this.state.option2){
+    if (option2){
       Q2 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 의미에 해당하는 단어를 빈 칸에 적어주세요.<br/><br/><br/></strong>
-        {this.state.sample_no[1].map(function(idx){
-                    return this.draw_2022_type_2(idx)
-                  }.bind(this))
+        {sample_no[1].map(function(idx){
+                    return draw_2022_type_2(idx)
+                  })
         }
       </div>
     }
 
-    if (this.state.option3){
+    if (option3){
       Q3 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 고르세요.<br/><br/><br/></strong>
-        {this.state.sample_no[2].map(function(idx){
-                    return this.draw_2022_type_3(idx)
-                  }.bind(this))
+        {sample_no[2].map(function(idx){
+                    return draw_2022_type_3(idx)
+                  })
         }
       </div>
     }
 
-    if (this.state.option4){
+    if (option4){
       Q4 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 적으세요.<br/><br/><br/></strong>
-        {this.state.sample_no[3].map(function(idx){
-                    return this.draw_2022_type_4(idx)
-                  }.bind(this))
+        {sample_no[3].map(function(idx){
+                    return draw_2022_type_4(idx)
+                  })
         }
       </div>
     }
@@ -547,7 +435,7 @@ class Quizgen extends Component {
     return(
       <div className="modalField">
         {infogrid}
-        <div className="insideModalField">
+        <div className="insideModalField" ref={ref}>
           <div id="printable">
             {headerGrid}
             <ol className="orderedTest">
@@ -562,7 +450,7 @@ class Quizgen extends Component {
     )
   }
 
-  draw_voca_2022(){
+  const draw_voca_2022 = () => {
     const hashed = -1693770398
     const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"
 
@@ -588,14 +476,11 @@ class Quizgen extends Component {
               } else {
                 axios.get(dataUrl)
                 .then(data => {
-                  this.setState({
-                    logged_in: true,
-                    word_data: data,
-                    totalRange: false
-                  })
+                  setLogged_in(true)
+                  word_data(data)
                 })
               }
-            }.bind(this)
+            }
           }
         >Access</button>
       </div>
@@ -608,10 +493,8 @@ class Quizgen extends Component {
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_1" onClick={
             function(e){
-              this.setState({
-                option1: !this.state.option1
-              })
-            }.bind(this)
+              setOption1(!option1)
+            }
           }/>
           <label for="checker1_1">영단어와 빈칸</label>
         </div>
@@ -619,10 +502,8 @@ class Quizgen extends Component {
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_2" onClick={
             function(e){
-              this.setState({
-                option2: !this.state.option2
-              })
-            }.bind(this)
+              setOption2(!option2)
+            }
           }/>
           <label for="checker1_2">빈칸과 한글 의미</label>
         </div>
@@ -630,10 +511,8 @@ class Quizgen extends Component {
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_3" onClick={
             function(e){
-              this.setState({
-                option3: !this.state.option3
-              })
-            }.bind(this)
+              setOption3(!option3)
+            }
           }/>
           <label for="checker1_3">문장 내 빈칸채우기 (객관식)</label>
         </div>
@@ -641,10 +520,8 @@ class Quizgen extends Component {
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type[0]"/>
           <input type="checkbox" name="checker1" id="checker1_4" onClick={
             function(e){
-              this.setState({
-                option4: !this.state.option4
-              })
-            }.bind(this)
+              setOption4(!option4)
+            }
           }/>
           <label for="checker1_4">문장 내 빈칸채우기 (주관식)</label>
         </div>
@@ -656,28 +533,25 @@ class Quizgen extends Component {
         onClick={
           function(e){
             e.preventDefault()
-            if (! (this.state.option1 || this.state.option2 || this.state.option3 || this.state.option4)){
+            if (! (option1 || option2 || option3 || option4)){
               alert("1개 이상의 시험 유형을 선택해주세요.")
-            } else if (this.state.from < this.state.min){
+            } else if (from < min){
               alert("출제 시작값이 너무 작습니다.")
-            } else if (this.state.to > this.state.max){
+            } else if (to > max){
               alert("출제 종료값이 너무 큽니다.")
-            } else if (this.state.from >= this.state.to){
+            } else if (from >= to){
               alert("출제 시작값보다 종료값이 커야 합니다.")
             } else{
-              this.setState({
-                gen_result: true,
-                showModal: true
-              })
-              this.prepare_2022_voca_test()
+              setShowModal(true)
+              prepare_2022_voca_test()
             }
-          }.bind(this)
+          }
         }
       >시험지 생성</button>
     </div>
 
-    if (this.state.logged_in){
-      if (! (this.state.option1 || this.state.option2 || this.state.option3 || this.state.option4)){
+    if (logged_in){
+      if (! (option1 || option2 || option3 || option4)){
         return (
           <div className="codeContainer">
             <div className="quizGenerator">
@@ -689,14 +563,14 @@ class Quizgen extends Component {
           </div>
         )
       }
-      else if (this.state.numQ <= 0){
+      else if (numQ <= 0){
         return(
           <div className="codeContainer">
             <div className="quizGenerator">
               <div className="col-lg-12 text-center">
                 {typeSelector}
                 <div className="separator"/>
-                {this.draw_rangeSelector_2022voca()}
+                {draw_rangeSelector_2022voca()}
                 <div className="separator"/>
               </div>
             </div>
@@ -709,15 +583,15 @@ class Quizgen extends Component {
               <div className="col-lg-12 text-center">
                 {typeSelector}
                 <div className="separator"/>
-                {this.draw_rangeSelector_2022voca()}
+                {draw_rangeSelector_2022voca()}
                 <div className="separator"/>
               </div>
             </div>
             {test_gen_button}
-            <Modal id="modalForTest" isOpen={this.state.showModal} onRequestClose={this.handleCloseModal}
+            <Modal id="modalForTest" isOpen={showModal} onRequestClose={closeModal}
               overlayClassName="overlay" className="ModalPrintPage"
             >
-              {this.draw_2022_voca_printable_page()}
+              {Draw_2022_voca_printable_page()}
             </Modal>
           </div>
         )
@@ -731,30 +605,28 @@ class Quizgen extends Component {
     }
   }
 
-  drawWebsites(){
-    if (this.state.mode === "main"){
+  const drawWebsites = () => {
+    if (mode === "main"){
       return (
         <div className="websitesContainer">
-          {this.drawMain()}
+          {drawMain()}
         </div>
       )
-    } else if (this.state.mode === "voca_2022"){
+    } else if (mode === "voca_2022"){
       return (
-          <div className="quizPrintContainer">
-            {this.draw_voca_2022()}
-          </div>
-        )
+        <div className="quizPrintContainer">
+          {draw_voca_2022()}
+        </div>
+      )
     }
   }
 
-  render() {
-    return (
-      <section id="quizgen" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+    <section id="quizgen" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
+    </section>
+  );
 }
   
 export default Quizgen;
