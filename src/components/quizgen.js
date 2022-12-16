@@ -1,4 +1,4 @@
-import React, { Component, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
@@ -97,6 +97,7 @@ function Quizgen () {
     // 문제 개수, 범위를 받아와서 sample_no를 제작해야 됨
     // 일단 하나의 어레이에 전부 집어넣고 섞은다음에
     // 유형별로 나눠담으면 될듯
+    // setSampleNo() 활용
   }
 
   const sectionTitle = () => {
@@ -548,7 +549,7 @@ function Quizgen () {
             } else if (from >= to){
               alert("출제 시작값보다 종료값이 커야 합니다.")
             } else{
-              setShowModal(true)
+              openModal()
               prepare_2022_voca_test()
             }
           }
