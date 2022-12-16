@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './contact.css';
 
 
-
 class Contact extends Component {
   constructor(props){
     super(props)

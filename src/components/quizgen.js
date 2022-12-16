@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './codes.css';
+import './quizgen.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
 import Modal from 'react-modal';
