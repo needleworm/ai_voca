@@ -3,14 +3,18 @@ import './codes.css';
 import { TextField, MenuItem } from "@material-ui/core"
 import axios from 'axios';
 import Modal from 'react-modal';
-import html2canvas from 'html2canvas';
-import jsPDF from "jspdf";
 import LOGOFILE from "../images/logo.png";
 import ReactToPrint from "react-to-print";
 
+/*
+  할 일
+  1. 단어장 json 만들어서 jsonData/ 폴더에 넣기
+  2. prepare_2022_voca_test 함수 만들기
+*/
+
 Modal.setAppElement('#root')
 
-const hashCode = function(s){
+const hashCode = (s) => {
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
 }
 
@@ -54,7 +58,7 @@ let word_data = {
 
 const num_words = [0, 692, 223, 280, 105]
 
-function Quizgen (props) {
+function Quizgen () {
   const [mode, setMode] = useState("voca_2022")    /*  main
                                           voca_2022
                                         */
@@ -74,11 +78,11 @@ function Quizgen (props) {
   const [title, setTitle] = useState("수능 영단어 퀴즈") // ""
   const [sample_no, setSampleNo] = useState(
         [
-        [1, 2, 1, 2, 1, 1],
-        [1, 2, 2, 2, 2, 2,],
-        [1, 1, 2, 1, 1, 1,],
-        [2, 1, 2, 2, 2, 2,]
-      ]
+          [1, 2, 1, 2, 1, 1], // type 1
+          [1, 2, 2, 2, 2, 2,], // type 2
+          [1, 1, 2, 1, 1, 1,], // type 3
+          [2, 1, 2, 2, 2, 2,] //type 4
+        ]
     )
 
   const closeModal = () => {
@@ -90,7 +94,9 @@ function Quizgen (props) {
   }
 
   const prepare_2022_voca_test = () => {
-
+    // 문제 개수, 범위를 받아와서 sample_no를 제작해야 됨
+    // 일단 하나의 어레이에 전부 집어넣고 섞은다음에
+    // 유형별로 나눠담으면 될듯
   }
 
   const sectionTitle = () => {
@@ -370,7 +376,7 @@ function Quizgen (props) {
     />
 
     let infogrid = <div className="infoGrid">
-      <p>인쇄 기능은 PC 버전 Chrome 브라우저에 최적화되어 있습니다.</p>
+      <p>인쇄 기능은 PC 버전 <a href="https://www.google.com/chrome/" target="_blank"  rel="noreferrer">Chrome 브라우저</a>에 최적화되어 있습니다.</p>
       <div className="buttonArrayGrid">
         {testPDF}
         {modalCloseButton}
@@ -452,7 +458,7 @@ function Quizgen (props) {
 
   const draw_voca_2022 = () => {
     const hashed = -1693770398
-    const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/package.json"
+    const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/jsonData/2022_voca.json"
 
     let serial = ""
 
