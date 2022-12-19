@@ -151,7 +151,7 @@ function App() {
           }
         }
       >
-        <i class="fa-solid fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
+        <i className="fa-solid fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
       </a>
     </li>
 
@@ -170,7 +170,7 @@ function App() {
           }
         }
       >
-        <i class="fa-solid fa-robot"></i>&nbsp;AI 수능독해
+        <i className="fa-solid fa-robot"></i>&nbsp;AI 수능독해
       </a>
     </li>
 
@@ -189,7 +189,7 @@ function App() {
           }
         }
       >
-        <i class="fa-solid fa-chalkboard-user"></i>&nbsp;교사용 메뉴
+        <i className="fa-solid fa-chalkboard-user"></i>&nbsp;교사용 메뉴
       </a>
     </li>
 

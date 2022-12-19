@@ -6,7 +6,7 @@ import Modal from 'react-modal';
 import LOGOFILE from "../images/logo.png";
 import ReactToPrint from "react-to-print";
 
-/*
+/*  
   할 일
   1. 단어장 json 만들어서 jsonData/ 폴더에 넣기
   2. prepare_2022_voca_test 함수 만들기
@@ -31,64 +31,30 @@ const day_words = [0,
   30, 30, 30, 15
 ]
 
-let word_data = {}
-/*
-let word_data = {
-  1:{
-    word: "apple",
-    meaning: "사과",
-    sentence:[
-      "I ate an",
-      "pie for dinner"
-    ],
-    translatioin: [
-      "나는 저녁으로 애플파이를 먹었어요."
-    ],
-    appearance: "apple"
-  }, 
-  2:{
-    word: "approve",
-    meaning: "승인하다",
-    sentence:[
-      "I'd like to ask you to",
-      "our plan for 2023."
-    ],
-    translatioin: [
-      "2023년도 계획안을 승인해주십사 요청드리고 싶습니다."
-    ],
-    appearance: "approves"
-  }
-}
-*/
 
 const num_words = [0, 692, 223, 280, 105]
 
 function Quizgen () {
-  const [mode, setMode] = useState("voca_2022")    /*  main
+  const [mode, setMode] = useState("main")    /*  main
                                           voca_2022
                                         */
-  const [logged_in, setLogged_in] = useState(true)// false
+  const [logged_in, setLogged_in] = useState(false)// false
   const [select_mode, setSelect_Mode] = useState("index") // index
-  const [from, setFrom] = useState(1)
-  const [min, setMin] = useState(1)
-  const [to, setTo] = useState(1300)
-  const [max, setMax] = useState(1300)
-  const [maxQ, setMaxQ] = useState(1300)
-  const [numQ, setNumQ] = useState(30)
-  const [option1, setOption1] = useState(true) //false
-  const [option2, setOption4] = useState(true) //false
-  const [option3, setOption3] = useState(true) //false
-  const [option4, setOption2] = useState(true) //false
-  const [showModal, setShowModal] = useState(true) //false
-  const [title, setTitle] = useState("수능 영단어 퀴즈") // ""
+  const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
+  const [word_data, setWord_data] = useState({})
+  const [options, setOptions] = useState([])
+  const [showModal, setShowModal] = useState(false) //false
+  const [title, setTitle] = useState("") // ""
   const [sample_no, setSampleNo] = useState(
-        [
-          [1, 2, 1, 2, 1, 1], // type 1
-          [1, 2, 2, 2, 2, 2,], // type 2
-          [1, 1, 2, 1, 1, 1,], // type 3
-          [2, 1, 2, 2, 2, 2,] //type 4
-        ]
-    )
+      [
+        [1, 2, 3, 4, 5, 6], // type 1
+        [719, 287, 542, 225, 32, 24,], // type 2
+        [1012, 1043, 1232, 193, 153, 514,], // type 3
+        [62, 321, 622, 752, 842, 922,] //type 4
+      ]
+  )
+  const ref = useRef()
+  
 
   const closeModal = () => {
     setShowModal(false)
@@ -118,12 +84,7 @@ function Quizgen () {
                     setMode("main")
                     setLogged_in(false)
                     setSelect_Mode("index")
-                    setFrom(1)
-                    setTo(1300)
-                    setMin(1)
-                    setMax(1300)
-                    setMaxQ(1300)
-                    setNumQ(0)
+                    setQuestion_range([1, 1, 1300, 1300, 1300, 30]) // from, question_range[1], to, max, question_range[4], question_range[5]  
                 }
               }
             >처음으로</button>
@@ -181,25 +142,20 @@ function Quizgen () {
         function(e){
           if (e.target.value === "total"){
               setSelect_Mode("total")
-              setFrom(1)
-              setTo(1300)
-              setMaxQ(1300)
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([1, question_range[1], 1300, question_range[3], 1300, question_range[5]])
           } else if (e.target.value === "index"){
               setSelect_Mode(e.target.value)
-              setMin(1)
-              setMax(1300)
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([question_range[0], 1, question_range[2], 1300, question_range[4], question_range[5]])
           } else if (e.target.value === "part"){
               setSelect_Mode(e.target.value)
-              setMin(1)
-              setMax(4)
-              setFrom(1)
-              setTo(4)
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([1, 1, 4, 4, question_range[4], question_range[5]])
           } else if (e.target.value === "day"){
               setSelect_Mode(e.target.value)
-              setMin(1)
-              setMax(45)
-              setFrom(1)
-              setTo(45)
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([1, 1, 45, 45, question_range[4], question_range[5]])
           }
         }
       }
@@ -210,32 +166,33 @@ function Quizgen () {
       <MenuItem value={"total"} key={"total"}>책 전체</MenuItem>
     </TextField>
 
-    let selector2 = <TextField type="number" label="~부터" className="itemSelectorBox" value={from}
-          InputProps={{ inputProps: { min: min, max: max } }}
+    let selector2 = <TextField type="number" label="~부터" className="itemSelectorBox" value={question_range[0]}
+          InputProps={{ inputProps: { min: question_range[1], max: question_range[3] } }}
           onChange={
             function(e){
-              setFrom(Number(e.target.value))
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([Number(e.target.value), question_range[1], question_range[2], question_range[3], question_range[4], question_range[5]])
             }
           }
         />
 
-    let selector3 =  <TextField type="number" label="~까지" className="itemSelectorBox" value={to}
-        InputProps={{ inputProps: { min: min, max: max } }}
+    let selector3 =  <TextField type="number" label="~까지" className="itemSelectorBox" value={question_range[2]}
+        InputProps={{ inputProps: { min: question_range[1], max: question_range[3] } }}
           onInput={
             function(e){
               var L = Number(e.target.value)
               if (select_mode === "index"){
-                  setTo(L)
-                  setMaxQ(L + 1 - from)
+                  // from, min, to, max, maxQ, numQ 
+                  setQuestion_range([question_range[0], question_range[1], L, question_range[3], L + 1 -question_range[0], question_range[5]])
               } else if (select_mode === "day"){
-                  setTo(L)
-                  setMaxQ(day_words.slice(from, L + 1).reduce((a,b) => (a+b)))
+                  // from, min, to, max, maxQ, numQ 
+                  setQuestion_range([question_range[0], question_range[1], L, question_range[3], day_words.slice(question_range[0], L + 1).reduce((a,b) => (a+b)), question_range[5]])
               } else if (select_mode === "part"){
-                  setTo(L)
-                  setMaxQ(num_words.slice(from, L + 1).reduce((a,b) => (a+b)))
+                  // from, min, to, max, maxQ, numQ 
+                  setQuestion_range([question_range[0], question_range[1], L, question_range[3], num_words.slice(question_range[0], L + 1).reduce((a,b) => (a+b)), question_range[5]])
               } else {
-                  setTo(L)
-                  setMaxQ(0)
+                  // from, min, to, max, maxQ, numQ 
+                  setQuestion_range([question_range[0], question_range[1], L, question_range[3], 0, question_range[5]])
               }
             }
           }
@@ -243,11 +200,12 @@ function Quizgen () {
     
     let numQSelector = <div className="separ2">
       <strong className="col-lg-12 text-center">총 몇 문제를 출제할까요?</strong><br/><br/>
-      최대 <u>{maxQ}</u> 개의 문제를 출제할 수 있습니다.
-      <TextField type="number" label="문항 개수" className="itemSelectorBox" value={numQ}
+      최대 <u>{question_range[4]}</u> 개의 문제를 출제할 수 있습니다.
+      <TextField type="number" label="문항 개수" className="itemSelectorBox" value={question_range[5]}
           onChange={
             function(e){
-              setNumQ(Number(e.target.value))
+              // from, min, to, max, maxQ, numQ 
+              setQuestion_range([question_range[0], question_range[1], question_range[2], question_range[3], question_range[4], Number(e.target.value)])
             }
           }
         />
@@ -278,7 +236,7 @@ function Quizgen () {
       return (
         <div className="selectorForTestGen">
           <strong className="col-lg-12 text-center">출제 범위를 선택해주세요</strong><br/><br/>
-          {min}부터 {max}까지 선택하실 수 있습니다.<br/><br/>
+          {question_range[1]}부터 {question_range[3]}까지 선택하실 수 있습니다.<br/><br/>
           <div className="separ">
             {selector1}
             {selector2}
@@ -292,6 +250,8 @@ function Quizgen () {
 
   const draw_2022_type_1 = (idx) => {
     let word = word_data[idx]
+    console.log(idx)
+    console.log(word_data)
 
     return (
       <li className="singleQuiz">
@@ -318,10 +278,10 @@ function Quizgen () {
     let word = word_data[idx]
 
     let samples = [
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].word,
-      word.word
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word.appearance
     ]
     
     samples.sort(() => Math.random() - 0.5);
@@ -365,7 +325,6 @@ function Quizgen () {
         onClick={closeModal}
       >창 닫기</button>
 
-    const ref = useRef()
 
     let today = new Date()
     let year = today.getFullYear()
@@ -404,42 +363,46 @@ function Quizgen () {
     let Q3 = <div></div>
     let Q4 = <div></div>
 
-    if (option1){
+    if (options[0]){
       Q1 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 단어의 의미를 빈 칸에 적어주세요.<br/><br/><br/></strong>
-        {sample_no[0].map(function(idx){
-                    return draw_2022_type_1(idx)
-                  })
+        {sample_no[0].map(
+          function(idx){
+            return draw_2022_type_1(idx)
+          })
         }
       </div>
     }
 
-    if (option2){
+    if (options[1]){
       Q2 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 의미에 해당하는 단어를 빈 칸에 적어주세요.<br/><br/><br/></strong>
-        {sample_no[1].map(function(idx){
-                    return draw_2022_type_2(idx)
-                  })
+        {sample_no[1].map(
+          function(idx){
+            return draw_2022_type_2(idx)
+          })
         }
       </div>
     }
 
-    if (option3){
+    if (options[2]){
       Q3 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 고르세요.<br/><br/><br/></strong>
-        {sample_no[2].map(function(idx){
-                    return draw_2022_type_3(idx)
-                  })
+        {sample_no[2].map(
+          function(idx){
+            return draw_2022_type_3(idx)
+          })
         }
       </div>
     }
 
-    if (option4){
+    if (options[3]){
       Q4 = <div>
         <strong className="singleQuiz"><br/><br/><br/>주어진 문장의 빈칸에 가장 알맞는 단어를 적으세요.<br/><br/><br/></strong>
-        {sample_no[3].map(function(idx){
-                    return draw_2022_type_4(idx)
-                  })
+        {sample_no[3].map(
+          function(idx){
+            return draw_2022_type_4(idx)
+          })
         }
       </div>
     }
@@ -489,7 +452,7 @@ function Quizgen () {
                 axios.get(dataUrl)
                 .then(data => {
                   setLogged_in(true)
-                  word_data(data)
+                  setWord_data(data)
                 })
               }
             }
@@ -502,40 +465,64 @@ function Quizgen () {
       <strong className="col-lg-12 text-center">문제 유형을 1개 이상 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
         <div className="text-center checkOptions" >
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type[0]"/>
-          <input type="checkbox" name="checker1" id="checker1_1" onClick={
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type 1"
+            onClick={
+              function(e){
+                setOptions([!options[0], options[1], options[2], options[3]])
+              }
+          }/>
+          <input type="checkbox" name="checker1" id="checker1_1" checked={options[0]} onChange={
             function(e){
-              setOption1(!option1)
+              e.preventDefault()
+              setOptions([!options[0], options[1], options[2], options[3]])
             }
           }/>
-          <label for="checker1_1">영단어와 빈칸</label>
+          <label htmlFor="checker1_1">영단어와 빈칸</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type[0]"/>
-          <input type="checkbox" name="checker1" id="checker1_2" onClick={
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type 2"
+            onClick={
+              function(e){
+                setOptions([options[0], !options[1], options[2], options[3]])
+              }
+          }/>
+          <input type="checkbox" name="checker1" id="checker1_2" checked={options[1]} onChange={
             function(e){
-              setOption2(!option2)
+              e.preventDefault()
+              setOptions([options[0], !options[1], options[2], options[3]])
             }
           }/>
-          <label for="checker1_2">빈칸과 한글 의미</label>
+          <label htmlFor="checker1_2">빈칸과 한글 의미</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type[0]"/>
-          <input type="checkbox" name="checker1" id="checker1_3" onClick={
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type 3"
+            onClick={
+              function(e){
+                setOptions([options[0], options[1], !options[2], options[3]])
+              }
+          }/>
+          <input type="checkbox" name="checker1" id="checker1_3" checked={options[2]} onChange={
             function(e){
-              setOption3(!option3)
+              e.preventDefault()
+              setOptions([options[0], options[1], !options[2], options[3]])
             }
           }/>
-          <label for="checker1_3">문장 내 빈칸채우기 (객관식)</label>
+          <label htmlFor="checker1_3">문장 내 빈칸채우기 (객관식)</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type[0]"/>
-          <input type="checkbox" name="checker1" id="checker1_4" onClick={
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type 4"
+            onClick={
+              function(e){
+                setOptions([options[0], options[1], options[2], !options[3]])
+              }
+          }/>
+          <input type="checkbox" name="checker1" id="checker1_4" checked={options[3]} onChange={
             function(e){
-              setOption4(!option4)
+              e.preventDefault()
+              setOptions([options[0], options[1], options[2], !options[3]])
             }
           }/>
-          <label for="checker1_4">문장 내 빈칸채우기 (주관식)</label>
+          <label htmlFor="checker1_4">문장 내 빈칸채우기 (주관식)</label>
         </div>
       </div>
     </div>
@@ -545,13 +532,13 @@ function Quizgen () {
         onClick={
           function(e){
             e.preventDefault()
-            if (! (option1 || option2 || option3 || option4)){
+            if (! (options[0] || options[1] || options[2] || options[3])){
               alert("1개 이상의 시험 유형을 선택해주세요.")
-            } else if (from < min){
+            } else if (question_range[0] < question_range[1]){
               alert("출제 시작값이 너무 작습니다.")
-            } else if (to > max){
+            } else if (question_range[2] > question_range[3]){
               alert("출제 종료값이 너무 큽니다.")
-            } else if (from >= to){
+            } else if (question_range[0] >= question_range[2]){
               alert("출제 시작값보다 종료값이 커야 합니다.")
             } else{
               openModal()
@@ -562,8 +549,14 @@ function Quizgen () {
       >시험지 생성</button>
     </div>
 
+    let printable_page_modal = <Modal id="modalForTest" isOpen={showModal} onRequestClose={closeModal}
+      overlayClassName="overlay" className="ModalPrintPage"
+    >
+      {Draw_2022_voca_printable_page()}
+    </Modal>
+
     if (logged_in){
-      if (! (option1 || option2 || option3 || option4)){
+      if (! (options[0] || options[1] || options[2] || options[3])){
         return (
           <div className="codeContainer">
             <div className="quizGenerator">
@@ -572,10 +565,11 @@ function Quizgen () {
                 <div className="separator"/>
               </div>
             </div>
+            {printable_page_modal}
           </div>
         )
       }
-      else if (numQ <= 0){
+      else if (question_range[5] <= 0){
         return(
           <div className="codeContainer">
             <div className="quizGenerator">
@@ -586,6 +580,7 @@ function Quizgen () {
                 <div className="separator"/>
               </div>
             </div>
+            {printable_page_modal}
           </div>
         )
       } else {
@@ -600,11 +595,7 @@ function Quizgen () {
               </div>
             </div>
             {test_gen_button}
-            <Modal id="modalForTest" isOpen={showModal} onRequestClose={closeModal}
-              overlayClassName="overlay" className="ModalPrintPage"
-            >
-              {Draw_2022_voca_printable_page()}
-            </Modal>
+            {printable_page_modal}
           </div>
         )
       }
