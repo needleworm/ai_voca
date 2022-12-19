@@ -18,18 +18,7 @@ const hashCode = (s) => {
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
 }
 
-const day_words = [0, 
-  // Part 1 : day 1 ~ 23
-  30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
-  30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
-  30, 30, 32,
-  // Part 2 : day 24 ~ 31
-  30, 30, 30, 30, 30, 30, 30, 13,
-  // Part 3 : day 32 ~ 41
-  30, 30, 30, 30, 30, 30, 30, 30, 30, 10,
-  // Part 4 : day 42 ~ 45
-  30, 30, 30, 15
-]
+
 
 
 const num_words = [0, 692, 223, 280, 105]
@@ -39,10 +28,10 @@ function Quizgen () {
                                           voca_2022
                                         */
   const [logged_in, setLogged_in] = useState(false)// false
-  const [select_mode, setSelect_Mode] = useState("index") // index
+  const [select_mode, setSelect_Mode] = useState("index") // index, total, part, day
   const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
   const [word_data, setWord_data] = useState({})
-  const [options, setOptions] = useState([])
+  const [options, setOptions] = useState([false, false, false, false]) // false false false false
   const [showModal, setShowModal] = useState(false) //false
   const [title, setTitle] = useState("") // ""
   const [sample_no, setSampleNo] = useState([[], [], [], []]) // type 1, 2, 3, 4
@@ -58,10 +47,96 @@ function Quizgen () {
   }
 
   const prepare_2022_voca_test = () => {
-    // 문제 개수, 범위를 받아와서 sample_no를 제작해야 됨
-    // 일단 하나의 어레이에 전부 집어넣고 섞은다음에
-    // 유형별로 나눠담으면 될듯
-    // setSampleNo() 활용
+    let totalSamples = [] //전체 범위의 모집합
+    // 이거 구해야됨
+    
+    let range = Array.from({length: question_range[2] - question_range[0] + 1}, (v, i) => i + question_range[0])
+
+    if (select_mode === "total" || select_mode === 'index'){
+      totalSamples = range
+    } else if (select_mode === "part"){
+      const part_word_idx = [
+        Array.from({length: 692}, (v, i) => i + 1),
+        Array.from({length: 223}, (v, i) => i + 1 + 692),
+        Array.from({length: 280}, (v, i) => i + 1 + 692 + 223),
+        Array.from({length: 105}, (v, i) => i + 1 + 692 + 223 + 280),
+      ]
+
+      range.map(function(idx){
+        totalSamples = totalSamples.concat(part_word_idx[idx])
+        return null
+      })
+    } else if (select_mode === "day"){
+      const day_start_idx = [0, 
+        // Part 1 : day 1 ~ 23
+        1, 31, 61, 91, 121, 151, 181, 211, 241, 271,
+        301, 331, 361, 391, 421, 451, 481, 511, 541, 571,
+        601, 631, 661,
+        // Part 2 : day 24 ~ 31
+        693, 723, 753, 783, 813, 843, 873, 903,
+        // Part 3 : day 32 ~ 41
+        916, 946, 976, 1006, 1036, 1066, 1096, 1126, 1156, 1186,
+        // Part 4 : day 42 ~ 45
+        1196, 1226, 1256, 1286
+      ]
+
+      const day_end_idx = [0,
+        // Part 1 : day 1 ~ 23
+        30, 60, 90, 120, 150, 180, 210, 240, 270, 300,
+        330, 360, 390, 420, 450, 480, 510, 540, 570, 600,
+        630, 660, 692,
+        // Part 2 : day 24 ~ 31
+        722, 752, 782, 812, 842, 872, 902, 915,
+        // Part 3 : day 32 ~ 41
+        945, 975, 1005, 1035, 1065, 1095, 1125, 1155, 1185, 1195,
+        // Part 4 : day 42 ~ 45
+        1225, 1255, 1285, 1300
+      ]
+
+      totalSamples = Array.from({length: day_end_idx[question_range[2]] - day_start_idx[question_range[0]] + 1}, (v, i) => i + day_start_idx[question_range[0]])
+    }
+
+    let types_1 = []
+    let types_2 = []
+    let types_3 = []
+    let types_4 = []
+   
+    totalSamples.sort(() => Math.random() - 0.5);
+
+    if (question_range[5] > question_range[4]) { // numQ > maxQ
+      totalSamples = totalSamples.concat(totalSamples.slice(0, question_range[5] - question_range[4]))
+    } else {
+      totalSamples = totalSamples.slice(0, question_range[5])
+    }
+
+    let ticket = []
+    if (options[0]){
+      ticket.push(1)
+    }if (options[1]){
+      ticket.push(2)
+    }if (options[2]){
+      ticket.push(3)
+    }if (options[3]){
+      ticket.push(4)
+    }
+    
+    let tk = 0
+    totalSamples.map(function(idx){
+      tk = ticket[parseInt(Math.random() * ticket.length)]
+      console.log(tk)
+      if (tk === 1){
+        types_1.push(idx)
+      } else if (tk === 2){
+        types_2.push(idx)
+      }  else if (tk === 3){
+        types_3.push(idx)
+      }  else if (tk === 4){
+        types_4.push(idx)
+      } 
+      return null
+    })
+
+    setSampleNo([types_1, types_2, types_3, types_4])
   }
 
   const sectionTitle = () => {
@@ -79,7 +154,7 @@ function Quizgen () {
                     setSelect_Mode("index")
                     setQuestion_range([1, 1, 1300, 1300, 1300, 30]) // from, question_range[1], to, max, question_range[4], question_range[5]  
                     setWord_data({})
-                    setOptions([])
+                    setOptions([false, false, false, false])
                     setShowModal(false)
                     setTitle("")
                     setSampleNo([[], [], [], []])
@@ -138,21 +213,14 @@ function Quizgen () {
     let selector1 = <TextField select label="구분" className="itemSelectorBox" value={select_mode}
       onChange={
         function(e){
+          setSelect_Mode(e.target.value)
           if (e.target.value === "total"){
-              setSelect_Mode("total")
-              // from, min, to, max, maxQ, numQ 
               setQuestion_range([1, question_range[1], 1300, question_range[3], 1300, question_range[5]])
           } else if (e.target.value === "index"){
-              setSelect_Mode(e.target.value)
-              // from, min, to, max, maxQ, numQ 
               setQuestion_range([question_range[0], 1, question_range[2], 1300, question_range[4], question_range[5]])
           } else if (e.target.value === "part"){
-              setSelect_Mode(e.target.value)
-              // from, min, to, max, maxQ, numQ 
               setQuestion_range([1, 1, 4, 4, question_range[4], question_range[5]])
           } else if (e.target.value === "day"){
-              setSelect_Mode(e.target.value)
-              // from, min, to, max, maxQ, numQ 
               setQuestion_range([1, 1, 45, 45, question_range[4], question_range[5]])
           }
         }
@@ -183,6 +251,18 @@ function Quizgen () {
                   // from, min, to, max, maxQ, numQ 
                   setQuestion_range([question_range[0], question_range[1], L, question_range[3], L + 1 -question_range[0], question_range[5]])
               } else if (select_mode === "day"){
+                  const day_words = [0, 
+                    // Part 1 : day 1 ~ 23
+                    30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+                    30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+                    30, 30, 32,
+                    // Part 2 : day 24 ~ 31
+                    30, 30, 30, 30, 30, 30, 30, 13,
+                    // Part 3 : day 32 ~ 41
+                    30, 30, 30, 30, 30, 30, 30, 30, 30, 10,
+                    // Part 4 : day 42 ~ 45
+                    30, 30, 30, 15
+                  ]
                   // from, min, to, max, maxQ, numQ 
                   setQuestion_range([question_range[0], question_range[1], L, question_range[3], day_words.slice(question_range[0], L + 1).reduce((a,b) => (a+b)), question_range[5]])
               } else if (select_mode === "part"){
@@ -361,7 +441,7 @@ function Quizgen () {
 
     if (options[0]){
       Q1 = <div>
-        <strong className="singleQuiz"><br/><br/><br/>주어진 단어의 의미를 빈 칸에 적어주세요.<br/><br/><br/></strong>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 단어의 의미를 빈칸에 적어주세요.<br/><br/><br/></strong>
         {sample_no[0].map(
           function(idx){
             return draw_2022_type_1(idx)
@@ -372,7 +452,7 @@ function Quizgen () {
 
     if (options[1]){
       Q2 = <div>
-        <strong className="singleQuiz"><br/><br/><br/>주어진 의미에 해당하는 단어를 빈 칸에 적어주세요.<br/><br/><br/></strong>
+        <strong className="singleQuiz"><br/><br/><br/>주어진 의미에 해당하는 단어를 빈칸에 적어주세요.<br/><br/><br/></strong>
         {sample_no[1].map(
           function(idx){
             return draw_2022_type_2(idx)
