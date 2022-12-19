@@ -53,10 +53,11 @@
         "word": "limit",
         "meaning": "[동] 제한하다, [명] 한계",
         "sentence": [
-            "The number of participants is limited to 20."
+            "The number of participants is",
+            "to 20."
         ],
         "translation": "참가자 수는 20명으로 제한됩니다",
-        "appearance": "limit"
+        "appearance": "limited"
     },
     "7": {
         "word": "form",
@@ -103,19 +104,21 @@
         "word": "produce",
         "meaning": "[명] 생산물, 농작물, [타] 생산하다",
         "sentence": [
-            "The result is that a staple crop, such as maize, is not being produced in a sufficient amount."
+            "The result is that a staple crop, such as maize, is not being",
+            "in a sufficient amount."
         ],
         "translation": "결과적으로 옥수수와 같은 필수 곡물이 충분한 양으로 생산되지 않습니다.",
-        "appearance": "produce"
+        "appearance": "produced"
     },
     "12": {
         "word": "point",
         "meaning": "[동] 가리키다, 지적하다, [명] 요점, 지점",
         "sentence": [
-            "He points out that the ear is the only sense."
+            "He",
+            "out that the ear is the only sense."
         ],
         "translation": "그는 귀가 유일한 감각이라고 지적했다.",
-        "appearance": "point"
+        "appearance": "points"
     },
     "13": {
         "word": "individual",
@@ -271,19 +274,21 @@
         "word": "include",
         "meaning": "[동] 포함하다",
         "sentence": [
-            "The Arctic Climate Impact Assessment includes observations gathered from"
+            "The Arctic Climate Impact Assessment",
+            "observations gathered from"
         ],
         "translation": "local native groups.",
-        "appearance": "include"
+        "appearance": "includes"
     },
     "29": {
         "word": "hand",
         "meaning": "[동] 건네다, [명] 도움",
         "sentence": [
-            "I slowly handed tennis balls to one person."
+            "I slowly",
+            "tennis balls to one person."
         ],
         "translation": "나는 천천히 테니스 공을 한 사람에게 건네 주었다.",
-        "appearance": "hand"
+        "appearance": "handed"
     },
     "30": {
         "word": "great",
@@ -319,10 +324,11 @@
         "word": "relate",
         "meaning": "[타] 관련시키다",
         "sentence": [
-            "The use of a paradigm in research typically addresses related problems."
+            "The use of a paradigm in research typically addresses",
+            "problems."
         ],
         "translation": "연구에서의 패러다임의 사용은 대체로 관련된 문제들을 다룹니다.",
-        "appearance": "relate"
+        "appearance": "related"
     },
     "34": {
         "word": "put",
@@ -398,10 +404,11 @@
         "word": "concern",
         "meaning": "[명] 걱정, 관심사, [동] 걱정하다, 관심을 가지다",
         "sentence": [
-            "They are not deeply concerned about how others see them."
+            "They are not deeply",
+            "about how others see them."
         ],
         "translation": "그들은 남들이 어떻게 보는지를 깊게 신경쓰지 않습니다.",
-        "appearance": "concern"
+        "appearance": "concerned"
     },
     "42": {
         "word": "typical",
@@ -477,10 +484,11 @@
         "word": "nature",
         "meaning": "[명] 본성, 자연, 본질",
         "sentence": [
-            "Musical sounds can be distinguished from those of nature."
+            "You should",
+            "it with others."
         ],
         "translation": "음악소리는 자연의 소리와 구분됩니다.",
-        "appearance": "nature"
+        "appearance": "share"
     },
     "50": {
         "word": "increase",
@@ -526,10 +534,11 @@
         "word": "reduce",
         "meaning": "[타] 줄이다",
         "sentence": [
-            "Dietary fiber reduces the risk of heart disease and diabetes."
+            "Dietary fiber",
+            "the risk of heart disease and diabetes."
         ],
         "translation": "식이 섬유는 심장병과 당뇨병의 위험을 줄입니다.",
-        "appearance": "reduce"
+        "appearance": "reduces"
     },
     "55": {
         "word": "practice",
@@ -565,10 +574,11 @@
         "word": "succeed",
         "meaning": "[자] 성공하다, 계승하다",
         "sentence": [
-            "It has succeeded in registering hundreds of thousands of voters."
+            "It has",
+            "in registering hundreds of thousands of voters."
         ],
         "translation": "수십만 명의 유권자를 등록하는데 성공했습니다.",
-        "appearance": "succeed"
+        "appearance": "succeeded"
     },
     "59": {
         "word": "since",
@@ -634,28 +644,31 @@
         "word": "model",
         "meaning": "[타] (모형을) 만들다, [명] 모형",
         "sentence": [
-            "In many ways, I’ve modeled my life after that of my grandpa."
+            "In many ways, I’ve",
+            "my life after that of my grandpa."
         ],
         "translation": "여러면에서 나는 할아버지의 삶을 모델로 삼았습니다.",
-        "appearance": "model"
+        "appearance": "modeled"
     },
     "66": {
         "word": "measure",
         "meaning": "[명] 조치, [동] 측정하다, 판단하다",
         "sentence": [
-            "Figures A and B demonstrate how dew point is measured by a dew point hygrometer."
+            "Figures A and B demonstrate how dew point is",
+            "by a dew point hygrometer."
         ],
         "translation": "그림 A와 B는 이슬점 습도계가 어떻게 이슬점을 측정되는지 보여줍니다.",
-        "appearance": "measure"
+        "appearance": "measured"
     },
     "67": {
         "word": "cost",
         "meaning": "[명] 비용, 노력",
         "sentence": [
-            "So the costs are relatively low and the benefits are relatively high."
+            "So the",
+            "are relatively low and the benefits are relatively high."
         ],
         "translation": "따라서 비용은 상대적으로 낮으며 이점은 상대적으로 높습니다.",
-        "appearance": "cost"
+        "appearance": "costs"
     },
     "68": {
         "word": "concept",
@@ -761,10 +774,11 @@
         "word": "particular",
         "meaning": "[형] 특정한, 특별한",
         "sentence": [
-            "The building provides the physical environment and setting for a particular"
+            "The",
+            "and the present are our means; only the future is our end."
         ],
         "translation": "social ritual.",
-        "appearance": "particular"
+        "appearance": "past"
     },
     "79": {
         "word": "natural",
@@ -820,10 +834,11 @@
         "word": "regard",
         "meaning": "[명] 관심, [타] 여기다",
         "sentence": [
-            "Eduard Hanslick regarded ‘the measurable tone’ as ‘the essential condition of"
+            "Eduard Hanslick",
+            "‘the measurable tone’ as ‘the essential condition of"
         ],
         "translation": "all music’.",
-        "appearance": "regard"
+        "appearance": "regarded"
     },
     "85": {
         "word": "probably",
@@ -979,10 +994,11 @@
         "word": "avoid",
         "meaning": "[동] 피하다",
         "sentence": [
-            "Some environmental contaminants are difficult to avoid."
+            "Eating fruit peel can also help to",
+            "the amount of food waste."
         ],
         "translation": "일부 환경 오염 물질은 피하기가 어렵습니다.",
-        "appearance": "avoid"
+        "appearance": "decrease"
     },
     "101": {
         "word": "assume",
@@ -1108,37 +1124,41 @@
         "word": "shape",
         "meaning": "[타] 형성하다, [명] 형태",
         "sentence": [
-            "The eons shaped our brains in the opposite direction."
+            "The eons",
+            "our brains in the opposite direction."
         ],
         "translation": "영겁과도 같은 세월은 우리의 뇌를 그 반대 방향으로 형성했습니다.",
-        "appearance": "shape"
+        "appearance": "shaped"
     },
     "114": {
         "word": "instance",
         "meaning": "[명] 사례",
         "sentence": [
-            "There are many instances of well-known actors."
+            "There are many",
+            "of well-known actors."
         ],
         "translation": "잘 알려진 배우들의 다양한 사례들이 있습니다.",
-        "appearance": "instance"
+        "appearance": "instances"
     },
     "115": {
         "word": "head",
         "meaning": "[타] 선두에 있다, 향하다, [명] 책임자, 머리",
         "sentence": [
-            "The landscape looked fascinating as the bus headed to Alsace."
+            "The landscape looked fascinating as the bus",
+            "to Alsace."
         ],
         "translation": "Alsace로 향하는 버스에서 보이던 풍경은 무척이나 매혹적이었습니다.",
-        "appearance": "head"
+        "appearance": "headed"
     },
     "116": {
         "word": "expert",
         "meaning": "[명] 전문가",
         "sentence": [
-            "We can become experts in some areas, like speaking a language."
+            "We can become",
+            "in some areas, like speaking a language."
         ],
         "translation": "우리는 언어를 말하는 것과 같은 일부 분야에서 전문가가 될 수 있습니다.",
-        "appearance": "expert"
+        "appearance": "experts"
     },
     "117": {
         "word": "especially",
@@ -1184,28 +1204,31 @@
         "word": "object",
         "meaning": "[명] 물건, 목표, [자] 반대하다",
         "sentence": [
-            "Aristotle thought that moving objects kept moving only if something kept"
+            "Aristotle thought that moving",
+            "kept moving only if something kept"
         ],
         "translation": "pushing them.",
-        "appearance": "object"
+        "appearance": "objects"
     },
     "122": {
         "word": "locate",
         "meaning": "[타] 찾아내다, 위치시키다",
         "sentence": [
-            "Our donation booths are located in the lobbies of the campus libraries."
+            "Our donation booths are",
+            "in the lobbies of the campus libraries."
         ],
         "translation": "우리의 기부 부스는 캠퍼스 도서관의 로비에 위치해 있습니다.",
-        "appearance": "locate"
+        "appearance": "located"
     },
     "123": {
         "word": "exist",
         "meaning": "[자] 존재하다",
         "sentence": [
-            "They existed in the world."
+            "They",
+            "in the world."
         ],
         "translation": "그들은 세상에 존재했습니다.",
-        "appearance": "exist"
+        "appearance": "existed"
     },
     "124": {
         "word": "encourage",
@@ -1221,10 +1244,11 @@
         "word": "account",
         "meaning": "[명] 계좌, [명] 설명, 이야기",
         "sentence": [
-            "There are some accounts of his paintings."
+            "There are some",
+            "of his paintings."
         ],
         "translation": "그의 그림에 대한 약간의 설명문이 있습니다.",
-        "appearance": "account"
+        "appearance": "accounts"
     },
     "126": {
         "word": "tend",
@@ -1290,10 +1314,11 @@
         "word": "gain",
         "meaning": "[동] 얻다",
         "sentence": [
-            "The insights I gained led me into a new career as an art therapist."
+            "The insights I",
+            "led me into a new career as an art therapist."
         ],
         "translation": "내가 얻은 통찰력 덕분에 미술 치료사로서의 새로운 커리어를 시작하게 되었다.",
-        "appearance": "gain"
+        "appearance": "gained"
     },
     "133": {
         "word": "few",
@@ -1379,10 +1404,11 @@
         "word": "function",
         "meaning": "[명] 기능, [동] 기능하다",
         "sentence": [
-            "This intentional error functions as an advance warning system."
+            "This intentional error",
+            "as an advance warning system."
         ],
         "translation": "이 의도적인 오류는 사전 경고 시스템으로 기능합니다.",
-        "appearance": "function"
+        "appearance": "functions"
     },
     "142": {
         "word": "current",
@@ -1398,19 +1424,21 @@
         "word": "serve",
         "meaning": "[동] 제공하다, 일하다, 역할을 하다, 기여하다",
         "sentence": [
-            "Identifying what we can do serves to enhance the quality of our professional"
+            "Identifying what we can do",
+            "to enhance the quality of our professional"
         ],
         "translation": "career.",
-        "appearance": "serve"
+        "appearance": "serves"
     },
     "144": {
         "word": "original",
         "meaning": "[형] 원래의, 독창적인, [명] 원본",
         "sentence": [
-            "Mending and restoring objects often require even more creativity than original"
+            "Identifying what we can do",
+            "to enhance the quality of our professional"
         ],
         "translation": "production.",
-        "appearance": "original"
+        "appearance": "serves"
     },
     "145": {
         "word": "moral",
@@ -1446,10 +1474,11 @@
         "word": "representation",
         "meaning": "[명] 나타냄, 표현",
         "sentence": [
-            "Transforming film into a mere delivery device for representations of reality"
+            "I plan to",
+            "Korea later."
         ],
         "translation": "필름을 단순히 현실의 표현을 전달하기 위한 도구로 바꾸는 것.",
-        "appearance": "representation"
+        "appearance": "visit"
     },
     "149": {
         "word": "quite",
@@ -1475,19 +1504,21 @@
         "word": "please",
         "meaning": "[동] 기쁘게 하다",
         "sentence": [
-            "I’m very pleased to get this present from you."
+            "I’m very",
+            "to get this present from you."
         ],
         "translation": "이 선물을 너에게 주게 되어 무척이나 기쁘구나.",
-        "appearance": "please"
+        "appearance": "pleased"
     },
     "152": {
         "word": "participant",
         "meaning": "[명] 참가자",
         "sentence": [
-            "All participants will receive T-shirts."
+            "All",
+            "will receive T-shirts."
         ],
         "translation": "모든 참가자들은 T셔츠를 받게 됩니다.",
-        "appearance": "participant"
+        "appearance": "participants"
     },
     "153": {
         "word": "ordinary",
@@ -1503,19 +1534,21 @@
         "word": "lay",
         "meaning": "[동] 놓다, 낳다, [형] 전문 지식이 없는",
         "sentence": [
-            "But it lays its eggs on cabbages, and then the caterpillars eat the cabbage"
+            "But it",
+            "its eggs on cabbages, and then the caterpillars eat the cabbage"
         ],
         "translation": "leaves!",
-        "appearance": "lay"
+        "appearance": "lays"
     },
     "155": {
         "word": "issue",
         "meaning": "[타] 발행하다, [명] 주제, 문제, 발행",
         "sentence": [
-            "Individual notifications will also be issued to winners."
+            "Individual notifications will also be",
+            "to winners."
         ],
         "translation": "승자에게는 개별적인 알람이 발행됩니다.",
-        "appearance": "issue"
+        "appearance": "issued"
     },
     "156": {
         "word": "fundamental",
@@ -1561,37 +1594,41 @@
         "word": "crop",
         "meaning": "[명] 작물",
         "sentence": [
-            "Farmers are encouraged to grow export crops at the expense of basic food"
+            "Farmers are encouraged to grow export",
+            "at the expense of basic food"
         ],
         "translation": "production.",
-        "appearance": "crop"
+        "appearance": "crops"
     },
     "161": {
         "word": "contain",
         "meaning": "[타] 포함하다",
         "sentence": [
-            "Both humans and rats dislike bitter and sour foods, which tend to contain"
+            "Farmers are encouraged to grow export",
+            "at the expense of basic food"
         ],
         "translation": "toxins.",
-        "appearance": "contain"
+        "appearance": "crops"
     },
     "162": {
         "word": "compete",
         "meaning": "[동] 경쟁하다",
         "sentence": [
-            "Why is it difficult to find a runner who competes equally in both 100m and"
+            "Why is it difficult to find a runner who",
+            "equally in both 100m and"
         ],
         "translation": "10,000m races?",
-        "appearance": "compete"
+        "appearance": "competes"
     },
     "163": {
         "word": "advance",
         "meaning": "[명] 발전, [타] 진전시키다",
         "sentence": [
-            "Technological advances provided the basis for the explosive expansion of"
+            "Technological",
+            "provided the basis for the explosive expansion of"
         ],
         "translation": "local networks.",
-        "appearance": "advance"
+        "appearance": "advances"
     },
     "164": {
         "word": "achieve",
@@ -1727,10 +1764,11 @@
         "word": "plan",
         "meaning": "[명] 계획, [동] 계획하다",
         "sentence": [
-            "I was full of great plans to find success in this unknown land."
+            "I was full of great",
+            "to find success in this unknown land."
         ],
         "translation": "나는 이 미지의 땅에서 성공을 찾기위한 큰 계획으로 가득 차있었습니다.",
-        "appearance": "plan"
+        "appearance": "plans"
     },
     "178": {
         "word": "virtually",
@@ -1756,10 +1794,11 @@
         "word": "invent",
         "meaning": "[타] 발명하다",
         "sentence": [
-            "Amazonian people who have not invented counting are unable to make exact"
+            "Amazonian people who have not",
+            "counting are unable to make exact"
         ],
         "translation": "calculations.",
-        "appearance": "invent"
+        "appearance": "invented"
     },
     "181": {
         "word": "conservation",
@@ -1805,10 +1844,11 @@
         "word": "judge",
         "meaning": "[동] 판단하다, [명] 판사, 심판",
         "sentence": [
-            "Performance must be judged in terms of what is under the control of the"
+            "Performance must be",
+            "in terms of what is under the control of the"
         ],
         "translation": "individuals.",
-        "appearance": "judge"
+        "appearance": "judged"
     },
     "186": {
         "word": "invite",
@@ -1864,10 +1904,11 @@
         "word": "engage",
         "meaning": "[자] 관계를 맺다, 참여하다",
         "sentence": [
-            "Every day each of us engages in many types of complex activities."
+            "Every day each of us",
+            "in many types of complex activities."
         ],
         "translation": "우리 각자는 매일 많은 유형의 복잡한 활동에 참여합니다.",
-        "appearance": "engage"
+        "appearance": "engages"
     },
     "192": {
         "word": "track",
@@ -1893,19 +1934,21 @@
         "word": "respect",
         "meaning": "[명] 존경, [타] 존경하다",
         "sentence": [
-            "For the past 25 years you have been a valued and respected employee of this"
+            "For the past 25 years you have been a valued and",
+            "employee of this"
         ],
         "translation": "company.",
-        "appearance": "respect"
+        "appearance": "respected"
     },
     "195": {
         "word": "project",
         "meaning": "[타] 보여 주다, 투영하다",
         "sentence": [
-            "It is projected that the share of the global middle class in Asia Pacific will"
+            "It is",
+            "that the share of the global middle class in Asia Pacific will"
         ],
         "translation": "increase.",
-        "appearance": "project"
+        "appearance": "projected"
     },
     "196": {
         "word": "impression",
@@ -2031,10 +2074,11 @@
         "word": "attempt",
         "meaning": "[명] 시도, [동] 시도하다",
         "sentence": [
-            "There have been many attempts to define what music is."
+            "There have been many",
+            "to define what music is."
         ],
         "translation": "음악이 무엇인지 정의하려는 많은 시도가 있었습니다.",
-        "appearance": "attempt"
+        "appearance": "attempts"
     },
     "209": {
         "word": "waste",
@@ -2050,10 +2094,11 @@
         "word": "survive",
         "meaning": "[자] 살아남다, 생존하다",
         "sentence": [
-            "But when you were a child, they survived a storm without losing a branch."
+            "But when you were a child, they",
+            "a storm without losing a branch."
         ],
         "translation": "하지만 네가 어렸을때, 그것들은 가지를 하나도 잃어버리지 않고 살아남았다.",
-        "appearance": "survive"
+        "appearance": "survived"
     },
     "211": {
         "word": "survival",
@@ -2099,10 +2144,11 @@
         "word": "physical",
         "meaning": "[형] 신체의, [형] 물리적인",
         "sentence": [
-            "It is advised that everyone over twenty-five should have a regular physical"
+            "Naturally the person believes the",
+            "is important."
         ],
         "translation": "examination.",
-        "appearance": "physical"
+        "appearance": "principle"
     },
     "216": {
         "word": "personal",
@@ -2138,10 +2184,11 @@
         "word": "mistake",
         "meaning": "[명] 실수, 잘못, [동] 오해하다",
         "sentence": [
-            "One of the mistakes we often make is our tendency to focus on the end result."
+            "One of the",
+            "we often make is our tendency to focus on the end result."
         ],
         "translation": "우리가 자주하는 실수 중 하나는 최종 결과에 집중하는 경향입니다.",
-        "appearance": "mistake"
+        "appearance": "mistakes"
     },
     "220": {
         "word": "global",
@@ -2177,28 +2224,31 @@
         "word": "disappoint",
         "meaning": "[동] 실망시키다",
         "sentence": [
-            "My friend was disappointed that scientific progress has not cured the world’s"
+            "My friend was",
+            "that scientific progress has not cured the world’s"
         ],
         "translation": "ills.",
-        "appearance": "disappoint"
+        "appearance": "disappointed"
     },
     "224": {
         "word": "count",
         "meaning": "[동] 세다, 중요하다",
         "sentence": [
-            "The little boy again counted the coins and he ordered the plain ice cream."
+            "The little boy again",
+            "the coins and he ordered the plain ice cream."
         ],
         "translation": "어린 소년은 다시 동전을 세고 보통 아이스크림을 주문했습니다.",
-        "appearance": "count"
+        "appearance": "counted"
     },
     "225": {
         "word": "breathe",
         "meaning": "[동] 호흡하다",
         "sentence": [
-            "I breathed out slowly."
+            "I",
+            "out slowly."
         ],
         "translation": "나는 천천히 숨을 내쉬었다.",
-        "appearance": "breathe"
+        "appearance": "breathed"
     },
     "226": {
         "word": "alternate",
@@ -2214,19 +2264,21 @@
         "word": "release",
         "meaning": "[명] 발매, 방출, [타] 풀어 주다, 발산하다",
         "sentence": [
-            "The heat releases an aroma that attracts certain insects."
+            "The heat",
+            "an aroma that attracts certain insects."
         ],
         "translation": "열기는 특정한 곤충을 유혹하는 향기를 발산합니다.",
-        "appearance": "release"
+        "appearance": "releases"
     },
     "228": {
         "word": "reach",
         "meaning": "[명] 거리, 범위, [타] 도달하다",
         "sentence": [
-            "Edward Felix Norton reached an elevation of 28,126 feet."
+            "Edward Felix Norton",
+            "an elevation of 28,126 feet."
         ],
         "translation": "Edward Felix Norton은 28,126 피트의 고도에 도달했습니다.",
-        "appearance": "reach"
+        "appearance": "reached"
     },
     "229": {
         "word": "obtain",
@@ -2252,10 +2304,11 @@
         "word": "involve",
         "meaning": "[동] 수반하다, 관련시키다",
         "sentence": [
-            "Reading comprehension involves one's knowledge of the world."
+            "Reading comprehension",
+            "one's knowledge of the world."
         ],
         "translation": "독해는 세상에 대한 그 사람의 지식을 포함합니다.",
-        "appearance": "involve"
+        "appearance": "involves"
     },
     "232": {
         "word": "international",
@@ -2271,10 +2324,11 @@
         "word": "integrate",
         "meaning": "[동] 통합시키다",
         "sentence": [
-            "The new generations of mobile telephony are fully digitalized and integrated."
+            "The program has always been very popular among",
+            "students."
         ],
         "translation": "새로운 세대의 휴대전화는 완전히 디지털화되고 통합되었습니다.",
-        "appearance": "integrate"
+        "appearance": "international"
     },
     "234": {
         "word": "infer",
@@ -2330,10 +2384,11 @@
         "word": "communicate",
         "meaning": "[동] 소통하다, 전달하다",
         "sentence": [
-            "This would give us the chance to find information quickly and communicate"
+            "Early, small communities had to",
+            "all their physical and mental"
         ],
         "translation": "with others.",
-        "appearance": "communicate"
+        "appearance": "concentrate"
     },
     "240": {
         "word": "claim",
@@ -2349,37 +2404,41 @@
         "word": "associate",
         "meaning": "[타] 관련시키다",
         "sentence": [
-            "Scientists can avoid the restrictions associated with experimenting on other"
+            "Scientists can avoid the restrictions",
+            "with experimenting on other"
         ],
         "translation": "people.",
-        "appearance": "associate"
+        "appearance": "associated"
     },
     "242": {
         "word": "whereas",
         "meaning": "[접] 반면에",
         "sentence": [
-            "Scientists can avoid the restrictions associated with experimenting on other"
+            "Scientists can avoid the restrictions",
+            "with experimenting on other"
         ],
         "translation": "초기 재즈는 라이브 연주에 의존했던 반면에,",
-        "appearance": "associate"
+        "appearance": "associated"
     },
     "243": {
         "word": "unit",
         "meaning": "[명] 구성 단위",
         "sentence": [
-            "Scientists can avoid the restrictions associated with experimenting on other"
+            "Scientists can avoid the restrictions",
+            "with experimenting on other"
         ],
         "translation": "profitable units.",
-        "appearance": "associate"
+        "appearance": "associated"
     },
     "244": {
         "word": "transform",
         "meaning": "[타] 변형시키다",
         "sentence": [
-            "Scientists can avoid the restrictions associated with experimenting on other"
+            "Scientists can avoid the restrictions",
+            "with experimenting on other"
         ],
         "translation": "필름을 단순히 현실의 표현을 전달하기 위한 도구로 바꾸는 것",
-        "appearance": "associate"
+        "appearance": "associated"
     },
     "245": {
         "word": "sustainable",
@@ -2395,10 +2454,11 @@
         "word": "suit",
         "meaning": "[동] 어울리다, [명] 정장",
         "sentence": [
-            "It’s worthwhile to spend money on my suit."
+            "In order to ensure",
+            "business performance."
         ],
         "translation": "내 정장에는 돈을 들일 가치가 있습니다.",
-        "appearance": "suit"
+        "appearance": "sustainable"
     },
     "247": {
         "word": "sudden",
@@ -2434,10 +2494,11 @@
         "word": "statement",
         "meaning": "[명] 진술",
         "sentence": [
-            "Each of these contradictory statements may hold true under particular"
+            "Each of these contradictory",
+            "may hold true under particular"
         ],
         "translation": "conditions.",
-        "appearance": "statement"
+        "appearance": "statements"
     },
     "251": {
         "word": "stable",
@@ -2553,10 +2614,11 @@
         "word": "loud",
         "meaning": "[형] 시끄러운",
         "sentence": [
-            "The noise of barking and yelling from the park at night is so loud."
+            "This chaos only gets processed and",
+            "when perceived by a human"
         ],
         "translation": "밤에 공원에서 짖고 고함치는 소리가 너무 시끄러워요.",
-        "appearance": "loud"
+        "appearance": "modified"
     },
     "263": {
         "word": "lecture",
@@ -2592,10 +2654,11 @@
         "word": "insight",
         "meaning": "[명] 통찰력",
         "sentence": [
-            "The insights I gained led me into a new career as an art therapist."
+            "The",
+            "I gained led me into a new career as an art therapist."
         ],
         "translation": "내가 얻은 통찰력 덕분에 미술 치료사로서의 새로운 커리어를 시작하게 되었다.",
-        "appearance": "insight"
+        "appearance": "insights"
     },
     "267": {
         "word": "industry",
@@ -2611,10 +2674,11 @@
         "word": "hazard",
         "meaning": "[명] 위험",
         "sentence": [
-            "Environmental hazards include biological, physical, and chemical ones"
+            "Environmental",
+            "include biological, physical, and chemical ones"
         ],
         "translation": "환경 위험에는 생물학적, 물리적 및 화학적 위험이 포함됩니다.",
-        "appearance": "hazard"
+        "appearance": "hazards"
     },
     "269": {
         "word": "goal",
@@ -2660,10 +2724,11 @@
         "word": "facial",
         "meaning": "[형] 얼굴의",
         "sentence": [
-            "Clients send a steady stream of clues and messages through their facial"
+            "The",
+            "world deviates from the real one in one important respect."
         ],
         "translation": "expression.",
-        "appearance": "facial"
+        "appearance": "fictional"
     },
     "274": {
         "word": "exposure",
@@ -2689,10 +2754,11 @@
         "word": "encounter",
         "meaning": "[타] 맞닥뜨리다",
         "sentence": [
-            "Competent child encounters what seem like insurmountable problems in"
+            "Competent child",
+            "what seem like insurmountable problems in"
         ],
         "translation": "living.",
-        "appearance": "encounter"
+        "appearance": "encounters"
     },
     "277": {
         "word": "emphasize",
@@ -2748,10 +2814,11 @@
         "word": "distinguish",
         "meaning": "[동] 구별하다",
         "sentence": [
-            "Musical sounds can be distinguished from those of nature."
+            "Musical sounds can be",
+            "from those of nature."
         ],
         "translation": "음악소리는 자연의 소리와 구분됩니다.",
-        "appearance": "distinguish"
+        "appearance": "distinguished"
     },
     "283": {
         "word": "distinct",
@@ -2817,10 +2884,11 @@
         "word": "consist",
         "meaning": "[자] 구성되어 있다",
         "sentence": [
-            "Dinner consists of a freeze-dried meal."
+            "Dinner",
+            "of a freeze-dried meal."
         ],
         "translation": "저녁 식사는 동결 건조 메뉴로 구성됩니다.",
-        "appearance": "consist"
+        "appearance": "consists"
     },
     "290": {
         "word": "conception",
@@ -2896,10 +2964,11 @@
         "word": "bond",
         "meaning": "[명] 유대",
         "sentence": [
-            "He formed special bonds with the artists he worked with."
+            "He formed special",
+            "with the artists he worked with."
         ],
         "translation": "그는 함께 일한 예술가들과 특별한 유대를 형성했습니다.",
-        "appearance": "bond"
+        "appearance": "bonds"
     },
     "298": {
         "word": "analysis",
@@ -2925,10 +2994,11 @@
         "word": "twist",
         "meaning": "[타] 비틀다, 일그러지다",
         "sentence": [
-            "Their faces twisted into vivid mixes of uncomfortable feelings."
+            "Their faces",
+            "into vivid mixes of uncomfortable feelings."
         ],
         "translation": "그들의 표정은 생생한 불쾌한 감정들으로 뒤섞여 일그러졌습니다.",
-        "appearance": "twist"
+        "appearance": "twisted"
     },
     "301": {
         "word": "surprise",
@@ -3004,19 +3074,21 @@
         "word": "neural",
         "meaning": "[형] 신경의",
         "sentence": [
-            "There are reported cases of individuals who have damaged the neural"
+            "The most",
+            "salient feature of moral agents is a capacity for rational"
         ],
         "translation": "system.",
-        "appearance": "neural"
+        "appearance": "obvious"
     },
     "309": {
         "word": "linguistic",
         "meaning": "[형] 언어의, 언어적인",
         "sentence": [
-            "There are reported cases of individuals who have damaged the neural"
+            "The most",
+            "salient feature of moral agents is a capacity for rational"
         ],
         "translation": "linguistic structure.",
-        "appearance": "neural"
+        "appearance": "obvious"
     },
     "310": {
         "word": "internal",
@@ -3062,10 +3134,11 @@
         "word": "economic",
         "meaning": "[형] 경제의",
         "sentence": [
-            "Standard English allows access to certain educational and economic"
+            "We offer a free",
+            "program."
         ],
         "translation": "opportunities.",
-        "appearance": "economic"
+        "appearance": "educational"
     },
     "315": {
         "word": "domain",
@@ -3151,10 +3224,11 @@
         "word": "host",
         "meaning": "[명] 주인, 진행자, [타] 주최하다",
         "sentence": [
-            "Fremont Art College will be hosting its 7th Annual Art Exhibition for one week."
+            "Fremont Art College will be",
+            "its 7th Annual Art Exhibition for one week."
         ],
         "translation": "Fremont 미대는 일주일 동안 제7회 연례 전시회를 주최할 것입니다.",
-        "appearance": "host"
+        "appearance": "hosting"
     },
     "324": {
         "word": "excite",
@@ -3170,10 +3244,11 @@
         "word": "demand",
         "meaning": "[명] 수요, 요구, [동] 요구하다, 필요로 하다",
         "sentence": [
-            "They are all seen as disposable for the accelerating demands of human"
+            "They are all seen as disposable for the accelerating",
+            "of human"
         ],
         "translation": "population.",
-        "appearance": "demand"
+        "appearance": "demands"
     },
     "326": {
         "word": "although",
@@ -3229,10 +3304,11 @@
         "word": "enable",
         "meaning": "[동] ~을 할 수 있게 하다",
         "sentence": [
-            "Social media services also enabled people to publicize their views on new"
+            "Social media services also",
+            "people to publicize their views on new"
         ],
         "translation": "songs.",
-        "appearance": "enable"
+        "appearance": "enabled"
     },
     "332": {
         "word": "catch",
@@ -3308,37 +3384,41 @@
         "word": "trade",
         "meaning": "[명] 거래, 무역, [동] 거래하다",
         "sentence": [
-            "People traded crops or objects."
+            "People",
+            "crops or objects."
         ],
         "translation": "사람들은 작물이나 물건을 거래했습니다.",
-        "appearance": "trade"
+        "appearance": "traded"
     },
     "340": {
         "word": "submit",
         "meaning": "[타] 제출하다",
         "sentence": [
-            "I submitted my application."
+            "I",
+            "my application."
         ],
         "translation": "신청서를 제출했습니다.",
-        "appearance": "submit"
+        "appearance": "submitted"
     },
     "341": {
         "word": "reveal",
         "meaning": "[동] 드러내다, 보이다",
         "sentence": [
-            "The data revealed that the news of the king’s death had been widely socially"
+            "The data",
+            "that the news of the king’s death had been widely socially"
         ],
         "translation": "shared.",
-        "appearance": "reveal"
+        "appearance": "revealed"
     },
     "342": {
         "word": "represent",
         "meaning": "[타] 대표하다, 나타내다",
         "sentence": [
-            "Early photographs represented the world as stable, eternal, and unshakable."
+            "Early photographs",
+            "the world as stable, eternal, and unshakable."
         ],
         "translation": "초기의 사진은 세상을 안정적이고 영원하며 흔들리지 않는 것으로 나타냈습니다.",
-        "appearance": "represent"
+        "appearance": "represented"
     },
     "343": {
         "word": "renewable",
@@ -3364,28 +3444,31 @@
         "word": "recall",
         "meaning": "[타] 상기시키다, [명] 회상",
         "sentence": [
-            "She recalled the first day of school."
+            "She",
+            "the first day of school."
         ],
         "translation": "그녀는 학교 첫날을 회상했다.",
-        "appearance": "recall"
+        "appearance": "recalled"
     },
     "346": {
         "word": "quantity",
         "meaning": "[명] 양",
         "sentence": [
-            "Data can be stored in effectively unlimited quantities."
+            "She",
+            "the first day of school."
         ],
         "translation": "데이터가 효과적으로 무한한 양만큼 저장될 수 있습니다.",
-        "appearance": "quantities"
+        "appearance": "recalled"
     },
     "347": {
         "word": "publish",
         "meaning": "[타] 출판하다, 발표하다",
         "sentence": [
-            "A 10% discount on books published by the Foundation."
+            "A 10% discount on books",
+            "by the Foundation."
         ],
         "translation": "그 재단에서 출판된 책들에 대한 10% 할인",
-        "appearance": "publish"
+        "appearance": "published"
     },
     "348": {
         "word": "protection",
@@ -3401,10 +3484,11 @@
         "word": "preference",
         "meaning": "[명] 선호",
         "sentence": [
-            "Both humans and rats have evolved taste preferences for sweet foods."
+            "Both humans and rats have evolved taste",
+            "for sweet foods."
         ],
         "translation": "인간과 쥐 모두 달콤한 맛에 대한 선호도가 발달해왔습니다.",
-        "appearance": "preference"
+        "appearance": "preferences"
     },
     "350": {
         "word": "possess",
@@ -3430,10 +3514,11 @@
         "word": "origin",
         "meaning": "[명] 근원, 기원, 근본, 출신, 원형, 유래",
         "sentence": [
-            "Unexpected origins of common foods."
+            "Clothes can evoke both cherished and",
+            "memories."
         ],
         "translation": "흔한 음식물들의 뜻밖의 기원들.",
-        "appearance": "origin"
+        "appearance": "painful"
     },
     "353": {
         "word": "movement",
@@ -3469,10 +3554,11 @@
         "word": "fascinate",
         "meaning": "[동] 매혹하다",
         "sentence": [
-            "I was fascinated by the beautiful leaves and flowers of the mangroves."
+            "I was",
+            "by the beautiful leaves and flowers of the mangroves."
         ],
         "translation": "나는 맹그로브의 아름다운 잎과 꽃에 매료되었습니다.",
-        "appearance": "fascinate"
+        "appearance": "fascinated"
     },
     "357": {
         "word": "external",
@@ -3708,10 +3794,11 @@
         "word": "continue",
         "meaning": "[동] 계속하다",
         "sentence": [
-            "A moving object continues to move unless some force is used to stop it."
+            "A moving object",
+            "to move unless some force is used to stop it."
         ],
         "translation": "물체를 멈추려는 힘이 없다면 물체는 계속해서 움직입니다.",
-        "appearance": "continue"
+        "appearance": "continues"
     },
     "381": {
         "word": "cognitive",
@@ -3727,10 +3814,11 @@
         "word": "post",
         "meaning": "[동] 게시하다, 우편을 보내다, [명] 우편, 우편물",
         "sentence": [
-            "Felix was studying science using a video posted on the school web site."
+            "Felix was studying science using a video",
+            "on the school web site."
         ],
         "translation": "Felix는 학교 웹 사이트에 게시된 동영상으로 과학을 공부하고 있었습니다.",
-        "appearance": "post"
+        "appearance": "posted"
     },
     "383": {
         "word": "conclusion",
@@ -3746,37 +3834,41 @@
         "word": "refer",
         "meaning": "[동] 인용하다, 참고하다, 조회하다, [동] ~의 탓으로 하다, ~라는 뜻으로 하다, ~에 속하는 것으로 하다",
         "sentence": [
-            "Duration refers to the time that events last."
+            "Duration",
+            "to the time that events last."
         ],
         "translation": "기간은 이벤트가 지속되는 시간이라는 의미입니다..",
-        "appearance": "refer"
+        "appearance": "refers"
     },
     "385": {
         "word": "employee",
         "meaning": "[명] 피고용인, 종업원",
         "sentence": [
-            "The employees stopped complaining about the temperature."
+            "The",
+            "stopped complaining about the temperature."
         ],
         "translation": "직원들은 온도에 대해 불평을 멈췄습니다.",
-        "appearance": "employee"
+        "appearance": "employees"
     },
     "386": {
         "word": "trustworthy",
         "meaning": "[형] 신뢰할 수 있는",
         "sentence": [
-            "How much of the information is considered to be accurate or trustworthy."
+            "The",
+            "stopped complaining about the temperature."
         ],
         "translation": "얼마나 그 정보가 정확하고 신뢰할 만 하다고 여겨지는지.",
-        "appearance": "trustworthy"
+        "appearance": "employees"
     },
     "387": {
         "word": "ritual",
         "meaning": "[명] (종교 등의) 의식, 의례, 제사, [형] 의례적인, 의식적인",
         "sentence": [
-            "The building provides the physical environment and setting for a particular social ritual."
+            "The",
+            "stopped complaining about the temperature."
         ],
         "translation": "건물은 물리적 환경과 특정한 사회적인 의식을 위한 배경을 제공합니다.",
-        "appearance": "ritual"
+        "appearance": "employees"
     },
     "388": {
         "word": "resolution",
@@ -3802,10 +3894,11 @@
         "word": "raise",
         "meaning": "[타] 들어올리다, [타] (돈이나 사람을) 모으다, 어렵사리 얻어 내다",
         "sentence": [
-            "The leopard raised its head and then got up slowly."
+            "The leopard",
+            "its head and then got up slowly."
         ],
         "translation": "표범은 머리를 들어올리고 천천히 일어났다.",
-        "appearance": "raise"
+        "appearance": "raised"
     },
     "391": {
         "word": "rise",
@@ -3831,10 +3924,11 @@
         "word": "measurement",
         "meaning": "[명] 측정행위, 측량행위, [명] 측정된 값",
         "sentence": [
-            "It is very useful to ensure that scientific measurements are taken accurately and so on."
+            "It is very useful to ensure that scientific",
+            "are taken accurately and so on."
         ],
         "translation": "그것은 과학적 측정이 정확하게 되었는지를 보장하는 데 유용합니다.",
-        "appearance": "measurement"
+        "appearance": "measurements"
     },
     "394": {
         "word": "logical",
@@ -3860,10 +3954,11 @@
         "word": "invest",
         "meaning": "[동] 투자하다, [타] (법적인 권리, 권한 등을) 부여하다",
         "sentence": [
-            "Copyright is free and is automatically invested in the author."
+            "Copyright is free and is automatically",
+            "in the author."
         ],
         "translation": "저작권은 무료이며 저자에게 자동으로 부여됩니다.",
-        "appearance": "invest"
+        "appearance": "invested"
     },
     "397": {
         "word": "intrigue",
@@ -3889,10 +3984,11 @@
         "word": "guarantee",
         "meaning": "[명] 보장, 보증, [동] 보장하다",
         "sentence": [
-            "Our service is guaranteed to improve the quality of your living environment."
+            "Our service is",
+            "to improve the quality of your living environment."
         ],
         "translation": "우리 서비스는 당신의 삶의 질을 향상시켜 드릴 것을 보장합니다.",
-        "appearance": "guarantee"
+        "appearance": "guaranteed"
     },
     "400": {
         "word": "fame",
@@ -3908,19 +4004,21 @@
         "word": "expectation",
         "meaning": "[명] 기대, 예상",
         "sentence": [
-            "Animals, however, have no expectations about mental capacity."
+            "Animals, however, have no",
+            "about mental capacity."
         ],
         "translation": "하지만, 동물에게는 정신적인 능력을 기대하지 않습니다.",
-        "appearance": "expectation"
+        "appearance": "expectations"
     },
     "402": {
         "word": "exhibit",
         "meaning": "[동] 전시하다, 보이다",
         "sentence": [
-            "The Modern Pottery Museum exhibits collections of artistic ceramic works."
+            "The Modern Pottery Museum",
+            "collections of artistic ceramic works."
         ],
         "translation": "현대 도자기 박물관은 예술적인 도자기 작품들을 전시합니다.",
-        "appearance": "exhibit"
+        "appearance": "exhibits"
     },
     "403": {
         "word": "enhance",
@@ -3936,10 +4034,11 @@
         "word": "elevate",
         "meaning": "[동] 높이다",
         "sentence": [
-            "When material wealth is elevated to the position of the ultimate end."
+            "When material wealth is",
+            "to the position of the ultimate end."
         ],
         "translation": "물질적 부가 궁극적인 목표의 자리로 올라갈 때.",
-        "appearance": "elevate"
+        "appearance": "elevated"
     },
     "405": {
         "word": "collect",
@@ -4015,10 +4114,11 @@
         "word": "pollute",
         "meaning": "[타] 오염시키다",
         "sentence": [
-            "Nearly two-thirds of the world’s population live under night skies polluted by light."
+            "Nearly two-thirds of the world’s population live under night skies",
+            "by light."
         ],
         "translation": "세계 인구의 2/3가량이 광해로 오염된 하늘 아래에서 삽니다.",
-        "appearance": "pollute"
+        "appearance": "polluted"
     },
     "413": {
         "word": "latter",
@@ -4054,37 +4154,41 @@
         "word": "wound",
         "meaning": "[명] 상처, 부상, [타] 상처를 입히다",
         "sentence": [
-            "Cora walked in like a wounded soldier."
+            "Cora walked in like a",
+            "soldier."
         ],
         "translation": "Cora는 상처입은 병사처럼 걸었다.",
-        "appearance": "wound"
+        "appearance": "wounded"
     },
     "417": {
         "word": "vulnerable",
         "meaning": "[형] 취약한, 연약한",
         "sentence": [
-            "As safety features are added to vehicles and roads, drivers feel less vulnerable."
+            "Cora walked in like a",
+            "soldier."
         ],
         "translation": "안전 기능이 차량 및 도로에 추가됨에 따라 운전자는 덜 취약하다고 느낍니다.",
-        "appearance": "vulnerable"
+        "appearance": "wounded"
     },
     "418": {
         "word": "threaten",
         "meaning": "[동] 위협하다",
         "sentence": [
-            "Smaller animals are actually more threatening than bigger animals."
+            "Smaller animals are actually more",
+            "than bigger animals."
         ],
         "translation": "작은 동물은 실제로 더 큰 동물보다 더 위협적입니다.",
-        "appearance": "threaten"
+        "appearance": "threatening"
     },
     "419": {
         "word": "routine",
         "meaning": "[명] 규칙적으로 반복되는 절차, 틀에 박힌 일상, [형] 틀에 박힌, 일상적인, 정례적인",
         "sentence": [
-            "They stick to routines for no reason."
+            "They stick to",
+            "for no reason."
         ],
         "translation": "그들은 아무 이유 없이 루틴을 고수합니다.",
-        "appearance": "routine"
+        "appearance": "routines"
     },
     "420": {
         "word": "ride",
@@ -4100,10 +4204,11 @@
         "word": "recycle",
         "meaning": "[타] 재활용하다",
         "sentence": [
-            "The fabric is partially made from recycled plastic bottles."
+            "The fabric is partially made from",
+            "plastic bottles."
         ],
         "translation": "그 직물 천의 일부는 재활용된 플라스틱 병으로 만들어집니다.",
-        "appearance": "recycle"
+        "appearance": "recycled"
     },
     "422": {
         "word": "range",
@@ -4119,10 +4224,11 @@
         "word": "purchase",
         "meaning": "[명] 구입, [타] 구입하다",
         "sentence": [
-            "I found the little notebook I had purchased twenty years earlier."
+            "I found the little notebook I had",
+            "twenty years earlier."
         ],
         "translation": "나는 20 년 전에 구입했던 작은 노트를 발견했다.",
-        "appearance": "purchase"
+        "appearance": "purchased"
     },
     "424": {
         "word": "miss",
@@ -4248,10 +4354,11 @@
         "word": "drop",
         "meaning": "[동] 떨어지다, [명] 하락",
         "sentence": [
-            "Dew drops cover the surface of the mirror."
+            "Dew",
+            "cover the surface of the mirror."
         ],
         "translation": "이슬 방울은 거울 표면을 덮습니다.",
-        "appearance": "drop"
+        "appearance": "drops"
     },
     "437": {
         "word": "apart",
@@ -4277,19 +4384,21 @@
         "word": "institution",
         "meaning": "[명] 기관, 시설, [명] 제도, 관습, 시행",
         "sentence": [
-            "The performance of groups and institutions will be impaired."
+            "The performance of groups and",
+            "will be impaired."
         ],
         "translation": "모임이나 기관의 실적이 손상될 것입니다.",
-        "appearance": "institution"
+        "appearance": "institutions"
     },
     "440": {
         "word": "deliver",
         "meaning": "[동] 배달하다, 결과를 내놓다, 넘겨주다, [타] 출산하다",
         "sentence": [
-            "It appears that cookie-producing companies are delivering to the market products."
+            "It appears that cookie-producing companies are",
+            "to the market products."
         ],
         "translation": "쿠키 생산 회사들이 시장에 상품을 공급하는 것으로 보입니다.",
-        "appearance": "deliver"
+        "appearance": "delivering"
     },
     "441": {
         "word": "daily",
@@ -4305,28 +4414,31 @@
         "word": "yell",
         "meaning": "[동] 소리치다",
         "sentence": [
-            "The noise of barking and yelling from the park at night is so loud."
+            "The noise of barking and",
+            "from the park at night is so loud."
         ],
         "translation": "밤에 공원에서 짖고 고함치는 소리가 너무 시끄러워요.",
-        "appearance": "yell"
+        "appearance": "yelling"
     },
     "443": {
         "word": "workplace",
         "meaning": "[명] 직장, 일터",
         "sentence": [
-            "What we can do in the workplace."
+            "The noise of barking and",
+            "from the park at night is so loud."
         ],
         "translation": "우리가 직장에서 할 수 있는 일",
-        "appearance": "workplace"
+        "appearance": "yelling"
     },
     "444": {
         "word": "witness",
         "meaning": "[명] 목격자, [타] 목격하다",
         "sentence": [
-            "We are now witnessing a fundamental shift in our resource demands."
+            "We are now",
+            "a fundamental shift in our resource demands."
         ],
         "translation": "우리는 지금 자원 수요의 근본적인 변화를 목격하고 있습니다.",
-        "appearance": "witness"
+        "appearance": "witnessing"
     },
     "445": {
         "word": "wise",
@@ -4412,10 +4524,11 @@
         "word": "urge",
         "meaning": "[타] 재촉하다, [명] 충동",
         "sentence": [
-            "He urges pumpkin buyers this Halloween."
+            "He",
+            "pumpkin buyers this Halloween."
         ],
         "translation": "그는 이번 할로윈에 호박을 사라고 구매자들을 재촉했습니다.",
-        "appearance": "urge"
+        "appearance": "urges"
     },
     "454": {
         "word": "upset",
@@ -4491,28 +4604,31 @@
         "word": "uncertainty",
         "meaning": "[명] 불확실성",
         "sentence": [
-            "Minorities can create social conflict, doubt and uncertainty."
+            "Large numbers have been found to lack meaning and to be",
+            "in decisions."
         ],
         "translation": "소수 집단이 사회적 갈등이나 의심, 그리고 불확실성을 유발할 수 있습니다.",
-        "appearance": "uncertainty"
+        "appearance": "underestimated"
     },
     "462": {
         "word": "trait",
         "meaning": "[명] 특성",
         "sentence": [
-            "We automatically assign to good-looking individuals such favorable traits."
+            "Large numbers have been found to lack meaning and to be",
+            "in decisions."
         ],
         "translation": "우리는 잘 생긴 사람들에게 호의적인 특성을 저절로 부여한다.",
-        "appearance": "traits"
+        "appearance": "underestimated"
     },
     "463": {
         "word": "trace",
         "meaning": "[명] 자취, 흔적, [타] 추적하다",
         "sentence": [
-            "We automatically assign to good-looking individuals such favorable traits."
+            "Large numbers have been found to lack meaning and to be",
+            "in decisions."
         ],
         "translation": "산업적 배출로 인해 멀리 떨어진 호수에서도 수은의 흔적이 검출될 수 있습니다.",
-        "appearance": "traits"
+        "appearance": "underestimated"
     },
     "464": {
         "word": "tough",
@@ -4648,10 +4764,11 @@
         "word": "spot",
         "meaning": "[동] 발견하다, [명] 점, 얼룩, 장소",
         "sentence": [
-            "Moles are dark spots on human skin."
+            "Moles are dark",
+            "on human skin."
         ],
         "translation": "점은 사람 피부에 발생하는 검은 얼룩입니다.",
-        "appearance": "spot"
+        "appearance": "spots"
     },
     "478": {
         "word": "spoil",
@@ -4797,19 +4914,21 @@
         "word": "render",
         "meaning": "[타] 만들다, 표현하다, [타] 제공하다, 제출하다",
         "sentence": [
-            "The service rendered in a manner that pleases them."
+            "The service",
+            "in a manner that pleases them."
         ],
         "translation": "그들을 기쁘게 할 수 있는 형태로 제공되는 서비스",
-        "appearance": "render"
+        "appearance": "rendered"
     },
     "493": {
         "word": "remind",
         "meaning": "[동] 상기시키다, 다시 떠올리게 하다",
         "sentence": [
-            "The person reminds us of the importance of beauty in human life."
+            "The person",
+            "us of the importance of beauty in human life."
         ],
         "translation": "그 사람은 우리에게 인간의 삶에서 아름다움의 중요성을 상기시켜줍니다.",
-        "appearance": "remind"
+        "appearance": "reminds"
     },
     "494": {
         "word": "remarkable",
@@ -4855,19 +4974,21 @@
         "word": "reinforce",
         "meaning": "[타] 강화하다, 보강하다",
         "sentence": [
-            "Good behavior must be reinforced with incentives."
+            "Good behavior must be",
+            "with incentives."
         ],
         "translation": "좋은 행동은 동기부여로 강화되어야 합니다.",
-        "appearance": "reinforce"
+        "appearance": "reinforced"
     },
     "499": {
         "word": "register",
         "meaning": "[동] 등록하다",
         "sentence": [
-            "Actually, I’ve just registered my name, too!"
+            "Actually, I’ve just",
+            "my name, too!"
         ],
         "translation": "사실, 방금 내 이름도 등록했습니다!",
-        "appearance": "register"
+        "appearance": "registered"
     },
     "500": {
         "word": "regional",
@@ -4913,10 +5034,11 @@
         "word": "reconstruct",
         "meaning": "[타] 재구성하다, 재구축하다",
         "sentence": [
-            "They are recalling indexes and reconstructing details."
+            "They are recalling indexes and",
+            "details."
         ],
         "translation": "그들은 인덱스를 재구성하고 세부 사항을 재구성하고 있습니다.",
-        "appearance": "reconstruct"
+        "appearance": "reconstructing"
     },
     "505": {
         "word": "reasonable",
@@ -5002,10 +5124,11 @@
         "word": "profitable",
         "meaning": "[형] 수익성이 있는",
         "sentence": [
-            "Many major companies are changing their business models by focusing on profitable"
+            "The",
+            "way of understanding a beast"
         ],
         "translation": "units.",
-        "appearance": "profitable"
+        "appearance": "proper"
     },
     "514": {
         "word": "productive",
@@ -5021,19 +5144,21 @@
         "word": "procedure",
         "meaning": "[명] 절차, 수술",
         "sentence": [
-            "The goal of medicine is to develop procedures and drugs that work equally well on all"
+            "The goal of medicine is to develop",
+            "and drugs that work equally well on all"
         ],
         "translation": "patients.",
-        "appearance": "procedure"
+        "appearance": "procedures"
     },
     "516": {
         "word": "previously",
         "meaning": "[부] 이전에",
         "sentence": [
-            "The goal of medicine is to develop procedures and drugs that work equally well on all"
+            "The goal of medicine is to develop",
+            "and drugs that work equally well on all"
         ],
         "translation": "patients.",
-        "appearance": "procedure"
+        "appearance": "procedures"
     },
     "517": {
         "word": "prevail",
@@ -5059,10 +5184,11 @@
         "word": "pour",
         "meaning": "[타] 붓다, 쏟아지다",
         "sentence": [
-            "I notice that even when it’s pouring rain outside, my dogs are still excited to go for a"
+            "I notice that even when it’s",
+            "rain outside, my dogs are still excited to go for a"
         ],
         "translation": "walk.",
-        "appearance": "pour"
+        "appearance": "pouring"
     },
     "520": {
         "word": "polite",
@@ -5108,10 +5234,11 @@
         "word": "permit",
         "meaning": "[동] 허용하다",
         "sentence": [
-            "Pets are not permitted in the museums or the National Zoo."
+            "Pets are not",
+            "in the museums or the National Zoo."
         ],
         "translation": "애완 동물은 박물관이나 국립 동물원에서 허용되지 않습니다.",
-        "appearance": "permit"
+        "appearance": "permitted"
     },
     "525": {
         "word": "permanent",
@@ -5177,10 +5304,11 @@
         "word": "overwhelm",
         "meaning": "[타] 압도하다",
         "sentence": [
-            "People feel an overwhelming need to fill it."
+            "People feel an",
+            "need to fill it."
         ],
         "translation": "사람들은 이를 채울 필요가 있다는 압도적인 기분을 느낍니다.",
-        "appearance": "overwhelm"
+        "appearance": "overwhelming"
     },
     "532": {
         "word": "overtake",
@@ -5256,19 +5384,21 @@
         "word": "obstacle",
         "meaning": "[명] 장애물",
         "sentence": [
-            "The romantic couple almost always find each other despite the obstacles they"
+            "The romantic couple almost always find each other despite the",
+            "they"
         ],
         "translation": "encounter.",
-        "appearance": "obstacle"
+        "appearance": "obstacles"
     },
     "540": {
         "word": "nutrient",
         "meaning": "[명] 영양소",
         "sentence": [
-            "The cleared soil was rich in minerals and nutrients and provided substantial production"
+            "The cleared soil was rich in minerals and",
+            "and provided substantial production"
         ],
         "translation": "yields.",
-        "appearance": "nutrient"
+        "appearance": "nutrients"
     },
     "541": {
         "word": "nevertheless",
@@ -5304,10 +5434,11 @@
         "word": "motive",
         "meaning": "[명] 동기",
         "sentence": [
-            "We are often mistaken in attributing complex human motives to other species."
+            "We are often mistaken in attributing complex human",
+            "to other species."
         ],
         "translation": "우리는 종종 복잡한 인간의 동기를 다른 종들에게 귀인시키는데 착각합니다.",
-        "appearance": "motive"
+        "appearance": "motives"
     },
     "545": {
         "word": "morally",
@@ -5343,10 +5474,11 @@
         "word": "mimic",
         "meaning": "[동] 흉내를 내다",
         "sentence": [
-            "There are 10,000 moves to master, mimicking animals."
+            "There are 10,000 moves to master,",
+            "animals."
         ],
         "translation": "동물 흉내를 내면서 숙달하는 동작은 10,000가지가 있습니다.",
-        "appearance": "mimic"
+        "appearance": "mimicking"
     },
     "549": {
         "word": "memorize",
@@ -5412,46 +5544,51 @@
         "word": "legislation",
         "meaning": "[명] 입법 행위",
         "sentence": [
-            "This has led to calls for legislation."
+            "Social media services also enabled people to",
+            "their new favorite bands."
         ],
         "translation": "이로 인해 입법이 요구되었습니다.",
-        "appearance": "legislation"
+        "appearance": "list"
     },
     "556": {
         "word": "layer",
         "meaning": "[명] 층",
         "sentence": [
-            "The air just above a glass contains molecules that are layered like a cake."
+            "The air just above a glass contains molecules that are",
+            "like a cake."
         ],
         "translation": "유리 바로 위의 공기에는 케이크처럼 층이있는 분자가 들어 있습니다.",
-        "appearance": "layer"
+        "appearance": "layered"
     },
     "557": {
         "word": "laugh",
         "meaning": "[동] 웃다",
         "sentence": [
-            "Some teenage girls are talking and laughing loudly."
+            "Some teenage girls are talking and",
+            "loudly."
         ],
         "translation": "십대 소녀 몇몇이 크게 떠들며 웃고 있었습니다.",
-        "appearance": "laugh"
+        "appearance": "laughing"
     },
     "558": {
         "word": "investigate",
         "meaning": "[타] 조사하다",
         "sentence": [
-            "He investigated the memory of the unexpected death of Belgium’s King Baudouin."
+            "He",
+            "the memory of the unexpected death of Belgium’s King Baudouin."
         ],
         "translation": "그는 벨기에 왕 Baudouin의 예기치 않은 죽음에 대한 기억을 조사했습니다.",
-        "appearance": "investigate"
+        "appearance": "investigated"
     },
     "559": {
         "word": "invade",
         "meaning": "[타] 침입하다",
         "sentence": [
-            "When Napoleon invaded Egypt in 1798, Fourier and other scholars accompanied the"
+            "When Napoleon",
+            "Egypt in 1798, Fourier and other scholars accompanied the"
         ],
         "translation": "expedition.",
-        "appearance": "invade"
+        "appearance": "invaded"
     },
     "560": {
         "word": "intuitive",
@@ -5467,10 +5604,11 @@
         "word": "interrupt",
         "meaning": "[동] 방해하다",
         "sentence": [
-            "Office workers are regularly interrupted by ringing phones."
+            "Office workers are regularly",
+            "by ringing phones."
         ],
         "translation": "사무실 근로자들은 전화벨 때문에 주기적으로 업무를 방해받습니다.",
-        "appearance": "interrupt"
+        "appearance": "interrupted"
     },
     "562": {
         "word": "interplay",
@@ -5486,10 +5624,11 @@
         "word": "internalize",
         "meaning": "[타 ] 내면화하다",
         "sentence": [
-            "Cultural norms that are internalized"
+            "The ironic effect seems to be caused by the",
+            "of two related cognitive processes."
         ],
         "translation": "내재화 된 문화적 규범",
-        "appearance": "internalized"
+        "appearance": "interplay"
     },
     "564": {
         "word": "interfere",
@@ -5515,19 +5654,21 @@
         "word": "intend",
         "meaning": "[동] 의도하다",
         "sentence": [
-            "Words can carry meanings beyond those consciously intended by speakers or writers."
+            "Words can carry meanings beyond those consciously",
+            "by speakers or writers."
         ],
         "translation": "말은 화자나 작가에 의해 의식적으로 의도된 것들을 넘어선 의미를 갖게 될 수도",
-        "appearance": "intend"
+        "appearance": "intended"
     },
     "567": {
         "word": "install",
         "meaning": "[타] 설치하다",
         "sentence": [
-            "The city should consider installing traffic lights as soon as possible."
+            "The city should consider",
+            "traffic lights as soon as possible."
         ],
         "translation": "그 도시는 최대한 빨리 신호등을 설치하는 것을 고려해야 합니다.",
-        "appearance": "install"
+        "appearance": "installing"
     },
     "568": {
         "word": "inspiration",
@@ -5553,10 +5694,11 @@
         "word": "initial",
         "meaning": "[형] 초기의",
         "sentence": [
-            "Someone who just heard a piece of bad news often tends initially to deny what"
+            "Someone who just heard a piece of bad news often tends",
+            "to deny what"
         ],
         "translation": "happened.",
-        "appearance": "initial"
+        "appearance": "initially"
     },
     "571": {
         "word": "inherit",
@@ -5612,10 +5754,11 @@
         "word": "infant",
         "meaning": "[명] 유아",
         "sentence": [
-            "Human newborn infants also show a strong preference for sweet liquids."
+            "Human newborn",
+            "also show a strong preference for sweet liquids."
         ],
         "translation": "인간 신생아 역시 달콤한 액체를 선호합니다.",
-        "appearance": "infant"
+        "appearance": "infants"
     },
     "577": {
         "word": "inevitable",
@@ -5681,10 +5824,11 @@
         "word": "illustrate",
         "meaning": "[타] 삽화를 쓰다, 설명하다",
         "sentence": [
-            "As illustrated in the study, the high performers placed importance on social bonds."
+            "As",
+            "in the study, the high performers placed importance on social bonds."
         ],
         "translation": "이 연구에서 설명되듯이, 고기능자들은 사회적 연결을 중요하게 생각합니다.",
-        "appearance": "illustrate"
+        "appearance": "illustrated"
     },
     "584": {
         "word": "identity",
@@ -5710,10 +5854,11 @@
         "word": "hesitate",
         "meaning": "[자] 망설이다, 주저하다",
         "sentence": [
-            "She wrapped a large scarf around her and hesitated for a moment."
+            "The foxes manage to dig up",
+            "traps."
         ],
         "translation": "그녀는 큰 스카프를 두르고 잠시 망설였다.",
-        "appearance": "hesitate"
+        "appearance": "hidden"
     },
     "587": {
         "word": "guilty",
@@ -5789,10 +5934,11 @@
         "word": "globe",
         "meaning": "[명] 세계, 지구본",
         "sentence": [
-            "The term artist is used to refer to a broad range of creative individuals across the globe."
+            "You",
+            "a spoon and take out a spoonful of soup to taste."
         ],
         "translation": "예술가라는 용어는 세계 각지에서 다양한 범위의 창조적 활동을 하는 사람들을",
-        "appearance": "globe"
+        "appearance": "grab"
     },
     "595": {
         "word": "glad",
@@ -5848,10 +5994,11 @@
         "word": "flow",
         "meaning": "[자] 흐르다",
         "sentence": [
-            "It was built where the slow-moving Duoro River flows to the Atlantic."
+            "It was built where the slow-moving Duoro River",
+            "to the Atlantic."
         ],
         "translation": "그것은 Duoro 강이 대서양으로 천천히 흐르는 곳에 지어졌습니다.",
-        "appearance": "flow"
+        "appearance": "flows"
     },
     "601": {
         "word": "failure",
@@ -5967,10 +6114,11 @@
         "word": "entrepreneur",
         "meaning": "[명] 사업가",
         "sentence": [
-            "Internet entrepreneurs are creating job-search products."
+            "Internet",
+            "are creating job-search products."
         ],
         "translation": "인터넷 기업가들은 일자리 검색 서비스를 만들고 있습니다.",
-        "appearance": "entrepreneur"
+        "appearance": "entrepreneurs"
     },
     "613": {
         "word": "entity",
@@ -6006,10 +6154,11 @@
         "word": "employ",
         "meaning": "[타] 사용하다, 고용하다",
         "sentence": [
-            "The use of a paradigm in research addresses related problems by employing shared"
+            "The use of a paradigm in research addresses related problems by",
+            "shared"
         ],
         "translation": "concepts.",
-        "appearance": "employ"
+        "appearance": "employing"
     },
     "617": {
         "word": "eliminate",
@@ -6045,10 +6194,11 @@
         "word": "edit",
         "meaning": "[동] 편집하다",
         "sentence": [
-            "No photo editing is allowed."
+            "No photo",
+            "is allowed."
         ],
         "translation": "사진 편집이 허용되지 않습니다.",
-        "appearance": "edit"
+        "appearance": "editing"
     },
     "621": {
         "word": "eager",
@@ -6084,37 +6234,41 @@
         "word": "drastically",
         "meaning": "[부] 급격히",
         "sentence": [
-            "The book industry has also declined drastically."
+            "I could only see",
+            "gray rocks."
         ],
         "translation": "책 산업 또한 급격히 쇠퇴했습니다.",
-        "appearance": "drastically"
+        "appearance": "dull"
     },
     "625": {
         "word": "donate",
         "meaning": "[타] 기부하다",
         "sentence": [
-            "All exhibits are for sale, and all money raised will be donated to charity."
+            "All exhibits are for sale, and all money raised will be",
+            "to charity."
         ],
         "translation": "모든 전시품은 판매용이며, 모금액 전액은 자선 단체에 기부됩니다.",
-        "appearance": "donate"
+        "appearance": "donated"
     },
     "626": {
         "word": "dominate",
         "meaning": "[동] 지배하다",
         "sentence": [
-            "Early human writing is dominated by wheeling and dealing."
+            "Early human writing is",
+            "by wheeling and dealing."
         ],
         "translation": "초기 인류의 글쓰기는 이윤 추구 활동에 의해 지배되었습니다.",
-        "appearance": "dominate"
+        "appearance": "dominated"
     },
     "627": {
         "word": "domestic",
         "meaning": "[형] 국내의, 가정의, 길들여진",
         "sentence": [
-            "Artificial selection has been going on ever since humans first began to domesticate animals."
+            "Artificial selection has been going on ever since humans first began to",
+            "animals."
         ],
         "translation": "인간이 처음으로 동물을 길들이기 시작한 이래로 인공 선택이 계속되고 있습니다.",
-        "appearance": "domestic"
+        "appearance": "domesticate"
     },
     "628": {
         "word": "disturb",
@@ -6160,10 +6314,11 @@
         "word": "direction",
         "meaning": "[명] 방향, 지시",
         "sentence": [
-            "It would be difficult for a vision statement to provide direction."
+            "Many of the lifeline systems serve vital roles in",
+            "recovery."
         ],
         "translation": "비전 선언이 방향까지 제시하는 것은 힘들 것입니다.",
-        "appearance": "direction"
+        "appearance": "disaster"
     },
     "633": {
         "word": "diminish",
@@ -6239,10 +6394,11 @@
         "word": "descendant",
         "meaning": "[명] 후손",
         "sentence": [
-            "Evolution works to maximize the number of descendants that an animal leaves behind."
+            "Evolution works to maximize the number of",
+            "that an animal leaves behind."
         ],
         "translation": "진화는 동물이 남길 후손의 숫자를 극대화하는 방향으로 작동합니다.",
-        "appearance": "descendant"
+        "appearance": "descendants"
     },
     "641": {
         "word": "dependence",
@@ -6308,28 +6464,31 @@
         "word": "cultivate",
         "meaning": "[타] 경작하다, 계발하다",
         "sentence": [
-            "The creativity that children possess needs to be cultivated."
+            "No wonder you’re",
+            "about your test results."
         ],
         "translation": "아이들이 가진 창의성을 계발해야합니다.",
-        "appearance": "cultivate"
+        "appearance": "curious"
     },
     "648": {
         "word": "credit",
         "meaning": "[명] 신용도",
         "sentence": [
-            "The leader grabs all the best chances, assignments and credit."
+            "No wonder you’re",
+            "about your test results."
         ],
         "translation": "지도자는 최선의 기회, 평판, 그리고 신용까지 모두 놓치지 않습니다.",
-        "appearance": "credit"
+        "appearance": "curious"
     },
     "649": {
         "word": "corporate",
         "meaning": "[형] 기업의, 공동의",
         "sentence": [
-            "The leader grabs all the best chances, assignments and credit."
+            "No wonder you’re",
+            "about your test results."
         ],
         "translation": "기업의 사회적 책임",
-        "appearance": "credit"
+        "appearance": "curious"
     },
     "650": {
         "word": "cooperation",
@@ -6385,19 +6544,21 @@
         "word": "construct",
         "meaning": "[타] 건설하다, 구성하다",
         "sentence": [
-            "By talking about the event, people gradually constructed a social narrative."
+            "By talking about the event, people gradually",
+            "a social narrative."
         ],
         "translation": "그 사건에 대해 이야기하면서, 사람들은 점점 사회적인 이야기를 구축했습니다.",
-        "appearance": "construct"
+        "appearance": "constructed"
     },
     "656": {
         "word": "constraint",
         "meaning": "[명] 제한",
         "sentence": [
-            "Global climate change has eased climatic constraints on plant life around the globe"
+            "Global climate change has eased climatic",
+            "on plant life around the globe"
         ],
         "translation": "세계적 기후 변화는 전 세계의 식물들의 기후적 제약을 완화시켰습니다.",
-        "appearance": "constraint"
+        "appearance": "constraints"
     },
     "657": {
         "word": "considerable",
@@ -6493,10 +6654,11 @@
         "word": "commit",
         "meaning": "[타] 저지르다, 전념하다",
         "sentence": [
-            "The boy was interested in Felix, who committed himself to studying no matter where he was."
+            "The boy was interested in Felix, who",
+            "himself to studying no matter where he was."
         ],
         "translation": "소년은 Felix에 관심이 있었는데, 그는 어디에서든지 공부에 전념했습니다.",
-        "appearance": "commit"
+        "appearance": "committed"
     },
     "667": {
         "word": "comfort",
@@ -6612,10 +6774,11 @@
         "word": "boost",
         "meaning": "[타] 증가시키다",
         "sentence": [
-            "The printing press boosted the power of ideas to copy themselves."
+            "The printing press",
+            "the power of ideas to copy themselves."
         ],
         "translation": "인쇄기는 사상이 스스로 복제되려는 힘을 더욱 부추겼습니다.",
-        "appearance": "boost"
+        "appearance": "boosted"
     },
     "679": {
         "word": "assumption",
@@ -6711,10 +6874,11 @@
         "word": "allocate",
         "meaning": "[동] 할당하다",
         "sentence": [
-            "The Customer Service department was allocated 60,000 dollars."
+            "The Customer Service department was",
+            "60,000 dollars."
         ],
         "translation": "고객 서비스 부서에는 60,000 달러가 배정되었습니다.",
-        "appearance": "allocate"
+        "appearance": "allocated"
     },
     "689": {
         "word": "aim",
@@ -6730,10 +6894,11 @@
         "word": "admire",
         "meaning": "[동] 감탄하다, 칭찬하다",
         "sentence": [
-            "This work is widely admired but not for being beautiful."
+            "This work is widely",
+            "but not for being beautiful."
         ],
         "translation": "이 작품은 널리 추앙받습니다만 아름다워서 그런 것은 아닙니다.",
-        "appearance": "admire"
+        "appearance": "admired"
     },
     "691": {
         "word": "accomplishment",
@@ -6799,10 +6964,11 @@
         "word": "need",
         "meaning": "[명] 필요, 욕구, 요구, [동] 필요로 하다",
         "sentence": [
-            "Initially, these needs include only food and shelter."
+            "Initially, these",
+            "include only food and shelter."
         ],
         "translation": "처음에는, 이런 요구는 음식과 휴식처를 포함하죠.",
-        "appearance": "need"
+        "appearance": "needs"
     },
     "698": {
         "word": "make",
@@ -6908,10 +7074,11 @@
         "word": "look",
         "meaning": "[동] 보다, [동] 보이다",
         "sentence": [
-            "Olivia and Ellie looked at their full buckets and smiled."
+            "Olivia and Ellie",
+            "at their full buckets and smiled."
         ],
         "translation": "Olivia와 Ellie는 가득 찬 양동이들을 보며 웃었다.",
-        "appearance": "look"
+        "appearance": "looked"
     },
     "709": {
         "word": "learn",
@@ -7068,19 +7235,21 @@
         "word": "direct",
         "meaning": "[타] 지휘하다, 감독하다,  ~로 향하다, [형] 직접적인",
         "sentence": [
-            "Apocalypse Now, a film produced and directed by Francis Ford Coppola"
+            "Apocalypse Now, a film produced and",
+            "by Francis Ford Coppola"
         ],
         "translation": "Apocalypse Now, Francis Ford Coppola가 제작하고 감독한 영화",
-        "appearance": "direct"
+        "appearance": "directed"
     },
     "725": {
         "word": "allow",
         "meaning": "[타] 허락하다",
         "sentence": [
-            "Standard English allows access to certain educational and economic"
+            "Standard English",
+            "access to certain educational and economic"
         ],
         "translation": "opportunities.",
-        "appearance": "allow"
+        "appearance": "allows"
     },
     "726": {
         "word": "well",
@@ -7166,10 +7335,11 @@
         "word": "end",
         "meaning": "[동] 끝내다",
         "sentence": [
-            "This ends up requiring people to behave in machine-like fashion."
+            "This",
+            "up requiring people to behave in machine-like fashion."
         ],
         "translation": "이것은 결국 사람들이 기계와 같은 방식으로 행동하게 된다.",
-        "appearance": "end"
+        "appearance": "ends"
     },
     "735": {
         "word": "build",
@@ -7195,10 +7365,11 @@
         "word": "name",
         "meaning": "[동] 이름을 지어주다",
         "sentence": [
-            "There lived in Greece a very famous painter named Apelles."
+            "There lived in Greece a very famous painter",
+            "Apelles."
         ],
         "translation": "그리스에는 Apelles라는 이름을 가진 매우 유명한 화가가 살았습니다.",
-        "appearance": "name"
+        "appearance": "named"
     },
     "738": {
         "word": "study",
@@ -7275,10 +7446,11 @@
         "word": "force",
         "meaning": "[동] 강요하다, [명] 힘",
         "sentence": [
-            "As we invent more species of AI, we will be forced to surrender more."
+            "As we invent more species of AI, we will be",
+            "to surrender more."
         ],
         "translation": "더 많은 종의 AI를 발명할수록, 우리는 더욱 굴복을 강요당할 것입니다.",
-        "appearance": "force"
+        "appearance": "forced"
     },
     "746": {
         "word": "book",
@@ -7314,10 +7486,11 @@
         "word": "stop",
         "meaning": "[동] 멈추다, [명] 정류장, 정거장",
         "sentence": [
-            "The employees stopped complaining about the temperature."
+            "The employees",
+            "complaining about the temperature."
         ],
         "translation": "직원들은 온도에 대해 불평을 멈추었습니다.",
-        "appearance": "stop"
+        "appearance": "stopped"
     },
     "750": {
         "word": "remain",
@@ -7363,28 +7536,31 @@
         "word": "act",
         "meaning": "[명] 행동, [자] 행동하다",
         "sentence": [
-            "This effort assumes that people can understand the resulting numbers and act"
+            "Wait here and I’ll go",
+            "the book for you."
         ],
         "translation": "on them.",
-        "appearance": "act"
+        "appearance": "find"
     },
     "755": {
         "word": "sound",
         "meaning": "[형] 괜찮은, 잘 된, [동] 들리다",
         "sentence": [
-            "This sounds unfair."
+            "This",
+            "unfair."
         ],
         "translation": "이건 불공평하게 들리네요.",
-        "appearance": "sound"
+        "appearance": "sounds"
     },
     "756": {
         "word": "reason",
         "meaning": "[명] 이유, 이성, [동] 추론하다",
         "sentence": [
-            "They stick to routines for no reason."
+            "This",
+            "unfair."
         ],
         "translation": "그들은 아무 이유 없이 루틴을 고수합니다.",
-        "appearance": "reason"
+        "appearance": "sounds"
     },
     "757": {
         "word": "order",
@@ -7400,19 +7576,21 @@
         "word": "meaningful",
         "meaning": "[형] 의미 있는",
         "sentence": [
-            "Precision and determinacy are a necessary requirement for all meaningful"
+            "Teachers need to know their students well in",
+            "to be able to teach them"
         ],
         "translation": "scientific debate.",
-        "appearance": "meaningful"
+        "appearance": "order"
     },
     "759": {
         "word": "express",
         "meaning": "[동] 표현하다",
         "sentence": [
-            "Interviewing is no more than expressing yourself."
+            "Interviewing is no more than",
+            "yourself."
         ],
         "translation": "인터뷰는 자신을 표현하는 것 이상입니다.",
-        "appearance": "express"
+        "appearance": "expressing"
     },
     "760": {
         "word": "successful",
@@ -7428,10 +7606,11 @@
         "word": "found",
         "meaning": "[동] 설립하다",
         "sentence": [
-            "This church is believed to have been built at the time of the founding of the"
+            "This church is believed to have been built at the time of the",
+            "of the"
         ],
         "translation": "little town.",
-        "appearance": "found"
+        "appearance": "founding"
     },
     "762": {
         "word": "carry",
@@ -7467,46 +7646,51 @@
         "word": "answer",
         "meaning": "[명] 대답, 정답, [동] 대답하다",
         "sentence": [
-            "Steve thought for a moment and answered."
+            "School should be a time for students to",
+            "their strengths."
         ],
         "translation": "Steve는 잠시 생각하고 대답했다.",
-        "appearance": "answer"
+        "appearance": "develop"
     },
     "766": {
         "word": "thought",
         "meaning": "[명] 사고(생각)",
         "sentence": [
-            "We need to curb anger and our negative thoughts and emotions."
+            "We need to curb anger and our negative",
+            "and emotions."
         ],
         "translation": "우리는 분노와 우리의 부정적인 생각과 감정을 억제해야합니다.",
-        "appearance": "thought"
+        "appearance": "thoughts"
     },
     "767": {
         "word": "fail",
         "meaning": "[동] ~하지 못하다",
         "sentence": [
-            "A bat that fails to feed for two nights is likely to die."
+            "A bat that",
+            "to feed for two nights is likely to die."
         ],
         "translation": "이틀 밤 동안 먹이를 먹지 못한 박쥐는 죽을 수도 있어요.",
-        "appearance": "fail"
+        "appearance": "fails"
     },
     "768": {
         "word": "cause",
         "meaning": "[명] 원인, 이유, [동] 유발하다",
         "sentence": [
-            "A bat that fails to feed for two nights is likely to die."
+            "A bat that",
+            "to feed for two nights is likely to die."
         ],
         "translation": "cause of pollution.",
-        "appearance": "fail"
+        "appearance": "fails"
     },
     "769": {
         "word": "add",
         "meaning": "[타] 첨가하다, 덧붙이다",
         "sentence": [
-            "Mom replied, and then sharply added a question."
+            "Mom replied, and then sharply",
+            "a question."
         ],
         "translation": "대답 후, 어머니는 급히 질문을 덧붙였다.",
-        "appearance": "add"
+        "appearance": "added"
     },
     "770": {
         "word": "wide",
@@ -7522,10 +7706,11 @@
         "word": "occur",
         "meaning": "[자] 발생하다",
         "sentence": [
-            "A bias occurs when what the scientist expects changes how the results are"
+            "A bias",
+            "when what the scientist expects changes how the results are"
         ],
         "translation": "viewed.",
-        "appearance": "occur"
+        "appearance": "occurs"
     },
     "772": {
         "word": "little",
@@ -7611,19 +7796,21 @@
         "word": "specialize",
         "meaning": "[동] 전문화하다",
         "sentence": [
-            "The time for specialized study is in university and graduate school, not earlier."
+            "The time for",
+            "study is in university and graduate school, not earlier."
         ],
         "translation": "전문적인 공부 시기는 대학과 대학원에 있지, 그 이전에 있지 않습니다.",
-        "appearance": "specialize"
+        "appearance": "specialized"
     },
     "781": {
         "word": "rest",
         "meaning": "[명] 나머지, 휴식, [동] 쉬다",
         "sentence": [
-            "The time for specialized study is in university and graduate school, not earlier."
+            "The time for",
+            "study is in university and graduate school, not earlier."
         ],
         "translation": "rest of his life.",
-        "appearance": "specialize"
+        "appearance": "specialized"
     },
     "782": {
         "word": "observe",
@@ -7769,19 +7956,21 @@
         "word": "touch",
         "meaning": "[타] 만지다, 감동시키다",
         "sentence": [
-            "I was deeply touched when you sent the message."
+            "I was deeply",
+            "when you sent the message."
         ],
         "translation": "당신이 메시지를 보냈을 때, 큰 감동을 받았습니다.",
-        "appearance": "touch"
+        "appearance": "touched"
     },
     "797": {
         "word": "fear",
         "meaning": "[명] 두려움, [동] 두려워하다",
         "sentence": [
-            "Columbus feared he would never live to tell the king and queen of his"
+            "Columbus",
+            "he would never live to tell the king and queen of his"
         ],
         "translation": "discovery.",
-        "appearance": "fear"
+        "appearance": "feared"
     },
     "798": {
         "word": "certain",
@@ -7857,10 +8046,11 @@
         "word": "general",
         "meaning": "[형] 일반적인",
         "sentence": [
-            "It generally seeks simplification and essentiality."
+            "It",
+            "seeks simplification and essentiality."
         ],
         "translation": "그건 일반적으로 단순화와 필수성을 추구합니다.",
-        "appearance": "general"
+        "appearance": "generally"
     },
     "806": {
         "word": "understand",
@@ -7876,10 +8066,11 @@
         "word": "motivate",
         "meaning": "[타] 동기를 부여하다",
         "sentence": [
-            "They are fascinated by the beauty of these plants and have been motivated to"
+            "They are fascinated by the beauty of these plants and have been",
+            "to"
         ],
         "translation": "conserve them.",
-        "appearance": "motivate"
+        "appearance": "motivated"
     },
     "808": {
         "word": "against",
@@ -7955,19 +8146,21 @@
         "word": "risk",
         "meaning": "[명] 위험 요소, [동] 위험을 무릅쓰다",
         "sentence": [
-            "Hikers take more risks when they think a rescuer can access them easily."
+            "Hikers take more",
+            "when they think a rescuer can access them easily."
         ],
         "translation": "등산객은 구조자가 쉽게 접근 할 수 있다고 생각할 때 더 많은 위험을 감수합니다.",
-        "appearance": "risk"
+        "appearance": "risks"
     },
     "816": {
         "word": "replace",
         "meaning": "[타] 대신하다",
         "sentence": [
-            "The habit of scratching can be replaced with rubbing in some lotion."
+            "The habit of scratching can be",
+            "with rubbing in some lotion."
         ],
         "translation": "긁는 습관은 약간의 로션을 문지르는 것으로 대체 될 수 있습니다.",
-        "appearance": "replace"
+        "appearance": "replaced"
     },
     "817": {
         "word": "matter",
@@ -8063,10 +8256,11 @@
         "word": "happen",
         "meaning": "[자] 일어나다",
         "sentence": [
-            "But let us know if it happens again."
+            "But let us know if it",
+            "again."
         ],
         "translation": "하지만 다시 그런 일이 일어난다면 알려주십시오.",
-        "appearance": "happen"
+        "appearance": "happens"
     },
     "827": {
         "word": "afraid",
@@ -8122,10 +8316,11 @@
         "word": "hold",
         "meaning": "[타] 잡다, 개최하다, [타] 가지다",
         "sentence": [
-            "His mom was holding his hand."
+            "His mom was",
+            "his hand."
         ],
         "translation": "그의 엄마는 그의 손을 잡고 있었다.",
-        "appearance": "hold"
+        "appearance": "holding"
     },
     "833": {
         "word": "travel",
@@ -8141,28 +8336,31 @@
         "word": "stand",
         "meaning": "[동] 서다, 견디다",
         "sentence": [
-            "They don’t know where they stand."
+            "I hope I can",
+            "to Africa to meet the child soon."
         ],
         "translation": "그들은 어디에 서 있는지를 모릅니다.",
-        "appearance": "stand"
+        "appearance": "travel"
     },
     "835": {
         "word": "circumstance",
         "meaning": "[명] 환경, 상황",
         "sentence": [
-            "Dogs aren’t affected by external circumstances."
+            "I hope I can",
+            "to Africa to meet the child soon."
         ],
         "translation": "개는 외부 상황의 영향을 받지 않습니다.",
-        "appearance": "circumstance"
+        "appearance": "travel"
     },
     "836": {
         "word": "pick",
         "meaning": "[동] 고르다, 집다, [동] 따다, 꺾다",
         "sentence": [
-            "Do you want the ripe tomatoes I picked yesterday?"
+            "Do you want the ripe tomatoes I",
+            "yesterday?"
         ],
         "translation": "내가 어제 딴 잘 익은 토마토 좀 먹을래요?",
-        "appearance": "pick"
+        "appearance": "picked"
     },
     "837": {
         "word": "equal",
@@ -8228,10 +8426,11 @@
         "word": "appropriate",
         "meaning": "[형] 적절한",
         "sentence": [
-            "The concept of violence is now unsuitable, and nonviolence is the appropriate"
+            "The purpose of the exercise is to",
+            "the importance of an"
         ],
         "translation": "method.",
-        "appearance": "appropriate"
+        "appearance": "demonstrate"
     },
     "844": {
         "word": "wonder",
@@ -8327,10 +8526,11 @@
         "word": "depend",
         "meaning": "[자] 의존하다",
         "sentence": [
-            "The timing of inputs and outputs varies greatly depending on the type of"
+            "The timing of inputs and outputs varies greatly",
+            "on the type of"
         ],
         "translation": "energy.",
-        "appearance": "depend"
+        "appearance": "depending"
     },
     "854": {
         "word": "attention",
@@ -8366,28 +8566,31 @@
         "word": "approach",
         "meaning": "[동] 다가가다, 다가오다, [명] 접근법",
         "sentence": [
-            "Then I saw something approaching me in the water."
+            "Then I saw something",
+            "me in the water."
         ],
         "translation": "그리고 나는 무언가가 물 속에서 접근하는 것을 봤습니다.",
-        "appearance": "approach"
+        "appearance": "approaching"
     },
     "858": {
         "word": "report",
         "meaning": "[동] 알리다, 발표하다",
         "sentence": [
-            "Researchers have reported various nonverbal features of sarcasm."
+            "Researchers have",
+            "various nonverbal features of sarcasm."
         ],
         "translation": "연구원들은 풍자의 다양한 비언어적 특징을 보고했습니다.",
-        "appearance": "report"
+        "appearance": "reported"
     },
     "859": {
         "word": "patient",
         "meaning": "[형] 참을성 있는, [명] 환자",
         "sentence": [
-            "Many also offer patients a chance to get their hands dirty engaged in caring"
+            "Many also offer",
+            "a chance to get their hands dirty engaged in caring"
         ],
         "translation": "for plants.",
-        "appearance": "patient"
+        "appearance": "patients"
     },
     "860": {
         "word": "figure",
@@ -8423,10 +8626,11 @@
         "word": "affect",
         "meaning": "[타] 영향을 미치다",
         "sentence": [
-            "This affects their whole attitude toward school and learning."
+            "This",
+            "their whole attitude toward school and learning."
         ],
         "translation": "이것은 학교와 학습에 대한 그들의 모든 태도에 영향을 미칩니다.",
-        "appearance": "affect"
+        "appearance": "affects"
     },
     "864": {
         "word": "wish",
@@ -8442,28 +8646,31 @@
         "word": "shelter",
         "meaning": "[타] 보호하다, [명] 주거지, 은신처",
         "sentence": [
-            "As you wander around, you find a large rock that provides some shelter."
+            "I",
+            "I could camp in the wild and enjoy the company of mosquitos, snakes,"
         ],
         "translation": "돌아다니다가, 당신은 은신처가 될만한 커다란 바위를 찾습니다.",
-        "appearance": "shelter"
+        "appearance": "wish"
     },
     "866": {
         "word": "seek",
         "meaning": "[동] 찾다, 추구하다",
         "sentence": [
-            "The brain seeks to create meaning through establishing or refining existing"
+            "The brain",
+            "to create meaning through establishing or refining existing"
         ],
         "translation": "neural networks.",
-        "appearance": "seek"
+        "appearance": "seeks"
     },
     "867": {
         "word": "reward",
         "meaning": "[명] 보답, [타] 보답하다",
         "sentence": [
-            "My efforts were rewarded only a month later."
+            "My efforts were",
+            "only a month later."
         ],
         "translation": "내 노력들은 고작 한 달 만에 보상받았다.",
-        "appearance": "reward"
+        "appearance": "rewarded"
     },
     "868": {
         "word": "adopt",
@@ -8489,19 +8696,21 @@
         "word": "address",
         "meaning": "[동] 연설하다, 다루다, [명] 주소, 연설",
         "sentence": [
-            "The use of a paradigm in research typically addresses related problems."
+            "The use of a paradigm in research typically",
+            "related problems."
         ],
         "translation": "연구에서의 패러다임의 사용은 대체로 관련된 문제들을 다룹니다.",
-        "appearance": "address"
+        "appearance": "addresses"
     },
     "871": {
         "word": "wet",
         "meaning": "[형] 젖은",
         "sentence": [
-            "The fact that the ground is wet"
+            "The use of a paradigm in research typically",
+            "related problems."
         ],
         "translation": "땅이 젖는다는 사실",
-        "appearance": "wet"
+        "appearance": "addresses"
     },
     "872": {
         "word": "vague",
@@ -8607,10 +8816,11 @@
         "word": "float",
         "meaning": "[자] 뜨다",
         "sentence": [
-            "I watched the beautiful stretch of the shoreline as it floated into view."
+            "I watched the beautiful stretch of the shoreline as it",
+            "into view."
         ],
         "translation": "나는 풍경을 따라 떠있는 쭉 뻗은 아름다운 해안선을 봤습니다.",
-        "appearance": "float"
+        "appearance": "floated"
     },
     "883": {
         "word": "bit",
@@ -8626,10 +8836,11 @@
         "word": "reverse",
         "meaning": "[타] 바꾸다, [형] 반대의",
         "sentence": [
-            "The scientist reverses his drive toward mathematical exactness."
+            "The scientist",
+            "his drive toward mathematical exactness."
         ],
         "translation": "과학자는 그의 충동을 수학적 정확성으로 바꾼다.",
-        "appearance": "reverse"
+        "appearance": "reverses"
     },
     "885": {
         "word": "half",
@@ -8645,10 +8856,11 @@
         "word": "frustrate",
         "meaning": "[타] 좌절시키다",
         "sentence": [
-            "The extended copyright protection frustrates new creative endeavors."
+            "The extended copyright protection",
+            "new creative endeavors."
         ],
         "translation": "저작권의 과도한 보호는 새로운 창작을 위한 노력을 좌절시킵니다.",
-        "appearance": "frustrate"
+        "appearance": "frustrates"
     },
     "887": {
         "word": "arrive",
@@ -8694,19 +8906,21 @@
         "word": "arrange",
         "meaning": "[동] 마련하다, 배열하다",
         "sentence": [
-            "Imagine trying to shop in a supermarket where the food was arranged in"
+            "Imagine trying to shop in a supermarket where the food was",
+            "in"
         ],
         "translation": "random order.",
-        "appearance": "arrange"
+        "appearance": "arranged"
     },
     "892": {
         "word": "appeal",
         "meaning": "[명] 매력, 호소, [자] 호소하다, 관심을 끌다",
         "sentence": [
-            "The fields were vast, but hardly appealed to him."
+            "The fields were vast, but hardly",
+            "to him."
         ],
         "translation": "들판은 광대했지만 그에게 호소력이 거의 없었습니다.",
-        "appearance": "appeal"
+        "appearance": "appealed"
     },
     "893": {
         "word": "acquire",
@@ -8762,28 +8976,31 @@
         "word": "sell",
         "meaning": "[동] 팔다",
         "sentence": [
-            "Rarer cases involve people selling paintings that were actually painted by"
+            "Rarer cases involve people",
+            "paintings that were actually painted by"
         ],
         "translation": "famous painters.",
-        "appearance": "sell"
+        "appearance": "selling"
     },
     "899": {
         "word": "rush",
         "meaning": "[자 ] 돌진하다, [명] 질주",
         "sentence": [
-            "I rushed to him and said."
+            "I",
+            "to him and said."
         ],
         "translation": "나는 그에게 달려 가서 말했다.",
-        "appearance": "rush"
+        "appearance": "rushed"
     },
     "900": {
         "word": "restrict",
         "meaning": "[타] 제한하다",
         "sentence": [
-            "I rushed to him and said."
+            "I",
+            "to him and said."
         ],
         "translation": "환경 관련 법안 입법자들의 권력을 제한하는 것",
-        "appearance": "rush"
+        "appearance": "rushed"
     },
     "901": {
         "word": "ongoing",
@@ -8799,37 +9016,41 @@
         "word": "mention",
         "meaning": "[명] 언급, [동] 언급하다",
         "sentence": [
-            "Later, Joan mentioned that she was looking for volunteers."
+            "Later, Joan",
+            "that she was looking for volunteers."
         ],
         "translation": "나중에, Joan은 자원 봉사자들을 찾고 있는 중이라고 언급했습니다.",
-        "appearance": "mention"
+        "appearance": "mentioned"
     },
     "903": {
         "word": "mark",
         "meaning": "[명] 표시, [동] 표시하다",
         "sentence": [
-            "They have participated in the hard work that have marked human life."
+            "They have participated in the hard work that have",
+            "human life."
         ],
         "translation": "그들은 인간의 삶을 표시하는 노력에 참여했습니다.",
-        "appearance": "mark"
+        "appearance": "marked"
     },
     "904": {
         "word": "intellectual",
         "meaning": "[형] 지능의, 지적인",
         "sentence": [
-            "Ideas expressed imprecisely may be intellectually stimulating for listeners or"
+            "Ideas expressed imprecisely may be",
+            "stimulating for listeners or"
         ],
         "translation": "readers.",
-        "appearance": "intellectual"
+        "appearance": "intellectually"
     },
     "905": {
         "word": "gather",
         "meaning": "[타] 모으다",
         "sentence": [
-            "He gathered logs."
+            "He",
+            "logs."
         ],
         "translation": "그는 통나무를 모았습니다.",
-        "appearance": "gather"
+        "appearance": "gathered"
     },
     "906": {
         "word": "fix",
@@ -8845,10 +9066,11 @@
         "word": "fault",
         "meaning": "[명] 잘못, 결함",
         "sentence": [
-            "A number of faults in this view of history became apparent."
+            "A number of",
+            "in this view of history became apparent."
         ],
         "translation": "역사를 바라보는 이런 관점이 가진 많은 결함들이 분명히 드러났습니다.",
-        "appearance": "fault"
+        "appearance": "faults"
     },
     "908": {
         "word": "extent",
@@ -8894,10 +9116,11 @@
         "word": "aware",
         "meaning": "[형] 인지하는",
         "sentence": [
-            "Judgements without being aware"
+            "Most helpful to the",
+            "and peaceful atmosphere is the presence of"
         ],
         "translation": "인지하지 못한 판단",
-        "appearance": "aware"
+        "appearance": "calm"
     },
     "913": {
         "word": "assist",
@@ -8913,10 +9136,11 @@
         "word": "advise",
         "meaning": "[동] 조언하다",
         "sentence": [
-            "The letter advised Adams not to be discouraged."
+            "The letter",
+            "Adams not to be discouraged."
         ],
         "translation": "편지는 Adams에게 낙담하지 말라고 조언했다.",
-        "appearance": "advise"
+        "appearance": "advised"
     },
     "915": {
         "word": "absorb",
@@ -8962,19 +9186,21 @@
         "word": "quick",
         "meaning": "[형] 빠른",
         "sentence": [
-            "That’s why the ability to recover quickly is so important."
+            "That’s why the ability to recover",
+            "is so important."
         ],
         "translation": "그게 바로 빠르게 회복하는 역량이 중요한 이유죠.",
-        "appearance": "quick"
+        "appearance": "quickly"
     },
     "920": {
         "word": "turn",
         "meaning": "[동] 돌다, 변하다, [명] 차례, 전환, 회전",
         "sentence": [
-            "It turns brown, and if allowed to ripen fully, becomes yellow."
+            "It",
+            "brown, and if allowed to ripen fully, becomes yellow."
         ],
         "translation": "그것은 갈색으로 변하고 완전히 익으면 노란색이 됩니다.",
-        "appearance": "turn"
+        "appearance": "turns"
     },
     "921": {
         "word": "able",
@@ -9010,10 +9236,11 @@
         "word": "record",
         "meaning": "[명] 기록, [동] 기록하다, 녹음하다, 녹화하다",
         "sentence": [
-            "They are recorded on film."
+            "They are",
+            "on film."
         ],
         "translation": "그것들은 영화로 기록된다.",
-        "appearance": "record"
+        "appearance": "recorded"
     },
     "925": {
         "word": "prefer",
@@ -9059,19 +9286,21 @@
         "word": "medical",
         "meaning": "[형] 의학의, 의료의",
         "sentence": [
-            "Gilbert, who had opened a medical clinic last year."
+            "Gilbert, who had opened a",
+            "clinic last year."
         ],
         "translation": "작년에 병원을 개원한 Gilbert.",
-        "appearance": "med"
+        "appearance": "medical"
     },
     "930": {
         "word": "ground",
         "meaning": "[명] 땅, 바닥, 근거, 기반, [동] 근거를 두다, 기초를 두다",
         "sentence": [
-            "Social definitions of the body are grounded in social relations."
+            "Social definitions of the body are",
+            "in social relations."
         ],
         "translation": "신체의 사회적 정의는 사회적 관계에 근거합니다.",
-        "appearance": "ground"
+        "appearance": "grounded"
     },
     "931": {
         "word": "buy",
@@ -9117,10 +9346,11 @@
         "word": "plant",
         "meaning": "[명] 식물, [명] 공장",
         "sentence": [
-            "A small number of people have recognized the value of wild plants in Korea."
+            "A small number of people have recognized the value of wild",
+            "in Korea."
         ],
         "translation": "소수의 사람들은 한국의 야생 식물의 가치를 인정했습니다.",
-        "appearance": "plant"
+        "appearance": "plants"
     },
     "936": {
         "word": "busy",
@@ -9196,28 +9426,31 @@
         "word": "constant",
         "meaning": "[형] 끊임없는",
         "sentence": [
-            "We need to constantly distinguish right from wrong."
+            "We need to",
+            "distinguish right from wrong."
         ],
         "translation": "우리는 끊임없이 옳고 그름을 구별할 필요가 있습니다.",
-        "appearance": "constant"
+        "appearance": "constantly"
     },
     "944": {
         "word": "classical",
         "meaning": "[형] 고전적인",
         "sentence": [
-            "Jazz and classical music have a number of things in common."
+            "Jazz and",
+            "music have a number of things in common."
         ],
         "translation": "재즈와 고전 음악에는 많은 공통점이 있습니다.",
-        "appearance": "classic"
+        "appearance": "classical"
     },
     "945": {
         "word": "age",
         "meaning": "[자] 나이가 들다, [명] 시대, 나이",
         "sentence": [
-            "Children ages 8 to 12 must be accompanied by a guardian."
+            "Children",
+            "8 to 12 must be accompanied by a guardian."
         ],
         "translation": "8 세에서 12 세 사이의 어린이는 보호자를 동반해야합니다.",
-        "appearance": "age"
+        "appearance": "ages"
     },
     "946": {
         "word": "feel",
@@ -9243,10 +9476,11 @@
         "word": "meal",
         "meaning": "[명] 식사",
         "sentence": [
-            "Dinner consists of a freeze-dried meal."
+            "He decided to focus more on building",
+            "attitudes."
         ],
         "translation": "저녁은 냉동건조 식사로 구성됩니다.",
-        "appearance": "meal"
+        "appearance": "positive"
     },
     "949": {
         "word": "almost",
@@ -9262,10 +9496,11 @@
         "word": "rate",
         "meaning": "[명] 속도, 비율, 평가, 등급, [동] 평가하다",
         "sentence": [
-            "The 15-24 age group showed the highest volunteer rate."
+            "The romantic couple",
+            "find each other despite the obstacles they encounter."
         ],
         "translation": "15-24세 그룹은 가장 높은 자원 봉사율을 보여주었습니다.",
-        "appearance": "rate"
+        "appearance": "almost"
     },
     "951": {
         "word": "professional",
@@ -9311,10 +9546,11 @@
         "word": "prepare",
         "meaning": "[타] 준비하다",
         "sentence": [
-            "You prepared a lot for the event."
+            "You",
+            "a lot for the event."
         ],
         "translation": "당신은 이벤트를 위해 많은 걸 준비하셨네요.",
-        "appearance": "prepare"
+        "appearance": "prepared"
     },
     "956": {
         "word": "necessity",
@@ -9340,10 +9576,11 @@
         "word": "decline",
         "meaning": "[동] 감소하다, [명] 감소, 하락",
         "sentence": [
-            "In many countries, the habit of reading newspapers has been on the decline."
+            "Would you fax me the",
+            "right away?"
         ],
         "translation": "많은 국가에서 신문을 읽는 습관이 줄어들고 있습니다.",
-        "appearance": "decline"
+        "appearance": "document"
     },
     "959": {
         "word": "lesson",
@@ -9399,10 +9636,11 @@
         "word": "promise",
         "meaning": "[명] 약속, 장래성, [동] 약속하다",
         "sentence": [
-            "Those who broke their promises were punished."
+            "Those who broke their",
+            "were punished."
         ],
         "translation": "그들의 약속을 깨뜨린 사람들은 처벌을 받았다.",
-        "appearance": "promise"
+        "appearance": "promises"
     },
     "965": {
         "word": "yield",
@@ -9458,10 +9696,11 @@
         "word": "strength",
         "meaning": "[명] 힘, 강점",
         "sentence": [
-            "We fail to take advantage of human strengths and capabilities."
+            "We fail to take advantage of human",
+            "and capabilities."
         ],
         "translation": "우리는 인간의 강점과 능력을 이용하지 못합니다.",
-        "appearance": "strength"
+        "appearance": "strengths"
     },
     "971": {
         "word": "treatment",
@@ -9477,37 +9716,41 @@
         "word": "tempt",
         "meaning": "[동] 유혹하다, 부추기다",
         "sentence": [
-            "It is tempting to stretch one’s finances to build or buy a larger house."
+            "It is",
+            "to stretch one’s finances to build or buy a larger house."
         ],
         "translation": "더 큰 집을 짓거나 구입하려고 자금조달을 늘리고 싶은 마음을 부추길 것입니다.",
-        "appearance": "tempt"
+        "appearance": "tempting"
     },
     "973": {
         "word": "suggestion",
         "meaning": "[명] 제안, 시사",
         "sentence": [
-            "Members of larger groups tend to offer more suggestions."
+            "It is",
+            "to stretch one’s finances to build or buy a larger house."
         ],
         "translation": "더 큰 그룹의 구성원들은 더 많은 제안을 하려는 경향이 있습니다.",
-        "appearance": "suggestions"
+        "appearance": "tempting"
     },
     "974": {
         "word": "resist",
         "meaning": "[동] 저항하다",
         "sentence": [
-            "Most people using US customary units have resisted adopting the metric system."
+            "Most people using US customary units have",
+            "adopting the metric system."
         ],
         "translation": "미국의 사용 단위를 사용하는 대부분의 사람들은 미터법 채택에 저항했습니다.",
-        "appearance": "resist"
+        "appearance": "resisted"
     },
     "975": {
         "word": "reproduce",
         "meaning": "[타] 복사하다, 번식하다, 다시 만들다",
         "sentence": [
-            "Van Gogh’s paintings have been reproduced endlessly on posters."
+            "Van Gogh’s paintings have been",
+            "endlessly on posters."
         ],
         "translation": "Van Gogh의 그림은 포스터로 끝없이 다시 만들어졌습니다.",
-        "appearance": "reproduce"
+        "appearance": "reproduced"
     },
     "976": {
         "word": "reference",
@@ -9543,10 +9786,11 @@
         "word": "personality",
         "meaning": "[명] 성격, 개성",
         "sentence": [
-            "We are influenced by our personality."
+            "We can discern different colors, but we can give a",
+            "number to different sounds."
         ],
         "translation": "우리는 우리의 성격에 영향을 받습니다.",
-        "appearance": "personality"
+        "appearance": "precise"
     },
     "980": {
         "word": "embarrassed",
@@ -9562,10 +9806,11 @@
         "word": "damage",
         "meaning": "[명] 손상, [타] 피해를 입히다",
         "sentence": [
-            "This election hasn’t damaged our friendship, has it?"
+            "This election hasn’t",
+            "our friendship, has it?"
         ],
         "translation": "이번 선거가 우리의 우정에 해치지는 못했지, 안그래?",
-        "appearance": "damage"
+        "appearance": "damaged"
     },
     "982": {
         "word": "crowd",
@@ -9641,10 +9886,11 @@
         "word": "automatic",
         "meaning": "[형] 자동의",
         "sentence": [
-            "On most subway trains, the doors open automatically."
+            "I hope that you no longer feel",
+            "or uncomfortable."
         ],
         "translation": "대부분의 지하철 객차에서 문은 자동으로 열립니다.",
-        "appearance": "automatic"
+        "appearance": "hurt"
     },
     "990": {
         "word": "discover",
@@ -9680,10 +9926,11 @@
         "word": "odd",
         "meaning": "[형] 이상한, 홀수의",
         "sentence": [
-            "Aristotle developed an entire theory of physics that physicists today find odd."
+            "All academic areas reached their",
+            "in their college graduates employment rate."
         ],
         "translation": "아리스토텔레스는 현대 물리학자들에게는 이상한 물리학 체계를 개발했습니다.",
-        "appearance": "odd"
+        "appearance": "peak"
     },
     "994": {
         "word": "conduct",
@@ -9719,10 +9966,11 @@
         "word": "trap",
         "meaning": "[타] 함정에 빠뜨리다, [명] (사람을 속이는)함정, 덫",
         "sentence": [
-            "Many of us fall into the trap."
+            "Children who",
+            "protective gear have a tendency to take more physical risks."
         ],
         "translation": "우리 중 대부분은 함정에 빠집니다.",
-        "appearance": "trap"
+        "appearance": "wear"
     },
     "998": {
         "word": "taste",
@@ -9748,19 +9996,21 @@
         "word": "prove",
         "meaning": "[동] 입증하다",
         "sentence": [
-            "Recent studies, however, have proved this belief to be false."
+            "Recent studies, however, have",
+            "this belief to be false."
         ],
         "translation": "하지만, 최근 연구는 이런 믿음이 거짓이라는 것을 입증했습니다.",
-        "appearance": "prove"
+        "appearance": "proved"
     },
     "1001": {
         "word": "praise",
         "meaning": "[명] 칭찬, [타] 칭찬하다",
         "sentence": [
-            "Recent studies, however, have proved this belief to be false."
+            "Recent studies, however, have",
+            "this belief to be false."
         ],
         "translation": "칭찬은 아이들이 활동을 계속하도록 격려 할 수 있습니다.",
-        "appearance": "prove"
+        "appearance": "proved"
     },
     "1002": {
         "word": "instant",
@@ -9926,10 +10176,11 @@
         "word": "pull",
         "meaning": "[동] 당기다, 뽑다",
         "sentence": [
-            "The little boy pulled his hand out of his pocket and studied a number of coins in it."
+            "The little boy",
+            "his hand out of his pocket and studied a number of coins in it."
         ],
         "translation": "어린 소년은 주머니에서 손을 꺼내어 많은 동전들을 살펴봤습니다.",
-        "appearance": "pull"
+        "appearance": "pulled"
     },
     "1019": {
         "word": "prize",
@@ -9995,10 +10246,11 @@
         "word": "atmosphere",
         "meaning": "[명] 대기, 공기, [명] 분위기",
         "sentence": [
-            "Concentration of greenhouse gases each country has put into the atmosphere."
+            "Testing allows us not merely to",
+            "our theories."
         ],
         "translation": "각 국가들이 대기로 방출한 온실 가스의 농도",
-        "appearance": "atmosphere"
+        "appearance": "confirm"
     },
     "1026": {
         "word": "stream",
@@ -10074,10 +10326,11 @@
         "word": "favor",
         "meaning": "[형] 호의, [타] 호의를 보이다, 선호하다",
         "sentence": [
-            "They did everything possible to avoid favoring one child over the others."
+            "They did everything possible to avoid",
+            "one child over the others."
         ],
         "translation": "그들은 한 아이를 다른 아이들보다 더 편애하지 않기 위해 가능한 모든 것을 했습니다.",
-        "appearance": "favor"
+        "appearance": "favoring"
     },
     "1034": {
         "word": "expressive",
@@ -10194,28 +10447,31 @@
         "word": "delight",
         "meaning": "[명] 기쁨, [타] 즐겁게 하다",
         "sentence": [
-            "I’m delighted you’re fully recovered from your illness."
+            "Italy was",
+            "forested at the beginning of Roman rule."
         ],
         "translation": "당신이 병환에서 완전히 회복되어 기쁩니다.",
-        "appearance": "delight"
+        "appearance": "densely"
     },
     "1046": {
         "word": "block",
         "meaning": "[타] 방해하다",
         "sentence": [
-            "The shadows are still there, but they have never blocked the light at all."
+            "The shadows are still there, but they have never",
+            "the light at all."
         ],
         "translation": "그림자는 여전히 거기 있었지만, 빛을 전혀 가리지 못했습니다.",
-        "appearance": "block"
+        "appearance": "blocked"
     },
     "1047": {
         "word": "wrap",
         "meaning": "[타] 포장하다",
         "sentence": [
-            "Furthermore, each bag is wrapped in a cushion and then placed inside a shipping box."
+            "Furthermore, each bag is",
+            "in a cushion and then placed inside a shipping box."
         ],
         "translation": "또한, 각각의 가방은 완충재로 감싸져서 택배 상자에 투입됩니다.",
-        "appearance": "wrap"
+        "appearance": "wrapped"
     },
     "1048": {
         "word": "worthwhile",
@@ -10281,10 +10537,11 @@
         "word": "tie",
         "meaning": "[타] 연결하다",
         "sentence": [
-            "The sashes are tied under the chin to hold the hat tightly in place."
+            "The sashes are",
+            "under the chin to hold the hat tightly in place."
         ],
         "translation": "띠는 턱 아래에 묶여 모자를 단단히 고정시킵니다.",
-        "appearance": "tie"
+        "appearance": "tied"
     },
     "1055": {
         "word": "thick",
@@ -10300,19 +10557,21 @@
         "word": "tense",
         "meaning": "[형] 긴장된",
         "sentence": [
-            "There is no need to get tense and therefore, no reaction."
+            "There is no need to get",
+            "and therefore, no reaction."
         ],
         "translation": "긴장할 필요가 없으니까, 반응도 없는 것이죠.",
-        "appearance": "tens"
+        "appearance": "tense"
     },
     "1057": {
         "word": "swallow",
         "meaning": "[타] 삼키다, 억지로 참다",
         "sentence": [
-            "It swallows the prey down head first."
+            "It",
+            "the prey down head first."
         ],
         "translation": "그것은 먹이를 머리부터 삼킨다.",
-        "appearance": "swallow"
+        "appearance": "swallows"
     },
     "1058": {
         "word": "sure",
@@ -10348,19 +10607,21 @@
         "word": "subtle",
         "meaning": "[형] 미묘한",
         "sentence": [
-            "Poe dismisses the argument that any ideas are so deep or subtle."
+            "These people",
+            "from an inevitable social and mental trauma."
         ],
         "translation": "Poe는 어떤 아이디어가 너무 깊거나 미묘하다는 주장을 무시합니다.",
-        "appearance": "subtle"
+        "appearance": "suffer"
     },
     "1062": {
         "word": "strive",
         "meaning": "[동] 노력하다",
         "sentence": [
-            "People have striven to conserve the the wild plants growing in Korea."
+            "People have",
+            "to conserve the the wild plants growing in Korea."
         ],
         "translation": "사람들은 한국에서 자라는 야생 식물을 보존하기 위해 노력해왔습니다.",
-        "appearance": "strive"
+        "appearance": "striven"
     },
     "1063": {
         "word": "stressful",
@@ -10376,10 +10637,11 @@
         "word": "stress",
         "meaning": "[타] 강조하다, 스트레스를 주다 (받다), [명] 압박, 긴장, 강조",
         "sentence": [
-            "Jeremy became so stressed that he even dreaded going into his classroom."
+            "Jeremy became so",
+            "that he even dreaded going into his classroom."
         ],
         "translation": "Jeremy는 너무 스트레스를 받아 교실에 들어가는 것을 두려워했습니다.",
-        "appearance": "stress"
+        "appearance": "stressed"
     },
     "1065": {
         "word": "strange",
@@ -10455,10 +10717,11 @@
         "word": "score",
         "meaning": "[명] 점수, [동] 점수를 받다, 채점하다",
         "sentence": [
-            "Luckily, I got a high score."
+            "Technology can",
+            "respond instantaneously."
         ],
         "translation": "운이 좋게도, 높은 점수를 받았어.",
-        "appearance": "score"
+        "appearance": "seldom"
     },
     "1073": {
         "word": "save",
@@ -10484,19 +10747,21 @@
         "word": "revolutionary",
         "meaning": "[형] 혁명적인, 획기적인, [명] 혁명가",
         "sentence": [
-            "A new revolutionary nutrient"
+            "A new",
+            "nutrient"
         ],
         "translation": "획기적인 새로운 영양소",
-        "appearance": "revolution"
+        "appearance": "revolutionary"
     },
     "1076": {
         "word": "reserve",
         "meaning": "[동] 예약하다, [명] 비축, 저장, 비축분, 재고",
         "sentence": [
-            "Oil and gas reserves could be affected by new climate conditions."
+            "Oil and gas",
+            "could be affected by new climate conditions."
         ],
         "translation": "석유와 가스 비축분은 새로운 기후 상황에 영향을 받을 수 있습니다.",
-        "appearance": "reserve"
+        "appearance": "reserves"
     },
     "1077": {
         "word": "renew",
@@ -10522,10 +10787,11 @@
         "word": "relax",
         "meaning": "[타] 완화하다, 안정을 취하다",
         "sentence": [
-            "Most people have their best ideas when they are relaxed."
+            "Thank you for years of",
+            "delivery of a first-rate newspaper."
         ],
         "translation": "대부분의 사람들은 안정을 취할 때, 최고의 아이디어를 냅니다.",
-        "appearance": "relax"
+        "appearance": "reliable"
     },
     "1080": {
         "word": "regular",
@@ -10631,10 +10897,11 @@
         "word": "pretend",
         "meaning": "[동] ~인 척하다",
         "sentence": [
-            "She sometimes pretended not to recognize me."
+            "She sometimes",
+            "not to recognize me."
         ],
         "translation": "그녀는 때때로 나를 알아차리지 못 한 척 했습니다.",
-        "appearance": "pretend"
+        "appearance": "pretended"
     },
     "1091": {
         "word": "presentation",
@@ -10650,10 +10917,11 @@
         "word": "predict",
         "meaning": "[동] 예측하다",
         "sentence": [
-            "Why is predicting the future so difficult?"
+            "Why is",
+            "the future so difficult?"
         ],
         "translation": "미래를 예측하는 것이 왜 그렇게 어려운가?",
-        "appearance": "predict"
+        "appearance": "predicting"
     },
     "1093": {
         "word": "precious",
@@ -10669,19 +10937,21 @@
         "word": "pose",
         "meaning": "[타] 제기하다, [자] ~인 체하다, 자세를 취하다",
         "sentence": [
-            "The policy posed a threat to jobs in the coal industry."
+            "The policy",
+            "a threat to jobs in the coal industry."
         ],
         "translation": "이 정책은 석탄 산업의 일자리에 위협을 제기했다.",
-        "appearance": "pose"
+        "appearance": "posed"
     },
     "1095": {
         "word": "polish",
         "meaning": "[동] 연마하다, 닦아서 광을 내다, 손질하다, [명] 광택 내기, 광택제",
         "sentence": [
-            "There will be time for revising and polishing any ideas you want to pursue later."
+            "There will be time for revising and",
+            "any ideas you want to pursue later."
         ],
         "translation": "당신이 추구하는 아이디어를 수정하고 연마할 시간이 나중에 있을겁니다.",
-        "appearance": "polish"
+        "appearance": "polishing"
     },
     "1096": {
         "word": "pleasant",
@@ -10727,19 +10997,21 @@
         "word": "operate",
         "meaning": "[동] 운용하다, 작동되다",
         "sentence": [
-            "This system operates at all temperature."
+            "This system",
+            "at all temperature."
         ],
         "translation": "이 시스템은 모든 온도에서 작동합니다.",
-        "appearance": "operate"
+        "appearance": "operates"
     },
     "1101": {
         "word": "offend",
         "meaning": "[동] 기분 상하게 하다, [동] 범죄를 저지르다",
         "sentence": [
-            "This system operates at all temperature."
+            "This system",
+            "at all temperature."
         ],
         "translation": "이 시스템은 모든 온도에서 작동합니다.",
-        "appearance": "operate"
+        "appearance": "operates"
     },
     "1102": {
         "word": "nervous",
@@ -10765,10 +11037,11 @@
         "word": "merchandise",
         "meaning": "[명] 상품, [동] 판매하다",
         "sentence": [
-            "Each of the five countries produced more electronic merchandise."
+            "When I was feeling somewhat",
+            "and sad, I started taping myself."
         ],
         "translation": "5개 국가 모두는 더 많은 전자제품을 판매했습니다.",
-        "appearance": "merchandise"
+        "appearance": "miserable"
     },
     "1105": {
         "word": "maximize",
@@ -10814,10 +11087,11 @@
         "word": "label",
         "meaning": "[명] 상표, 라벨, 딱지, [타] 라벨을 붙이다",
         "sentence": [
-            "A box labeled “This is where you belong.”"
+            "A box",
+            "“This is where you belong.”"
         ],
         "translation": "\"여기가 네가 있을 곳이야!\"라는 딱지가 붙은 상자",
-        "appearance": "label"
+        "appearance": "labeled"
     },
     "1110": {
         "word": "intensify",
@@ -10843,10 +11117,11 @@
         "word": "installation",
         "meaning": "[명] 설치, [명] (설치된) 기계장치, 설비, 시설",
         "sentence": [
-            "Saving came from the installation of energy-saving lights."
+            "Saving came from the",
+            "of energy-saving lights."
         ],
         "translation": "절약은 절전형 조명을 설치하는 것에서부터 시작합니다.",
-        "appearance": "install"
+        "appearance": "installation"
     },
     "1113": {
         "word": "insist",
@@ -10862,10 +11137,11 @@
         "word": "inhabit",
         "meaning": "[타] 거주하다, 서식하다",
         "sentence": [
-            "The negative impact on local wildlife inhabiting areas"
+            "The negative impact on local wildlife",
+            "areas"
         ],
         "translation": "토종 야생 동물이 거주하는 지역에 대한 부정적인 영향",
-        "appearance": "inhabit"
+        "appearance": "inhabiting"
     },
     "1115": {
         "word": "indifferent",
@@ -10931,10 +11207,11 @@
         "word": "humanity",
         "meaning": "[명] 인류, 인간성, [명] 인문학",
         "sentence": [
-            "Science majors need a strong background in humanities."
+            "An",
+            "container for a bunch of roses."
         ],
         "translation": "과학 전공자들은 인문학에 대한 강력한 배경지식이 필요합니다.",
-        "appearance": "humanities"
+        "appearance": "ideal"
     },
     "1122": {
         "word": "honest",
@@ -11030,10 +11307,11 @@
         "word": "frighten",
         "meaning": "[동] 겁먹게 만들다",
         "sentence": [
-            "What is frightening him is the sense of the unknown stretching into the black distance."
+            "What is",
+            "him is the sense of the unknown stretching into the black distance."
         ],
         "translation": "그를 겁나게 한 것은 어두워 아무것도 보이지 않는 길게 뻗은 광경이었다.",
-        "appearance": "frighten"
+        "appearance": "frightening"
     },
     "1132": {
         "word": "freedom",
@@ -11109,10 +11387,11 @@
         "word": "expose",
         "meaning": "[타] 노출시키다, 폭로하다",
         "sentence": [
-            "Unfortunately, deforestation left the soil exposed to harsh weather."
+            "Unfortunately, deforestation left the soil",
+            "to harsh weather."
         ],
         "translation": "불행히도, 삼림 벌채는 토양을 가혹한 기후에 노출시켰다.",
-        "appearance": "expose"
+        "appearance": "exposed"
     },
     "1140": {
         "word": "existence",
@@ -11218,19 +11497,21 @@
         "word": "distract",
         "meaning": "[타] 주위를 산만하게 하다",
         "sentence": [
-            "Her attention was distracted by a rough, noisy quarrel taking place at the ticket counter."
+            "Her attention was",
+            "by a rough, noisy quarrel taking place at the ticket counter."
         ],
         "translation": "티켓 카운터에서 일어난 거칠고 시끄러운 싸움 때문에 그녀의 집중이 깨졌습니다.",
-        "appearance": "distract"
+        "appearance": "distracted"
     },
     "1151": {
         "word": "dismiss",
         "meaning": "[타] 없애다, 해고하다, 무시하다",
         "sentence": [
-            "Poe dismisses the argument that any ideas are so deep or subtle."
+            "Poe",
+            "the argument that any ideas are so deep or subtle."
         ],
         "translation": "Poe는 어떤 아이디어가 너무 깊거나 미묘하다는 주장을 무시합니다.",
-        "appearance": "dismiss"
+        "appearance": "dismisses"
     },
     "1152": {
         "word": "disastrous",
@@ -11256,10 +11537,11 @@
         "word": "dictate",
         "meaning": "[동] 지시하다, 받아쓰게 하다",
         "sentence": [
-            "Humility dictates that in the presence of royalty heads are bowed."
+            "Humility",
+            "that in the presence of royalty heads are bowed."
         ],
         "translation": "겸양은 왕족의 앞에서 고개를 숙이도록 명령한다.",
-        "appearance": "dictate"
+        "appearance": "dictates"
     },
     "1155": {
         "word": "determine",
@@ -11295,10 +11577,11 @@
         "word": "derive",
         "meaning": "[타] 유도하다, 끌어내다, [자] 유래하다, 파생하다",
         "sentence": [
-            "The term euphemism derives from a Greek word meaning ‘to speak with good words’."
+            "The term euphemism",
+            "from a Greek word meaning ‘to speak with good words’."
         ],
         "translation": "완곡식이라는 용어는 '좋은 말로 말하는 것'을 의미하는 그리스어 단어에서 비롯됩니다.",
-        "appearance": "derive"
+        "appearance": "derives"
     },
     "1159": {
         "word": "deliberate",
@@ -11314,37 +11597,41 @@
         "word": "decorate",
         "meaning": "[타] 장식하다",
         "sentence": [
-            "My grandmother decorated a cake with “HAPPY BIRTHDAY BETTY.”"
+            "My grandmother",
+            "a cake with “HAPPY BIRTHDAY BETTY.”"
         ],
         "translation": "할머니는“HAPPY BIRTHDAY BETTY.”로 케이크를 장식했습니다.",
-        "appearance": "decorate"
+        "appearance": "decorated"
     },
     "1161": {
         "word": "cure",
         "meaning": "[명] 치유, [타] 치유하다",
         "sentence": [
-            "My friend was disappointed that scientific progress has not cured the world’s ills."
+            "My friend was disappointed that scientific progress has not",
+            "the world’s ills."
         ],
         "translation": "내 친구는 과학적 진보가 세계의 불행을 고치지 못한다는 것에 실망했습니다.",
-        "appearance": "cure"
+        "appearance": "cured"
     },
     "1162": {
         "word": "criticism",
         "meaning": "[명] 비판",
         "sentence": [
-            "If you want to be a mathematician, you had better expose your new ideas to the criticism."
+            "My friend was disappointed that scientific progress has not",
+            "the world’s ills."
         ],
         "translation": "수학자가 되고 싶다면, 너의 아이디어를 비판에 노출시키는 것이 좋을거야.",
-        "appearance": "criticism"
+        "appearance": "cured"
     },
     "1163": {
         "word": "creature",
         "meaning": "[명] 생물, 피조물",
         "sentence": [
-            "We are biological creatures."
+            "My friend was disappointed that scientific progress has not",
+            "the world’s ills."
         ],
         "translation": "우리는 생물학적 피조물입니다.",
-        "appearance": "creature"
+        "appearance": "cured"
     },
     "1164": {
         "word": "coverage",
@@ -11410,37 +11697,41 @@
         "word": "confine",
         "meaning": "[타] 국한시키다",
         "sentence": [
-            "Knowledge of writing was confined to professionals who worked for the king or temple."
+            "Knowledge of writing was",
+            "to professionals who worked for the king or temple."
         ],
         "translation": "글쓰기에 대한 지식은 왕가나 사원을 위해 일하는 전문가에게만 국한되었습니다.",
-        "appearance": "confine"
+        "appearance": "confined"
     },
     "1171": {
         "word": "composition",
         "meaning": "[명] 구성 요소, 작곡",
         "sentence": [
-            "Most life has a chemical composition."
+            "Knowledge of writing was",
+            "to professionals who worked for the king or temple."
         ],
         "translation": "대부분의 생명체에는 화학적 구성이 있습니다.",
-        "appearance": "composition"
+        "appearance": "confined"
     },
     "1172": {
         "word": "compose",
         "meaning": "[동] 구성하다, 작곡하다",
         "sentence": [
-            "Violin string can be viewed as composed of many individual pieces connected in a chain."
+            "Violin string can be viewed as",
+            "of many individual pieces connected in a chain."
         ],
         "translation": "바이올린 끈은 사슬로 연결된 많은 작은 조각들로 구성된 것으로 보일 수도 있습니다.",
-        "appearance": "compose"
+        "appearance": "composed"
     },
     "1173": {
         "word": "compensate",
         "meaning": "[자] 보상하다, [자] 보정하다, 보완하다",
         "sentence": [
-            "Our understanding of context compensates for lack of detail."
+            "Our understanding of context",
+            "for lack of detail."
         ],
         "translation": "맥락에 대한 이해는 디테일의 부족을 보완합니다.",
-        "appearance": "compensate"
+        "appearance": "compensates"
     },
     "1174": {
         "word": "combine",
@@ -11456,28 +11747,31 @@
         "word": "coach",
         "meaning": "[동] 지도하다",
         "sentence": [
-            "It was a good experience coaching you last semester."
+            "It was a good experience",
+            "you last semester."
         ],
         "translation": "지난 학기에 너를 지도하는 것은 좋은 경험이었어.",
-        "appearance": "coach"
+        "appearance": "coaching"
     },
     "1176": {
         "word": "climb",
         "meaning": "[동] 오르다",
         "sentence": [
-            "Have you ever climbed this mountain before?"
+            "Have you ever",
+            "this mountain before?"
         ],
         "translation": "전에 이 산을 올라 본 적이 있습니까?",
-        "appearance": "climb"
+        "appearance": "climbed"
     },
     "1177": {
         "word": "celebrate",
         "meaning": "[동] 기념하다, 축하하다",
         "sentence": [
-            "A school program that celebrates the end of the school year."
+            "A school program that",
+            "the end of the school year."
         ],
         "translation": "학년 말을 기념하는 학교의 프로그램.",
-        "appearance": "celebrate"
+        "appearance": "celebrates"
     },
     "1178": {
         "word": "capital",
@@ -11553,10 +11847,11 @@
         "word": "belong",
         "meaning": "[자] 소속감을 느끼다",
         "sentence": [
-            "All members of the school community feel as though they belong."
+            "The frequency is far",
+            "the range of human ears."
         ],
         "translation": "학교 공동체의 모든 구성원은 마치 자신이 소속된 것처럼 느낍니다.",
-        "appearance": "belong"
+        "appearance": "below"
     },
     "1186": {
         "word": "beat",
@@ -11572,10 +11867,11 @@
         "word": "attract",
         "meaning": "[타] 끌어들이다, 유혹하다",
         "sentence": [
-            "Readers would be attracted to the greatness of his personality."
+            "Readers would be",
+            "to the greatness of his personality."
         ],
         "translation": "독자들은 그의 인격의 위대함에 이끌릴 것입니다.",
-        "appearance": "attract"
+        "appearance": "attracted"
     },
     "1188": {
         "word": "article",
@@ -11631,10 +11927,11 @@
         "word": "alive",
         "meaning": "[형] 살아 있는, 생생한, [형] 가득한",
         "sentence": [
-            "The combustion of oxygen that keeps us alive"
+            "In",
+            "Egypt, pitching stones was children’s favorite game."
         ],
         "translation": "우리를 살아있게 하는 산소의 연소",
-        "appearance": "alive"
+        "appearance": "ancient"
     },
     "1194": {
         "word": "admit",
@@ -11660,10 +11957,11 @@
         "word": "hit",
         "meaning": "[타] 때리다, 충돌하다",
         "sentence": [
-            "The downdraft spreads out when it hits the ground."
+            "The downdraft spreads out when it",
+            "the ground."
         ],
         "translation": "하강기류는 지면과 충돌하면서 퍼져나갑니다.",
-        "appearance": "hit"
+        "appearance": "hits"
     },
     "1197": {
         "word": "accept",
@@ -11699,10 +11997,11 @@
         "word": "vote",
         "meaning": "[명] 투표, [자] 투표하다",
         "sentence": [
-            "The low performers usually voted unanimously, with little open debate."
+            "The low performers usually",
+            "unanimously, with little open debate."
         ],
         "translation": "실적이 낮은 사람들은 열린 논쟁이 거의 없이 만장일치로 투표했습니다.",
-        "appearance": "vote"
+        "appearance": "voted"
     },
     "1201": {
         "word": "speech",
@@ -11748,10 +12047,11 @@
         "word": "sink",
         "meaning": "[자] 가라앉다",
         "sentence": [
-            "A piece of wood tossed into water floats instead of sinking."
+            "We learn more about what our existence in this",
+            "means for us."
         ],
         "translation": "물에 던져진 나무 조각은 가라앉는 대신 떠오른다.",
-        "appearance": "sink"
+        "appearance": "universe"
     },
     "1206": {
         "word": "sequence",
@@ -11897,19 +12197,21 @@
         "word": "subordinate",
         "meaning": "[명] 부하, 부하 직원",
         "sentence": [
-            "The leader’s subordinates perceived the removal of the mask as an act of strength and courage."
+            "The leader’s",
+            "perceived the removal of the mask as an act of strength and courage."
         ],
         "translation": "지도자의 부하 직원들은 마스크를 벗는 것을 힘과 용기의 상징으로 받아들였습니다.",
-        "appearance": "subordinate"
+        "appearance": "subordinates"
     },
     "1221": {
         "word": "stuff",
         "meaning": "[명] 일, 물건",
         "sentence": [
-            "He didn’t want to find himself working just to pay for more space and the stuff."
+            "The leader’s",
+            "perceived the removal of the mask as an act of strength and courage."
         ],
         "translation": "그는 더 많은 공간과 물건을 구매하기 위해 일하는 자신을 보고 싶지 않았습니다.",
-        "appearance": "stuff"
+        "appearance": "subordinates"
     },
     "1222": {
         "word": "ship",
@@ -11965,10 +12267,11 @@
         "word": "emit",
         "meaning": "[동] 뿜어내다",
         "sentence": [
-            "The carbon dioxide that is emitted causes global warming."
+            "The carbon dioxide that is",
+            "causes global warming."
         ],
         "translation": "방출된 이산화탄소는 지구 온난화를 유발합니다.",
-        "appearance": "emit"
+        "appearance": "emitted"
     },
     "1228": {
         "word": "discount",
@@ -11994,19 +12297,21 @@
         "word": "bite",
         "meaning": "[동] 물다, [명] 한 입",
         "sentence": [
-            "A couple more bites still might taste good."
+            "A couple more",
+            "still might taste good."
         ],
         "translation": "몇 입 더 먹어도 맛있을걸요.",
-        "appearance": "bite"
+        "appearance": "bites"
     },
     "1231": {
         "word": "anxiety",
         "meaning": "[명] 불안",
         "sentence": [
-            "A couple more bites still might taste good."
+            "A couple more",
+            "still might taste good."
         ],
         "translation": "불안은 또한 모든 종류의 학문적 성과를 방해합니다.",
-        "appearance": "bite"
+        "appearance": "bites"
     },
     "1232": {
         "word": "acceptable",
@@ -12082,10 +12387,11 @@
         "word": "static",
         "meaning": "[형] 고정된, 정적인, 물리적으로 정지한 상태의, [명] 잡음",
         "sentence": [
-            "Most people reported that there was static."
+            "Their papers are designed to",
+            "further discussion."
         ],
         "translation": "대부분의 사람들은 잡음이 있었다고 보고했습니다.",
-        "appearance": "static"
+        "appearance": "stimulate"
     },
     "1240": {
         "word": "satisfaction",
@@ -12101,10 +12407,11 @@
         "word": "mirror",
         "meaning": "[타] 반영하다, 비추다",
         "sentence": [
-            "Inducing positive emotional arousal mirrors the emotional state of the laugher."
+            "Inducing positive emotional arousal",
+            "the emotional state of the laugher."
         ],
         "translation": "웃는 상태를 반영하는 긍정적인 감정 자극을 유발하는 것.",
-        "appearance": "mirror"
+        "appearance": "mirrors"
     },
     "1242": {
         "word": "assignment",
@@ -12130,10 +12437,11 @@
         "word": "transfer",
         "meaning": "[동] 이동하다, 옮기다, [명] 이동, 환승",
         "sentence": [
-            "It might be appropriate to describe animal signals as transferring information."
+            "It might be appropriate to describe animal signals as",
+            "information."
         ],
         "translation": "동물의 신호를 정보를 전달하는 행위라 설명하는 것이 적절할 수도 있습니다.",
-        "appearance": "transfer"
+        "appearance": "transferring"
     },
     "1245": {
         "word": "academic",
@@ -12159,19 +12467,21 @@
         "word": "violate",
         "meaning": "[타] 위반하다, 침해하다, [타] 훼손하다, 성폭행하다",
         "sentence": [
-            "The person will tend to feel guilty when his or her own conduct violates that principle."
+            "The person will tend to feel guilty when his or her own conduct",
+            "that principle."
         ],
         "translation": "사람은 자신의 행동이 그 원칙을 위배할 때 죄책감을 느끼는 경향이 있습니다.",
-        "appearance": "violate"
+        "appearance": "violates"
     },
     "1248": {
         "word": "undermine",
         "meaning": "[타] 약화시키다",
         "sentence": [
-            "Anxiety undermines the intellect."
+            "Anxiety",
+            "the intellect."
         ],
         "translation": "불안은 지성을 망가뜨립니다.",
-        "appearance": "undermine"
+        "appearance": "undermines"
     },
     "1249": {
         "word": "ultimate",
@@ -12227,10 +12537,11 @@
         "word": "terrify",
         "meaning": "[타] 무섭게 하다, 겁주다",
         "sentence": [
-            "I had no idea that I was in for one of the most terrifying experiences of my life."
+            "I had no idea that I was in for one of the most",
+            "experiences of my life."
         ],
         "translation": "나는 내 인생에서 가장 끔찍한 경험 중 하나에 있다는 것을 전혀 몰랐습니다.",
-        "appearance": "terrify"
+        "appearance": "terrifying"
     },
     "1255": {
         "word": "sustain",
@@ -12326,19 +12637,21 @@
         "word": "smooth",
         "meaning": "[형] 매끄러운, 부드러운",
         "sentence": [
-            "Should you buy smooth-textured strawberry jam or the one with less sugar?"
+            "The fact that information is conveyed",
+            "adds authority to what is conveyed."
         ],
         "translation": "부드러운 질감의 딸기 잼을 살 건가요 아니면 저당 잼을 살 건가요?",
-        "appearance": "smooth"
+        "appearance": "somehow"
     },
     "1265": {
         "word": "shock",
         "meaning": "[명] 충격, [동] 충격을 주다",
         "sentence": [
-            "I was shocked to learn that she had been the top player."
+            "I was",
+            "to learn that she had been the top player."
         ],
         "translation": "나는 그녀가 최고의 선수였다는 사실을 듣고 충격을 받았습니다.",
-        "appearance": "shock"
+        "appearance": "shocked"
     },
     "1266": {
         "word": "sensitive",
@@ -12474,10 +12787,11 @@
         "word": "lift",
         "meaning": "[타] 들어올리다",
         "sentence": [
-            "The children lifted their sacks to take home."
+            "The children",
+            "their sacks to take home."
         ],
         "translation": "아이들은 자루를 들어올려 집으로 가져갔습니다.",
-        "appearance": "lift"
+        "appearance": "lifted"
     },
     "1280": {
         "word": "legitimate",
@@ -12493,10 +12807,11 @@
         "word": "judgement",
         "meaning": "[명] 판단, 심판",
         "sentence": [
-            "She makes judgements about another aspect of events."
+            "She makes",
+            "about another aspect of events."
         ],
         "translation": "그녀는 사건의 또 다른 측면에 대해 판단합니다.",
-        "appearance": "judgement"
+        "appearance": "judgements"
     },
     "1282": {
         "word": "jealous",
@@ -12522,10 +12837,11 @@
         "word": "instruct",
         "meaning": "[동] 가르치다, 지시하다",
         "sentence": [
-            "I instructed her to begin CPR."
+            "I",
+            "her to begin CPR."
         ],
         "translation": "나는 그녀에게 심폐소생술을 시작하라고 지시했다.",
-        "appearance": "instruct"
+        "appearance": "instructed"
     },
     "1285": {
         "word": "induce",
@@ -12541,10 +12857,11 @@
         "word": "illustration",
         "meaning": "[명] 삽화, 그림, [명] 실제 사례, 예시",
         "sentence": [
-            "I discovered that the illustrations in the newspaper were wrong."
+            "I discovered that the",
+            "in the newspaper were wrong."
         ],
         "translation": "나는 신문의 삽화가 잘못되었다는 것을 발견했다.",
-        "appearance": "illustration"
+        "appearance": "illustrations"
     },
     "1287": {
         "word": "hate",
@@ -12560,10 +12877,11 @@
         "word": "handle",
         "meaning": "[타] 다루다",
         "sentence": [
-            "This is increasingly being handled by computers."
+            "This is increasingly being",
+            "by computers."
         ],
         "translation": "이건 점점 더 컴퓨터로 처리되는 경우가 많아요.",
-        "appearance": "handle"
+        "appearance": "handled"
     },
     "1289": {
         "word": "habitual",
@@ -12589,10 +12907,11 @@
         "word": "exert",
         "meaning": "[타] 가하다",
         "sentence": [
-            "An object’s weight is the force exerted on it by gravity."
+            "An object’s weight is the force",
+            "on it by gravity."
         ],
         "translation": "무게는 물체에 가해지는 중력입니다.",
-        "appearance": "exert"
+        "appearance": "exerted"
     },
     "1292": {
         "word": "excess",
@@ -12608,10 +12927,11 @@
         "word": "distraction",
         "meaning": "[명] 주의를 산만하게 하는 것, [명] 오락, 머리를 식히게 해 주는 것",
         "sentence": [
-            "Working at home can free you from these distractions."
+            "The smartest of our deep ancestors would have stored their",
+            "meat."
         ],
         "translation": "집에서 일하면 이러한 산만함으로부터 벗어날 수 있습니다.",
-        "appearance": "distraction"
+        "appearance": "excess"
     },
     "1294": {
         "word": "cope",
