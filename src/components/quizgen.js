@@ -31,6 +31,8 @@ const day_words = [0,
   30, 30, 30, 15
 ]
 
+let word_data = {}
+/*
 let word_data = {
   1:{
     word: "apple",
@@ -41,7 +43,8 @@ let word_data = {
     ],
     translatioin: [
       "나는 저녁으로 애플파이를 먹었어요."
-    ]
+    ],
+    appearance: "apple"
   }, 
   2:{
     word: "approve",
@@ -52,9 +55,11 @@ let word_data = {
     ],
     translatioin: [
       "2023년도 계획안을 승인해주십사 요청드리고 싶습니다."
-    ]
+    ],
+    appearance: "approves"
   }
 }
+*/
 
 const num_words = [0, 692, 223, 280, 105]
 
