@@ -45,14 +45,7 @@ function Quizgen () {
   const [options, setOptions] = useState([])
   const [showModal, setShowModal] = useState(false) //false
   const [title, setTitle] = useState("") // ""
-  const [sample_no, setSampleNo] = useState(
-      [
-        [1, 2, 3, 4, 5, 6], // type 1
-        [719, 287, 542, 225, 32, 24,], // type 2
-        [1012, 1043, 1232, 193, 153, 514,], // type 3
-        [62, 321, 622, 752, 842, 922,] //type 4
-      ]
-  )
+  const [sample_no, setSampleNo] = useState([[], [], [], []]) // type 1, 2, 3, 4
   const ref = useRef()
   
 
@@ -85,6 +78,11 @@ function Quizgen () {
                     setLogged_in(false)
                     setSelect_Mode("index")
                     setQuestion_range([1, 1, 1300, 1300, 1300, 30]) // from, question_range[1], to, max, question_range[4], question_range[5]  
+                    setWord_data({})
+                    setOptions([])
+                    setShowModal(false)
+                    setTitle("")
+                    setSampleNo([[], [], [], []])
                 }
               }
             >처음으로</button>
@@ -249,9 +247,7 @@ function Quizgen () {
   }
 
   const draw_2022_type_1 = (idx) => {
-    let word = word_data[idx]
-    console.log(idx)
-    console.log(word_data)
+    let word = word_data[String(idx)]
 
     return (
       <li className="singleQuiz">
@@ -427,7 +423,7 @@ function Quizgen () {
 
   const draw_voca_2022 = () => {
     const hashed = -1693770398
-    const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/jsonData/2022_voca.json"
+    const dataUrl = "https://raw.githubusercontent.com/needleworm/ai_voca/main/src/jsonData/2022_voca.json"
 
     let serial = ""
 
@@ -452,7 +448,7 @@ function Quizgen () {
                 axios.get(dataUrl)
                 .then(data => {
                   setLogged_in(true)
-                  setWord_data(data)
+                  setWord_data(data.data)
                 })
               }
             }
@@ -549,11 +545,6 @@ function Quizgen () {
       >시험지 생성</button>
     </div>
 
-    let printable_page_modal = <Modal id="modalForTest" isOpen={showModal} onRequestClose={closeModal}
-      overlayClassName="overlay" className="ModalPrintPage"
-    >
-      {Draw_2022_voca_printable_page()}
-    </Modal>
 
     if (logged_in){
       if (! (options[0] || options[1] || options[2] || options[3])){
@@ -565,7 +556,6 @@ function Quizgen () {
                 <div className="separator"/>
               </div>
             </div>
-            {printable_page_modal}
           </div>
         )
       }
@@ -580,7 +570,6 @@ function Quizgen () {
                 <div className="separator"/>
               </div>
             </div>
-            {printable_page_modal}
           </div>
         )
       } else {
@@ -595,7 +584,11 @@ function Quizgen () {
               </div>
             </div>
             {test_gen_button}
-            {printable_page_modal}
+            <Modal id="modalForTest" isOpen={showModal} onRequestClose={closeModal}
+              overlayClassName="overlay" className="ModalPrintPage"
+            >
+              {Draw_2022_voca_printable_page()}
+            </Modal>
           </div>
         )
       }

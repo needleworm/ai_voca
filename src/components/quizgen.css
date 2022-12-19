@@ -238,7 +238,7 @@ p {
 .testHeaderGrid {
     display:grid;
     grid-template-columns: 30mm 1fr 40mm;
-    margin-top:20mm;
+    margin-top:0mm;
     margin-left:20mm;
     margin-right:20mm;
     margin-bottom:20mm;
@@ -271,6 +271,7 @@ p {
     padding-left: 100px;
     font-size: 5mm;
     font-weight: 0.1px;
+    width:100%;
 }
 
 .testText {
@@ -281,8 +282,9 @@ p {
 }
 
 .singleQuiz{
-    margin-bottom: 5mm;
+    margin-bottom: 10mm;
     font-size: 5mm;
+    width: 180mm;
 }
 
 #printable {
