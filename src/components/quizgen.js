@@ -423,7 +423,7 @@ function Quizgen () {
 
   const draw_voca_2022 = () => {
     const hashed = -1693770398
-    const dataUrl = "https://raw.githubusercontent.com/needleworm/ai_voca/main/src/jsonData/2022_voca.json"
+    const dataUrl = "https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/jsonData/2022_voca.json"
 
     let serial = ""
 
