@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         webView = findViewById(R.id.webView) // 웹뷰 객체 가져오기
         webView.webViewClient = WebViewClient() // 웹뷰 클라이언트 생성
         webView.settings.javaScriptEnabled = true
-        webView.loadUrl("https://needleworm.github.io/bhban_ai") // 해당 url 로딩
+        webView.loadUrl("https://needleworm.github.io/psd") // 해당 url 로딩
 
         if (savedInstanceState != null) webView.restoreState(savedInstanceState)
-        else webView.loadUrl("https://needleworm.github.io/bhban_ai")
+        else webView.loadUrl("https://needleworm.github.io/psd")
 
     }
     override fun onBackPressed() {
