@@ -1,4 +1,4 @@
-package com.example.rpa
+package com.webview.ai_voca
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         webView = findViewById(R.id.webView) // 웹뷰 객체 가져오기
         webView.webViewClient = WebViewClient() // 웹뷰 클라이언트 생성
         webView.settings.javaScriptEnabled = true
-        webView.loadUrl("https://needleworm.github.io/psd") // 해당 url 로딩
+        webView.loadUrl("https://needleworm.github.io/ai_voca") // 해당 url 로딩
 
         if (savedInstanceState != null) webView.restoreState(savedInstanceState)
-        else webView.loadUrl("https://needleworm.github.io/psd")
+        else webView.loadUrl("https://needleworm.github.io/ai_voca")
 
     }
     override fun onBackPressed() {
@@ -29,5 +29,4 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         webView.saveState(outState)
     }
-
 }

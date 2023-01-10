@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "포토샵"
+rootProject.name = "AI족집게 수능영단어"
 include ':app'
