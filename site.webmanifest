@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
  "display": "fullscreen",
- "start_url": "/ai_voca?fullscreen=true",
+ "start_url": "/ai_voca/?fullscreen=true",
   "name":"AI Voca",
   "short_name":"AI Voca",
   "icons":[{"src":"/favicons/android-icon-192x192.png",
