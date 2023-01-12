@@ -19,18 +19,18 @@ function App() {
   const [content, setContent] = useState("none")
 
   const closeSideMenu = () => {
-    let contentWrapper = document.querySelector('.content-wrapper')
+    const contentWrapper = document.querySelector('.content-wrapper') as HTMLElement
     if (!contentWrapper.classList.contains('showing')){
       return
     }
 
-    let panelCover = document.querySelector('.panel-cover')
+    const panelCover = document.querySelector('.panel-cover') as HTMLElement
     panelCover.classList.remove('panel-cover--collapsed')
     panelCover.style.maxWidth = '100%'
 
-    let window = document.querySelector('html')
+    const window = document.querySelector('html') as HTMLElement
 
-    let currentWidth = window.clientWidth
+    const currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -58,8 +58,8 @@ function App() {
   }
 
   const bouncing = () => {
-    let navigationWrapper = document.querySelector('.navigation-wrapper')
-    let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+    const navigationWrapper = document.querySelector('.navigation-wrapper')  as HTMLElement
+    const btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon') as HTMLElement
     navigationWrapper.classList.toggle('visible')
     btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
     btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -68,17 +68,17 @@ function App() {
   }
 
   const openSideMenu = () => {
-    let contentWrapper = document.querySelector('.content-wrapper')
+    const contentWrapper = document.querySelector('.content-wrapper') as HTMLElement
     if (contentWrapper.classList.contains('showing')){
       return
     }
 
-    let panelCover = document.querySelector('.panel-cover')
+    const panelCover = document.querySelector('.panel-cover') as HTMLElement
     panelCover.classList.add('panel-cover--collapsed')
 
-    let window = document.querySelector('html')
+    const window = document.querySelector('html') as HTMLElement
 
-    let currentWidth = window.clientWidth
+    const currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -110,7 +110,7 @@ function App() {
         onClick={
           function(e){
             setLatestButton("none")
-            content("none")
+            setContent("none")
             closeSideMenu()
           }
         }
@@ -232,15 +232,15 @@ function App() {
     let mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
         function(e){
-          let navigationWrapper = document.querySelector('.navigation-wrapper')
-          let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-          navigationWrapper.classList.toggle('visible')
-          navigationWrapper.classList.toggle('bounceInDown')
-          navigationWrapper.classList.toggle('animated')
-          btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-          btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-          btnMobileMenuIcon.classList.toggle('animated')
-          btnMobileMenuIcon.classList.toggle('fadeIn')
+          const navigationWrapper = document.querySelector('.navigation-wrapper')
+          const btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+          navigationWrapper?.classList.toggle('visible')
+          navigationWrapper?.classList.toggle('bounceInDown')
+          navigationWrapper?.classList.toggle('animated')
+          btnMobileMenuIcon?.classList.toggle('fa-caret-square-down')
+          btnMobileMenuIcon?.classList.toggle('fa-caret-square-up')
+          btnMobileMenuIcon?.classList.toggle('animated')
+          btnMobileMenuIcon?.classList.toggle('fadeIn')
         }
       }
     >

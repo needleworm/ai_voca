@@ -1,7 +1,4 @@
 {
-  "manifest_version": 2,
- "display": "fullscreen",
- "start_url": "/ai_voca/?fullscreen=true",
   "short_name": "AI Voca",
   "name": "AI족집게 수능영단어",
   "icons": [
@@ -30,6 +27,8 @@
      "density": "2.0"
     }
   ],
+  "start_url": "/",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

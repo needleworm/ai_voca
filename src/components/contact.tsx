@@ -21,7 +21,7 @@ function Contact() {
           </p>
           <p>
             <label htmlFor="Message">Message</label><br/>
-            <textarea rows="6" name="complaint" id="complaint" placeholder="Tell me your story :)" required data-validation-required-message="Please enter a message."></textarea>
+            <textarea rows={6} name="complaint" id="complaint" placeholder="Tell me your story :)" required data-validation-required-message="Please enter a message."></textarea>
           </p>
           <input type="hidden" name="_subject" id="email-subject" value="Contact From Homepage"/>
         </fieldset>

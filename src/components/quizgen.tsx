@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './quizgen.css';
-import { TextField, MenuItem } from "@material-ui/core"
+import { TextField, MenuItem } from "@mui/material"
 import axios from 'axios';
 import Modal from 'react-modal';
 import LOGOFILE from "../images/logo.png";
@@ -14,28 +14,43 @@ import ReactToPrint from "react-to-print";
 
 Modal.setAppElement('#root')
 
-const hashCode = (s) => {
+const hashCode = (s: string) => {
   return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
 }
-
-
 
 
 const num_words = [0, 692, 223, 280, 105]
 
 function Quizgen () {
+  type SingleWordDataType = {
+    word: string
+    meaning: string
+    sentence: string[]
+    translation: string
+    appearance: string
+  }
+
+  type WordDataType = {
+    [key: string]: SingleWordDataType
+  }
+
+  type SampleNoType = [
+    number[], number[], number[], number[]
+  ]
+
+
   const [mode, setMode] = useState("main")    /*  main
                                           voca_2022
                                         */
   const [logged_in, setLogged_in] = useState(false)// false
   const [select_mode, setSelect_Mode] = useState("index") // index, total, part, day
   const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
-  const [word_data, setWord_data] = useState({})
+  const [word_data, setWord_data] = useState<WordDataType>({})
   const [options, setOptions] = useState([false, false, false, false]) // false false false false
   const [showModal, setShowModal] = useState(false) //false
   const [title, setTitle] = useState("") // ""
-  const [sample_no, setSampleNo] = useState([[], [], [], []]) // type 1, 2, 3, 4
-  const ref = useRef()
+  const [sample_no, setSampleNo] = useState<SampleNoType>([[], [], [], []]) // type 1, 2, 3, 4
+  const ref = useRef<HTMLDivElement>(null)
   
 
   const closeModal = () => {
@@ -47,7 +62,7 @@ function Quizgen () {
   }
 
   const prepare_2022_voca_test = () => {
-    let totalSamples = [] //전체 범위의 모집합
+    let totalSamples: number[] = [] //전체 범위의 모집합
     // 이거 구해야됨
     
     let range = Array.from({length: question_range[2] - question_range[0] + 1}, (v, i) => i + question_range[0])
@@ -93,13 +108,15 @@ function Quizgen () {
         1225, 1255, 1285, 1300
       ]
 
-      totalSamples = Array.from({length: day_end_idx[question_range[2]] - day_start_idx[question_range[0]] + 1}, (v, i) => i + day_start_idx[question_range[0]])
+      totalSamples = Array.from(
+        {length: day_end_idx[question_range[2]] - day_start_idx[question_range[0]] + 1}, (v, i) => i + day_start_idx[question_range[0]]
+      )
     }
 
-    let types_1 = []
-    let types_2 = []
-    let types_3 = []
-    let types_4 = []
+    let types_1: number[] = []
+    let types_2: number[] = []
+    let types_3: number[] = []
+    let types_4: number[] = []
    
     totalSamples.sort(() => Math.random() - 0.5);
 
@@ -109,7 +126,7 @@ function Quizgen () {
       totalSamples = totalSamples.slice(0, question_range[5])
     }
 
-    let ticket = []
+    let ticket: number[] = []
     if (options[0]){
       ticket.push(1)
     }if (options[1]){
@@ -122,7 +139,7 @@ function Quizgen () {
     
     let tk = 0
     totalSamples.map(function(idx){
-      tk = ticket[parseInt(Math.random() * ticket.length)]
+      tk = ticket[Math.trunc(Math.random() * ticket.length)]
       console.log(tk)
       if (tk === 1){
         types_1.push(idx)
@@ -246,7 +263,7 @@ function Quizgen () {
         InputProps={{ inputProps: { min: question_range[1], max: question_range[3] } }}
           onInput={
             function(e){
-              var L = Number(e.target.value)
+              var L = Number((e.target as HTMLInputElement).value)
               if (select_mode === "index"){
                   // from, min, to, max, maxQ, numQ 
                   setQuestion_range([question_range[0], question_range[1], L, question_range[3], L + 1 -question_range[0], question_range[5]])
@@ -326,7 +343,7 @@ function Quizgen () {
     }
   }
 
-  const draw_2022_type_1 = (idx) => {
+  const draw_2022_type_1 = (idx: number | string) => {
     let word = word_data[String(idx)]
 
     return (
@@ -338,7 +355,7 @@ function Quizgen () {
     )
   }
 
-  const draw_2022_type_2 = (idx) => {
+  const draw_2022_type_2 = (idx: number | string) => {
     let word = word_data[idx]
 
     return (
@@ -350,13 +367,13 @@ function Quizgen () {
     )
   }
 
-  const draw_2022_type_3 = (idx) => {
+  const draw_2022_type_3 = (idx: number | string) => {
     let word = word_data[idx]
 
     let samples = [
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
-      word_data[parseInt(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
       word.appearance
     ]
     
@@ -364,7 +381,7 @@ function Quizgen () {
 
     return (
       <li className="singleQuiz">
-        <div className="testText">{word.translatioin}</div>
+        <div className="testText">{word.translation}</div>
         <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
         <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           &nbsp;&nbsp;
@@ -381,12 +398,12 @@ function Quizgen () {
     
   }
 
-  const draw_2022_type_4 = (idx) => {
-    let word = word_data[idx]
+  const draw_2022_type_4 = (idx: number) => {
+    const word = word_data[idx]
 
     return (
       <li className="singleQuiz">
-        <div className="testText">{word.translatioin}</div>
+        <div className="testText">{word.translation}</div>
         <div className="testText">{word.sentence[0]} &nbsp;&nbsp;
           <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           &nbsp;&nbsp;
