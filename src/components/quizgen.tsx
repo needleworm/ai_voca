@@ -39,10 +39,10 @@ function Quizgen () {
   ]
 
 
-  const [mode, setMode] = useState("voca_2022")    /*  main
+  const [mode, setMode] = useState("main")    /*  main
                                           voca_2022
                                         */
-  const [logged_in, setLogged_in] = useState(true)// false
+  const [logged_in, setLogged_in] = useState(false)// false
   const [select_mode, setSelect_Mode] = useState("index") // index, total, part, day
   const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
   const [word_data, setWord_data] = useState<WordDataType>({})
@@ -203,7 +203,7 @@ function Quizgen () {
               setTitle("수능 영단어 퀴즈")
           }
         }>
-        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/1.png"  alt="projectimage"/>
+        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/1.jpg"  alt="projectimage"/>
         <div className="projectText">
           <h5>AI족집게 수능영단어</h5>
           <div className="codeBody">
