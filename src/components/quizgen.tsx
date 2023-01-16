@@ -558,7 +558,7 @@ function Quizgen () {
       <strong className="col-lg-12 text-center">문제 유형을 1개 이상 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
         <div className="text-center checkOptions" >
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="quiz_type 1"
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_1.png" alt="quiz_type 1"
             onClick={
               function(e){
                 setOptions([!options[0], options[1], options[2], options[3]])
