@@ -23,7 +23,7 @@ function Books() {
 
 
     let soon = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/books/covers/soon.png" alt="book1" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/books/covers/soon.jpg" alt="book1" className="bookCoverImage"/>
       <h5>Coming Soon</h5>
       <p className="bookDescription">...</p>
       <ul className="list-inline">
