@@ -225,7 +225,7 @@ function App() {
             }
           }
         }>
-        <i className="far fa-envelope"></i>&nbsp;협업문의
+        <i className="far fa-envelope"></i>&nbsp;Contact
       </a>
     </li>
 
@@ -266,8 +266,8 @@ function App() {
                   <ul className="navigation">
                     {selftest}
                     {quizgen}
-                    {papers}
                     {books}
+                    {papers}
                     {contact}
                   </ul>
                 </nav>

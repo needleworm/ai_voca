@@ -22,9 +22,22 @@ function Books() {
     </div>
 
 
+    let soon = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/books/covers/soon.png" alt="book1" className="bookCoverImage"/>
+      <h5>Coming Soon</h5>
+      <p className="bookDescription">...</p>
+      <ul className="list-inline">
+        <li><a href="#" target="_blank" rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+      </ul>
+    </div>
+
+
     return(
       <div className="bookContainer">
-
+        {soon}
         {bookSection1}
       </div>
     )
