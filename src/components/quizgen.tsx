@@ -39,10 +39,10 @@ function Quizgen () {
   ]
 
 
-  const [mode, setMode] = useState("main")    /*  main
+  const [mode, setMode] = useState("voca_2022")    /*  main
                                           voca_2022
                                         */
-  const [logged_in, setLogged_in] = useState(false)// false
+  const [logged_in, setLogged_in] = useState(true)// false
   const [select_mode, setSelect_Mode] = useState("index") // index, total, part, day
   const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
   const [word_data, setWord_data] = useState<WordDataType>({})
@@ -558,7 +558,7 @@ function Quizgen () {
       <strong className="col-lg-12 text-center">문제 유형을 1개 이상 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
         <div className="text-center checkOptions" >
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_1.png" alt="quiz_type 1"
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_1.jpg" alt="quiz_type 1"
             onClick={
               function(e){
                 setOptions([!options[0], options[1], options[2], options[3]])
@@ -573,7 +573,7 @@ function Quizgen () {
           <label htmlFor="checker1_1">영단어와 빈칸</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/2.jpg" alt="quiz_type 2"
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_2.jpg" alt="quiz_type 2"
             onClick={
               function(e){
                 setOptions([options[0], !options[1], options[2], options[3]])
@@ -588,7 +588,7 @@ function Quizgen () {
           <label htmlFor="checker1_2">빈칸과 한글 의미</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/3.jpg" alt="quiz_type 3"
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_3.jpg" alt="quiz_type 3"
             onClick={
               function(e){
                 setOptions([options[0], options[1], !options[2], options[3]])
@@ -603,7 +603,7 @@ function Quizgen () {
           <label htmlFor="checker1_3">문장 내 빈칸채우기 (객관식)</label>
         </div>
         <div className="text-center checkOptions">
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/4.jpg" alt="quiz_type 4"
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_4.jpg" alt="quiz_type 4"
             onClick={
               function(e){
                 setOptions([options[0], options[1], options[2], !options[3]])
