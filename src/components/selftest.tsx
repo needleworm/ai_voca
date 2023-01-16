@@ -1,22 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './selfTest.css';
-import { TextField, MenuItem } from "@mui/material"
 import axios from 'axios';
-import Modal from 'react-modal';
-import LOGOFILE from "../images/logo.png";
-import ReactToPrint from "react-to-print";
-
-/*  
-  할 일
-  1. 단어장 json 만들어서 jsonData/ 폴더에 넣기
-  2. prepare_2022_voca_test 함수 만들기
-*/
-
-Modal.setAppElement('#root')
-
-const hashCode = (s: string) => {
-  return s.replaceAll("-", "").split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
-}
 
 
 const num_words = [0, 692, 223, 280, 105]
@@ -41,32 +25,25 @@ function Quizgen () {
 
   const [mode, setMode] = useState("main")    /*  main
                                           voca_2022
+                                          voca_2022_type_1
+                                          voca_2022_type_2
                                         */
-  const [select_mode, setSelect_Mode] = useState("none") // none, type_1, type_2
-  const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300, 30]) // from, min, to, max, maxQ, numQ 
+  const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 1300]) // from, min, to, max, maxQ
+  const [numQ, setNumQ] = useState(30) // numQ 
+  const [select_mode, setSelect_Mode] = useState("index") // total, part, day
   const [word_data, setWord_data] = useState<WordDataType>({})
   const [options, setOptions] = useState([false, false, false, false]) // false false false false
-  const [showModal, setShowModal] = useState(false) //false
   const [title, setTitle] = useState("") // ""
   const [sample_no, setSampleNo] = useState<SampleNoType>([[], [], [], []]) // type 1, 2, 3, 4
-  const ref = useRef<HTMLDivElement>(null)
   
 
-  const closeModal = () => {
-    setShowModal(false)
-  }
-
-  const openModal = () => {
-    setShowModal(true)
-  }
-
-  const prepare_2022_voca_test = () => {
+  const generate_quiz_set = () => {
     let totalSamples: number[] = [] //전체 범위의 모집합
     // 이거 구해야됨
     
     let range = Array.from({length: question_range[2] - question_range[0] + 1}, (v, i) => i + question_range[0])
 
-    if (select_mode === "total" || select_mode === 'index'){
+    if (select_mode === "total"){
       totalSamples = range
     } else if (select_mode === "part"){
       const part_word_idx = [
@@ -119,7 +96,7 @@ function Quizgen () {
    
     totalSamples.sort(() => Math.random() - 0.5);
 
-    if (question_range[5] > question_range[4]) { // numQ > maxQ
+    if (numQ > question_range[4]) { // numQ > maxQ
       totalSamples = totalSamples.concat(totalSamples.slice(0, question_range[5] - question_range[4]))
     } else {
       totalSamples = totalSamples.slice(0, question_range[5])
@@ -165,12 +142,10 @@ function Quizgen () {
             <button className="submitButton"
               onClick={
                 function(e){
-                    setMode("main")
-                    setSelect_Mode("none")
+                    setMode("none")
                     setQuestion_range([1, 1, 1300, 1300, 1300, 30]) // from, question_range[1], to, max, question_range[4], question_range[5]  
                     setWord_data({})
                     setOptions([false, false, false, false])
-                    setShowModal(false)
                     setTitle("")
                     setSampleNo([[], [], [], []])
                 }
@@ -179,7 +154,7 @@ function Quizgen () {
           </div>
         </div>
       )
-    } else {
+    } else if (mode === "main"){
       return(
         <div className="row">
           <div className="col-lg-12 text-center">
@@ -188,16 +163,70 @@ function Quizgen () {
           </div>
         </div>
       )
+    } else if (mode === "voca_2022_type_1"){
+      return(
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading subpageHeading">1분의 벽</h2>
+            <p>1분 동안 얼마나 많이 풀 수 있을까?</p>
+            <button className="submitButton"
+              onClick={
+                function(e){
+                    setMode("voca_2022")
+                }
+              }
+            >이전으로</button>
+          </div>
+        </div>
+      )
+    } else if (mode === "voca_2022_type_2"){
+      return(
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading subpageHeading">타임어택 챌린지</h2>
+            <p>랜덤 퀴즈 30개를 푸는 데 몇 초나 걸릴까요?</p>
+            <button className="submitButton"
+              onClick={
+                function(e){
+                    setMode("voca_2022")
+                }
+              }
+            >이전으로</button>
+          </div>
+        </div>
+      )
     }
   }
 
   const drawMain = () => {
+    let soon = <div className="singleProjectContainer">
+      <div className="singleProjectCard citation">
+        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/books/covers/soon.jpg"  alt="projectimage"/>
+        <div className="projectText">
+          <h5>Coming Soon</h5>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              Last Update on ????.??.??.
+            </p>
+            <p className="bookDescription">
+              Coning Soon....
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     let project1 = <div className="singleProjectContainer">
       <div className="singleProjectCard citation" 
         onClick={
           function(e){
-              setMode("voca_2022")
-              setTitle("AI 족집게 수능영단어")
+            setMode("voca_2022")
+            setTitle("AI 족집게 수능영단어")
+            axios.get("https://raw.githubusercontent.com/needleworm/ai_voca/main/src/jsonData/2022_voca.json")
+              .then(data => {
+                  setWord_data(data.data)
+                }
+              )
           }
         }>
         <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/1.jpg"  alt="projectimage"/>
@@ -209,7 +238,7 @@ function Quizgen () {
             </p>
             <p className="bookDescription">
               AI가 족집게처럼 골라 준 단어만 공부하자!<br/>
-              오늘의 나는 몇 문제나 맞출 수 있을까? 조마조마한 단어 퀴즈 타임어택!<br/>
+              오늘은 몇 문제나 맞출 수 있을까? 조마조마한 단어 퀴즈 타임어택!<br/>
               책에 수록된 단어를 바탕으로 퀴즈 문제가 자동으로 생성됩니다.<br/>
               <strong>제공 모드</strong>: 1분의 벽, 타임어택 챌린지
             </p>
@@ -221,6 +250,7 @@ function Quizgen () {
     return(
       <div className="codeContainer">
         {project1}
+        {soon}
       </div>
     )
   }
@@ -251,28 +281,26 @@ function Quizgen () {
 
 
   const draw_voca_2022 = () => {
-    const dataUrl = "https://raw.githubusercontent.com/needleworm/ai_voca/main/src/jsonData/2022_voca.json"
-
     let typeSelector = <div className="selectorForTestGen">
       <strong className="col-lg-12 text-center">퀴즈 유형을 선택해주세요</strong><br/><br/>
       <div className="testTypeSelector1">
-        <div className="text-center checkOptions" 
+        <div className="text-center checkOptions citation" 
             onClick={
               function(e){
-                setSelect_Mode("type_1")
+                setMode("voca_2022_type_1")
               }
           }>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_1.jpg" alt="quiz_type 1"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/student_menu/type_1.jpg" alt="quiz_type 1"/>
           <span>1분의 벽</span>
         </div>
 
-        <div className="text-center checkOptions"
+        <div className="text-center checkOptions citation"
             onClick={
               function(e){
-                setSelect_Mode("type_2")
+                setMode("voca_2022_type_2")
               }
           }>
-          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_2.jpg" alt="quiz_type 2"/>
+          <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/student_menu/type_2.jpg" alt="quiz_type 2"/>
           <span>타임어택 챌린지</span>
         </div>
       </div>

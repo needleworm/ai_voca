@@ -6,12 +6,6 @@ import Modal from 'react-modal';
 import LOGOFILE from "../images/logo.png";
 import ReactToPrint from "react-to-print";
 
-/*  
-  할 일
-  1. 단어장 json 만들어서 jsonData/ 폴더에 넣기
-  2. prepare_2022_voca_test 함수 만들기
-*/
-
 Modal.setAppElement('#root')
 
 const hashCode = (s: string) => {
@@ -194,6 +188,23 @@ function Quizgen () {
   }
 
   const drawMain = () => {
+    let soon = <div className="singleProjectContainer">
+      <div className="singleProjectCard citation">
+        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/books/covers/soon.jpg"  alt="projectimage"/>
+        <div className="projectText">
+          <h5>Coming Soon</h5>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              Last Update on ????.??.??.
+            </p>
+            <p className="bookDescription">
+              Coning Soon....
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     let project1 = <div className="singleProjectContainer">
       <div className="singleProjectCard citation" 
         onClick={
@@ -222,6 +233,7 @@ function Quizgen () {
     return(
       <div className="codeContainer">
         {project1}
+        {soon}
       </div>
     )
   }
