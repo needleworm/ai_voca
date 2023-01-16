@@ -208,7 +208,7 @@ function Quizgen () {
           <h5>AI족집게 수능영단어</h5>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              Last Update on 2022.12.14.
+              Last Update on 2023.01.16.
             </p>
             <p className="bookDescription">
               AI족집게 수능영단어 도서에 수록된 단어들을 바탕으로 단어시험을 자동으로 생성하는 메뉴입니다.<br/>

@@ -151,7 +151,7 @@ function App() {
           }
         }
       >
-        <i className="fa-solid fa-pencil"></i>&nbsp;AI 수능영단어 퀴즈
+        <i className="fa-solid fa-pencil"></i>&nbsp;매일매일 Quiz Quiz!
       </a>
     </li>
 

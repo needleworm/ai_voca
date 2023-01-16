@@ -78,14 +78,13 @@
 }
 
 .singleProjectCard {
-    padding-left:5px;
-    padding-right:5px;
-    padding-top:5px;
-    padding-bottom:5px;
-    border: solid;
-    border-color: gray;
-    border-width: 0.1px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
     border-radius:10px;
+    box-shadow:1px 1px 1px 1px;
+
 }
 
 .getSerial{
