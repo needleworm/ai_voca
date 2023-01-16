@@ -264,7 +264,7 @@ function App() {
               <div className="navigation-wrapper">
                 <nav className="cover-navigation navigation--social">
                   <ul className="navigation">
-                    {selftest}
+                    {/*selftest*/}
                     {quizgen}
                     {books}
                     {papers}
