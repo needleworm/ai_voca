@@ -203,7 +203,7 @@ function Quizgen () {
               setTitle("수능 영단어 퀴즈")
           }
         }>
-        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg"  alt="projectimage"/>
+        <img className="projectImage" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/1.png"  alt="projectimage"/>
         <div className="projectText">
           <h5>AI족집게 수능영단어</h5>
           <div className="codeBody">
