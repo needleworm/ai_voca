@@ -1,4 +1,4 @@
-import React, { useState, useRef} from 'react';
+import React, { useState } from 'react';
 import './selfTest.css';
 import axios from 'axios';
 import { TextField, MenuItem } from "@mui/material"
@@ -58,6 +58,7 @@ function SelfTest () {
   const [countDown_Ready, setCountDown_Ready] = useState(false) //false
   const [countDown_60s, setCountDown_60s] = useState(false) //false
   const [showResult, setShowResult] = useState(false) //false
+  const [numCorrectAnswer, setNumCorrectAnswer] = useState(0) // numQ 
   
 
   const closeModal = () => {
