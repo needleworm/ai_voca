@@ -364,11 +364,11 @@
         "word": "material",
         "meaning": "물질적인",
         "sentence": [
-            "Being assertive does not have to",
-            "being disagreeable."
+            " ",
+            "wealth does not necessarily generate meaning or lead to emotional wealth."
         ],
         "translation": "물질적 부가 반드시 의미를 창출하거나 정신적인 부로 이어지는 것은 아닙 니다.",
-        "appearance": "mean"
+        "appearance": "material"
     },
     "38": {
         "word": "expect",
@@ -428,7 +428,7 @@
             "connections with relatively low use are weakend,"
         ],
         "translation": "상대적으로 사용율이 낮은 연결체들은 약화되는 반면에",
-        "appearance": "ran"
+        "appearance": "while"
     },
     "40": {
         "word": "drive",
@@ -464,21 +464,21 @@
         "word": "scientific",
         "meaning": "과학적인, 체계적인",
         "sentence": [
-            "You should",
-            "it with others."
+            " ",
+            "evidence must be obtained."
         ],
         "translation": "과학적인 증거가 반드시 필요해요.",
-        "appearance": "share"
+        "appearance": "scientific"
     },
     "49": {
         "word": "nature",
         "meaning": "본성, 자연, 본질",
         "sentence": [
-            "You should",
-            "it with others."
+            "Musical sounds can be distinguished from those of",
+            " ."
         ],
         "translation": "음악소리는 자연의 소리와 구분됩니다.",
-        "appearance": "share"
+        "appearance": "nature"
     },
     "45": {
         "word": "influence",
@@ -654,11 +654,11 @@
         "word": "measure",
         "meaning": "조치, 측정하다, 판단하다",
         "sentence": [
-            "In many ways, I’ve",
-            "my life after that of my grandpa."
+            "Figures A and B demonstrate how dew point is",
+            "by a dew point hygrometer."
         ],
-        "translation": "나는 여러면에서 할아버지의 삶을 모델로 삼았습니다.",
-        "appearance": "modeled"
+        "translation": "그림 A와 B는 이슬점이 이슬점 습도계에 의해 어떻게 측정되는지를 보여줍니다.",
+        "appearance": "measured"
     },
     "67": {
         "word": "cost",
@@ -908,7 +908,7 @@
             "in which the children feel comfortable and safe"
         ],
         "translation": "아이들이 편안하고 안전하다고 느끼는 환경",
-        "appearance": "probably"
+        "appearance": "environment"
     },
     "92": {
         "word": "control",
@@ -974,11 +974,11 @@
         "word": "either",
         "meaning": "~나 (둘 중 하나)",
         "sentence": [
-            "Our brains did not have enough time to",
-            "for them."
+            " ",
+            "my wife or I will call you back as soon as we can."
         ],
         "translation": "아내 또는 제가 최대한 빨리 다시 전화드리겠습니다.",
-        "appearance": "evolve"
+        "appearance": "either"
     },
     "99": {
         "word": "decrease",
@@ -994,11 +994,11 @@
         "word": "avoid",
         "meaning": "피하다",
         "sentence": [
-            "Eating fruit peel can also help to",
-            "the amount of food waste."
+            "Some environmental contaimants are difficult to",
+            " ."
         ],
         "translation": "일부 환경 오염 물질은 피하기가 어렵습니다.",
-        "appearance": "decrease"
+        "appearance": "avoid"
     },
     "105": {
         "word": "mind",
@@ -1364,11 +1364,11 @@
         "word": "benefit",
         "meaning": "이득을 보다, 도움이 되다",
         "sentence": [
-            "The only thing students should be required to do is to study a",
-            "range of subjects."
+            "Even old information can",
+            "all of us."
         ],
-        "translation": "학생들에게 유일하게 요구되는 일은 넓은 범위의 과목을 공부하는 것입니 다.",
-        "appearance": "broad"
+        "translation": "오래된 정보조차도 우리 모두에게 도움이 될 수 있습니다.",
+        "appearance": "benefit"
     },
     "138": {
         "word": "win",
