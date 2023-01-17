@@ -2614,11 +2614,11 @@
         "word": "loud",
         "meaning": "시끄러운",
         "sentence": [
-            "This chaos only gets processed and",
-            "when perceived by a human mind."
+            "The noise of barking and yelling from the park at night is so",
+            " ."
         ],
         "translation": "밤에 공원에서 짖고 고함치는 소리가 너무 시끄러워요.",
-        "appearance": "modified"
+        "appearance": "loud"
     },
     "263": {
         "word": "lecture",
@@ -2754,21 +2754,21 @@
         "word": "encounter",
         "meaning": "맞닥뜨리다",
         "sentence": [
-            "Some discoveries seem to",
-            "numerous phases and discoverers."
+            "Competent child",
+            "what seem like insurmountable problem in living."
         ],
-        "translation": "일부 발견은 수많은 단계와 발견한 사람들을 수반하는 것 같습니다.",
+        "translation": "유능한 어린이는 살면서 극복할 수 없는 문제처럼 보이는 것을 맞닥뜨립니다.",
         "appearance": "entail"
     },
     "277": {
         "word": "emphasize",
         "meaning": "강조하다",
         "sentence": [
-            "Some discoveries seem to",
-            "numerous phases and discoverers."
+            "Others",
+            "creative usage of a database."
         ],
-        "translation": "일부 발견은 수많은 단계와 발견한 사람들을 수반하는 것 같습니다.",
-        "appearance": "entail"
+        "translation": "다른 사람들은 데이터베이스의 창의적인 사용을 강조합니다.",
+        "appearance": "emphasize"
     },
     "278": {
         "word": "else",
@@ -2824,11 +2824,11 @@
         "word": "distinguish",
         "meaning": "구별하다",
         "sentence": [
-            "Its metabolism shifts as it either prepares to",
-            "or matures."
+            "Musical sounds can be",
+            "from those of nature."
         ],
-        "translation": "세포가 분열하거나 자라는 것을 준비함에 따라 물질대사가 전환됩니다.",
-        "appearance": "divide"
+        "translation": "음악소리는 자연의 소리와 구분됩니다.",
+        "appearance": "distinguish"
     },
     "283": {
         "word": "distinct",
@@ -3024,11 +3024,11 @@
         "word": "strict",
         "meaning": "엄격한",
         "sentence": [
-            "Experimenters",
-            "adjusted their results to match what they expected to find."
+            " ",
+            "regulations are in place to ensure that fish pens are placed in sites."
         ],
         "translation": "양식장이 현장에 배치되도록 하기 위해 더 엄격한 규정이 마련되었습니다.",
-        "appearance": "subconsciously"
+        "appearance": "stricter"
     },
     "304": {
         "word": "shift",
@@ -3154,21 +3154,21 @@
         "word": "disapprove",
         "meaning": "찬성하지 않다",
         "sentence": [
-            "Expertise is",
-            "specific."
+            "The person will tend to",
+            "of others whose behavior conflicts with it."
         ],
-        "translation": "전문성은 특정 분야에만 국한됩니다.",
-        "appearance": "domain"
+        "translation": "그 사람은 행동이 상충되는 다른 사람들을 찬성하지 않는 경향이 있을 것입니다.",
+        "appearance": "disapprove"
     },
     "317": {
         "word": "critic",
         "meaning": "비평가",
         "sentence": [
-            "Expertise is",
-            "specific."
+            " ",
+            "and laypeople alike could obtain new music."
         ],
         "translation": "비평가나 비전문가들 모두 새로운 음악을 접할 수 있었습니다.",
-        "appearance": "domain"
+        "appearance": "critic"
     },
     "318": {
         "word": "comfortable",
@@ -3458,7 +3458,7 @@
             "."
         ],
         "translation": "데이터는 효율적이게도 무한한 양만큼 저장될 수 있습니다.",
-        "appearance": "recent"
+        "appearance": "quantity"
     },
     "347": {
         "word": "publish",
@@ -3502,13 +3502,13 @@
     },
     "355": {
         "word": "incorporate",
-        "meaning": "포함하다",
+        "meaning": "포함하다, 회사를 설립하다",
         "sentence": [
-            "The creativity that children",
-            "needs to be cultivated."
+            "You must truly own this idea and",
+            "it into your daily life."
         ],
-        "translation": "아이들이 가진 창의성을 계발해야합니다.",
-        "appearance": "possess"
+        "translation": "당신은 진정으로 이 생각을 가지고 그것을 당신의 일상생활에 포함시켜야 합니다.",
+        "appearance": "incorporate"
     },
     "351": {
         "word": "painful",
@@ -3528,7 +3528,7 @@
             "of common foods"
         ],
         "translation": "흔한 음식들의 뜻밖의 기원들",
-        "appearance": "painful"
+        "appearance": "origins"
     },
     "353": {
         "word": "movement",
