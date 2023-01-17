@@ -260,6 +260,7 @@ function SelfTest () {
           generate_quiz_set()
           setCountDown_Ready(true)
           closeModal()
+          setCurrentIdx(1)
         }
       }
     >시작!</button>
@@ -755,9 +756,9 @@ function SelfTest () {
 
     const data2 = {
       labels: [
+        '문장 완성', 
         '단어 찾기', 
         '의미 찾기',
-        '문장 완성', 
       ],
       datasets: [
         {
@@ -809,6 +810,7 @@ function SelfTest () {
           setQuizStart(true)
           generate_quiz_set()
           setCountDown_Ready(true)
+          setCurrentIdx(1)
         }
       }
     >Quick Start!</button>
@@ -937,6 +939,7 @@ function SelfTest () {
           setQuizStart(true)
           generate_quiz_set()
           setCountDown_Ready(true)
+          setCurrentIdx(1)
         }
       }
     >Quick Start!</button>

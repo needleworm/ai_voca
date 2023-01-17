@@ -265,9 +265,9 @@
         "meaning": "공공의, 대중의, 대중",
         "sentence": [
             "Societal action, such as",
-            "awareness 공공의 인식과 같은 사회적 움직임"
+            "awareness."
         ],
-        "translation": "2. 대중 2004년 수능",
+        "translation": "공공의 인식과 같은 사회적 움직임",
         "appearance": "public"
     },
     "28": {
@@ -424,10 +424,10 @@
         "word": "while",
         "meaning": "~하는 동안, ~이지만, ~하는 반면에,",
         "sentence": [
-            "Sean",
-            "to the kitchen right away."
+            " ",
+            "connections with relatively low use are weakend,"
         ],
-        "translation": "상대적으로 사용율이 낮은 연결체들은 약화되는 반면에, 수능 55회",
+        "translation": "상대적으로 사용율이 낮은 연결체들은 약화되는 반면에",
         "appearance": "ran"
     },
     "40": {
@@ -904,10 +904,10 @@
         "word": "environment",
         "meaning": "환경",
         "sentence": [
-            "If you’re late, you’ll",
-            "experience feelings of dissatisfaction."
+            " ",
+            "in which the children feel comfortable and safe"
         ],
-        "translation": "아이들이 편안하고 안전하다고 느끼는 환경 수능 32회",
+        "translation": "아이들이 편안하고 안전하다고 느끼는 환경",
         "appearance": "probably"
     },
     "92": {
@@ -1065,9 +1065,9 @@
         "meaning": "전시, 전시하다, 보여주다",
         "sentence": [
             "Different patients that",
-            "similar symptoms 비슷한 증상을 보이는 다른 환자"
+            "similar symptoms."
         ],
-        "translation": "수능 17회 평가원 10회",
+        "translation": "비슷한 증상을 보이는 다른 환자",
         "appearance": "display"
     },
     "108": {
@@ -1495,9 +1495,9 @@
         "meaning": "초기의, 원시적인",
         "sentence": [
             "The",
-            "child who learns from his surroundings 주변 환경으로부터 배우는 원시 사회의 어린이"
+            "child who learns from his surroundings"
         ],
-        "translation": "수능 9회 평가원 6회",
+        "translation": "주변 환경으로부터 배우는 원시 사회의 어린이",
         "appearance": "primitive"
     },
     "151": {
@@ -1885,9 +1885,9 @@
         "meaning": "요인",
         "sentence": [
             "The crucial",
-            "in the success 성공의 중요한 요인"
+            "in the success"
         ],
-        "translation": "수능 24회 평가원 22회",
+        "translation": "성공의 중요한 요인",
         "appearance": "factor"
     },
     "190": {
@@ -2127,7 +2127,7 @@
             "With time it is possible to",
             "a stained reputation."
         ],
-        "translation": "시간만 있다면 더러워진 명성을 복구할 수 있습니다. 수능 15회 평가원 14회",
+        "translation": "시간만 있다면 더러워진 명성을 복구할 수 있습니다.",
         "appearance": "repair"
     },
     "214": {
@@ -2414,10 +2414,10 @@
         "word": "whereas",
         "meaning": "반면에",
         "sentence": [
-            "Scientists can avoid the restrictions",
-            "with experimenting on other people."
+            " ",
+            "early jazz mainly relied on live performance,"
         ],
-        "translation": "초기 재즈는 라이브 연주에 의존했던 반면에, 수능 8회",
+        "translation": "초기 재즈는 라이브 연주에 의존했던 반면에,",
         "appearance": "associated"
     },
     "243": {
@@ -2474,10 +2474,10 @@
         "word": "subjective",
         "meaning": "주관적인",
         "sentence": [
-            "At that moment, a",
-            "inspiration took hold."
+            " ",
+            "interpretation."
         ],
-        "translation": "수능 5회 평가원 4회",
+        "translation": "주관적인 해석",
         "appearance": "sudden"
     },
     "249": {
@@ -2795,9 +2795,9 @@
         "meaning": "생태계의",
         "sentence": [
             "Laws based upon",
-            "relationships 생태학적 관계에 근거한 법률"
+            "relationships."
         ],
-        "translation": "수능 3회 평가원 9회",
+        "translation": "생태학적 관계에 근거한 법률",
         "appearance": "ecological"
     },
     "285": {
@@ -2837,7 +2837,7 @@
             "While design and styling are interrelated, they are completely",
             "fields."
         ],
-        "translation": "디자인과 스타일은 서로 관련되어 있지만 완전히 별개의 영역입니다. 수능 9회 평가원 4회",
+        "translation": "디자인과 스타일은 서로 관련되어 있지만 완전히 별개의 영역입니다.",
         "appearance": "distinct"
     },
     "284": {
@@ -2877,7 +2877,7 @@
             "The approach most",
             "with culturally responsive teaching"
         ],
-        "translation": "문화적으로 반응하는 가르침과 가장 일관성있는 접근법 수능 7회",
+        "translation": "문화적으로 반응하는 가르침과 가장 일관성있는 접근법",
         "appearance": "consistent"
     },
     "289": {
@@ -3445,19 +3445,19 @@
         "meaning": "최근의",
         "sentence": [
             "A",
-            "study 최근 연구"
+            "study"
         ],
-        "translation": "수능 10회 평가원 24회",
+        "translation": "최근 연구",
         "appearance": "recent"
     },
     "346": {
         "word": "quantity",
         "meaning": "양",
         "sentence": [
-            "A",
-            "study 최근 연구"
+            "Data can be stored in effectively unlimited",
+            "."
         ],
-        "translation": "데이터가 효과적으로 무한한 양만큼 저장될 수 있습니다.",
+        "translation": "데이터는 효율적이게도 무한한 양만큼 저장될 수 있습니다.",
         "appearance": "recent"
     },
     "347": {
@@ -3522,12 +3522,12 @@
     },
     "352": {
         "word": "origin",
-        "meaning": "근원, 기원, 근본, 출신, 원형, 유래",
+        "meaning": "기원, 근본, 출신, 원형",
         "sentence": [
-            "Clothes can evoke both cherished and",
-            "memories."
+            "Unexpected",
+            "of common foods"
         ],
-        "translation": "수능 5회 평가원 6회",
+        "translation": "흔한 음식들의 뜻밖의 기원들",
         "appearance": "painful"
     },
     "353": {
@@ -3757,7 +3757,7 @@
             "Many do not blame tourism for",
             "problems."
         ],
-        "translation": "많은 사람들이 관광 산업을 교통 문제의 원인으로 지적하지 않습니다. 수능 5회 평가원 11회",
+        "translation": "많은 사람들이 관광 산업을 교통 문제의 원인으로 지적하지 않습니다.",
         "appearance": "traffic"
     },
     "377": {
@@ -4047,7 +4047,7 @@
             "When material wealth is",
             "to the position of the ultimate end,"
         ],
-        "translation": "물질적 부가 궁극적인 목표의 자리로 올라갈 때, 수능 3회",
+        "translation": "물질적 부가 궁극적인 목표의 자리로 올라갈 때,",
         "appearance": "elevated"
     },
     "406": {
@@ -4085,9 +4085,9 @@
         "meaning": "정확도",
         "sentence": [
             "The examination of the",
-            "of information 정보의 정확도를 분석하는 것"
+            "of information"
         ],
-        "translation": "수능 6회 평가원 6회",
+        "translation": "정보의 정확도를 분석하는 것",
         "appearance": "accuracy"
     },
     "410": {
@@ -4335,9 +4335,9 @@
         "meaning": "심각한, 진지한",
         "sentence": [
             "A",
-            "illness 심각한 질병"
+            "illness"
         ],
-        "translation": "수능 5회 평가원 20회",
+        "translation": "심각한 질병",
         "appearance": "serious"
     },
     "435": {
@@ -4455,9 +4455,9 @@
         "meaning": "부유한",
         "sentence": [
             "Many commissions from",
-            "patrons 부유한 후원자들로부터의 많은 지원금"
+            "patrons"
         ],
-        "translation": "수능 3회 평가원 6회",
+        "translation": "부유한 후원자들로부터의 많은 지원금",
         "appearance": "wealthy"
     },
     "447": {
