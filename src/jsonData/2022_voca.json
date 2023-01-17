@@ -1854,11 +1854,11 @@
         "word": "invite",
         "meaning": "초대하다",
         "sentence": [
-            "Performance must be",
-            "in terms of what is under the control of the individuals."
+            "It was nice of you to",
+            "my co-workers."
         ],
         "translation": "실적은 개인의 통제 하에 있는 범위 안에서 판단되어야 합니다.",
-        "appearance": "judged"
+        "appearance": "invite"
     },
     "187": {
         "word": "instead",
@@ -2334,11 +2334,11 @@
         "word": "integrate",
         "meaning": "통합시키다",
         "sentence": [
-            "The program has always been very popular among",
-            "students."
+            "The new generations of mobile telephone are fully digitalized and integrated.",
+            " ."
         ],
         "translation": "새로운 세대의 휴대전화는 완전히 디지털화되고 통합되었습니다.",
-        "appearance": "international"
+        "appearance": "integrated"
     },
     "234": {
         "word": "infer",
@@ -2374,11 +2374,11 @@
         "word": "communicate",
         "meaning": "소통하다, 전달하다",
         "sentence": [
-            "The French government was reluctant to shoulder the",
-            "burden."
+            "This would give us the chance to find information quickly and",
+            "with others."
         ],
-        "translation": "프랑스 정부는 재정적 부담을 지는 것을 꺼렸다.",
-        "appearance": "financial"
+        "translation": "이건 우리에게 정보를 빠르게 찾거나 다른 사람과 소통할 기회를 줄 것입니다.",
+        "appearance": "communicate"
     },
     "240": {
         "word": "claim",
@@ -2394,11 +2394,11 @@
         "word": "concentrate",
         "meaning": "집중하다",
         "sentence": [
-            "Some people",
-            "that the precise frequencies affect the overall sound of a musical piece."
+            "Earyl, small communities had to",
+            "all their physical and mental effort on survival."
         ],
-        "translation": "몇몇 사람들은 특정 주파수가 음악의 전체적인 소리에 영향을 끼친다고 주 장합니다.",
-        "appearance": "claim"
+        "translation": "초기에 소규모 공동체는 생존을 위해 모든 물리적, 정신적 노력을 집중해야 했습니다..",
+        "appearance": "concentrate"
     },
     "241": {
         "word": "associate",
@@ -2418,27 +2418,27 @@
             "early jazz mainly relied on live performance,"
         ],
         "translation": "초기 재즈는 라이브 연주에 의존했던 반면에,",
-        "appearance": "associated"
+        "appearance": "whereas"
     },
     "243": {
         "word": "unit",
         "meaning": "구성 단위",
         "sentence": [
-            "Scientists can avoid the restrictions",
-            "with experimenting on other people."
+            "Many major companies are changing their business models by focusing on profitable",
+            " ."
         ],
         "translation": "많은 주요 기업이 수익성 있는 단위를 중심으로 사업 모델을 변경하고 있습 니다.",
-        "appearance": "associated"
+        "appearance": "units"
     },
     "244": {
         "word": "transform",
         "meaning": "변형시키다",
         "sentence": [
-            "Scientists can avoid the restrictions",
-            "with experimenting on other people."
+            " ",
+            "film into a mere delivery device for representations of reality."
         ],
-        "translation": "많은 주요 기업이 수익성 있는 단위를 중심으로 사업 모델을 변경하고 있습 니다.",
-        "appearance": "associated"
+        "translation": "영화를 현실의 표현을 위한 단순한 전달 장치로 변형시키는 것.",
+        "appearance": "transforming"
     },
     "245": {
         "word": "sustainable",
@@ -2454,11 +2454,11 @@
         "word": "suit",
         "meaning": "어울리다, 정장",
         "sentence": [
-            "In order to ensure",
-            "business performance."
+            "It's worthwhile to spend money on my",
+            " ."
         ],
         "translation": "내 정장에는 돈을 들일 가치가 있습니다.",
-        "appearance": "sustainable"
+        "appearance": "suit"
     },
     "247": {
         "word": "sudden",
@@ -2478,7 +2478,7 @@
             "interpretation."
         ],
         "translation": "주관적인 해석",
-        "appearance": "sudden"
+        "appearance": "subjective"
     },
     "249": {
         "word": "structural",
@@ -2594,11 +2594,11 @@
         "word": "monitor",
         "meaning": "감시하다",
         "sentence": [
-            "I was charmed by the",
-            "birds moving among the branches."
+            "We expect people to",
+            "machines."
         ],
-        "translation": "나는 가지 사이에서 움직이는 토종 새들에 매료되었습니다.",
-        "appearance": "native"
+        "translation": "우리는 사람들이 기계를 감시할 것으로 기대합니다.",
+        "appearance": "monitor"
     },
     "261": {
         "word": "modify",
