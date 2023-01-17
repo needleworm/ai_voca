@@ -27,7 +27,7 @@
      "density": "2.0"
     }
   ],
-  "start_url": "./",
+  "start_url": "/ai_voca",
   "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
