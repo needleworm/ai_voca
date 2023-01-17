@@ -167,7 +167,7 @@
             "The servicing of the washing machine",
             "to us three months ago."
         ],
-        "translation": "3개월 전 우리에게 제공되던 세탁기 서비스 수능 21회",
+        "translation": "3개월 전 우리에게 제공되던 세탁기 서비스",
         "appearance": "supplied"
     },
     "18": {
@@ -2047,7 +2047,7 @@
             "Now you see how your",
             "body can be used in the activity of drawing."
         ],
-        "translation": "이제 당신의 몸 전체를 어떻게 그림 그리기에 사용하는지 알 것입니다. 수능 18회 평가원 26회",
+        "translation": "이제 당신의 몸 전체를 어떻게 그림 그리기에 사용하는지 알 것입니다.",
         "appearance": "entire"
     },
     "206": {
@@ -3467,7 +3467,7 @@
             "A 10% discount on books",
             "by the Foundation."
         ],
-        "translation": "그 재단에서 출판된 책들에 대한 10% 할인 수능 8회",
+        "translation": "그 재단에서 출판된 책들에 대한 10% 할인",
         "appearance": "published"
     },
     "348": {
@@ -4145,9 +4145,9 @@
         "meaning": "전염되는",
         "sentence": [
             "A strain of",
-            "bacteria 전염성 박테리아의 변종"
+            "bacteria"
         ],
-        "translation": "수능 3회 평가원 3회",
+        "translation": "전염성 박테리아의 변종",
         "appearance": "infectious"
     },
     "416": {
@@ -4425,9 +4425,9 @@
         "meaning": "직장, 일터",
         "sentence": [
             "What we can do in the",
-            "우리가 직장에서 할 수 있는 일"
+            " "
         ],
-        "translation": "수능 2회 평가원 12회",
+        "translation": "우리가 직장에서 할 수 있는 일",
         "appearance": "workplace"
     },
     "444": {
@@ -4627,7 +4627,7 @@
             "Felix could concentrate on the lesson, at least",
             "Sean came back."
         ],
-        "translation": "우리는 잘 생긴 사람들에게 호의적인 특성을 저절로 부여한다. 수능 3회 평가원 13회",
+        "translation": "우리는 잘 생긴 사람들에게 호의적인 특성을 저절로 부여한다.",
         "appearance": "till"
     },
     "463": {
@@ -4675,9 +4675,9 @@
         "meaning": "두드리다, 이용하다, 접근하다",
         "sentence": [
             "Measures that",
-            "into what people are thinking 사람들이 생각하는 것을 접근하는 수단"
+            "into what people are thinking"
         ],
-        "translation": "2. 수도꼭지, 밸브 수능 2회",
+        "translation": "사람들이 생각하는 것에 접근하는 수단",
         "appearance": "tap"
     },
     "469": {
@@ -4754,11 +4754,11 @@
         "word": "starve",
         "meaning": "굶주리다",
         "sentence": [
-            "The disabling neurological symptoms were",
-            "called Minamata disease."
+            " ",
+            "children"
         ],
-        "translation": "수능 2회 평가원 3회",
-        "appearance": "subsequently"
+        "translation": "굶주린 어린이들",
+        "appearance": "starving"
     },
     "477": {
         "word": "spot",
@@ -4847,7 +4847,7 @@
             "An Egyptian",
             "no bigger than a person’s hand"
         ],
-        "translation": "사람의 손보다 크지 않은 이집트 조각상 수능 4회",
+        "translation": "사람의 손보다 크지 않은 이집트 조각상",
         "appearance": "sculpture"
     },
     "486": {
@@ -4917,7 +4917,7 @@
             "The service",
             "in a manner that pleases them."
         ],
-        "translation": "그들을 기쁘게 할 수 있는 형태로 제공되는 서비스 수능 1회",
+        "translation": "그들을 기쁘게 할 수 있는 형태로 제공되는 서비스",
         "appearance": "rendered"
     },
     "493": {
@@ -5025,19 +5025,19 @@
         "meaning": "정제하다, 개선하다",
         "sentence": [
             "Establishing or",
-            "existing neural networks 기존의 신경망을 새로 구축하거나 개선하는 것"
+            "existing neural networks"
         ],
-        "translation": "수능 4회 평가원 4회",
+        "translation": "기존의 신경망을 새로 구축하거나 개선하는 것",
         "appearance": "refining"
     },
     "504": {
         "word": "reconstruct",
         "meaning": "재구성하다, 재구축하다",
         "sentence": [
-            "Establishing or",
-            "existing neural networks 기존의 신경망을 새로 구축하거나 개선하는 것"
+            "They are recalling indexes and",
+            "details."
         ],
-        "translation": "수능 4회 평가원 4회",
+        "translation": "그들은 색인을 불러와 세부 사항을 재구성하고 있습니다.",
         "appearance": "refining"
     },
     "505": {
@@ -5115,17 +5115,17 @@
         "meaning": "적절한, 올바른",
         "sentence": [
             "The",
-            "way of understanding a beast 짐승을 이해하는 올바른 방법"
+            "way of understanding a beast"
         ],
-        "translation": "수능 8회 평가원 16회",
+        "translation": "짐승을 이해하는 올바른 방법",
         "appearance": "proper"
     },
     "513": {
         "word": "profitable",
         "meaning": "수익성이 있는",
         "sentence": [
-            "The",
-            "way of understanding a beast 짐승을 이해하는 올바른 방법"
+            "Many major companies are changing their business models by focusing on",
+            "units."
         ],
         "translation": "많은 주요 기업들이 수익성 있는 단위를 중심으로 사업 모델을 변경하고 있 습니다.",
         "appearance": "proper"
@@ -5307,18 +5307,18 @@
             "Causing them to be",
             "toward the complexities"
         ],
-        "translation": "복잡성을 지향하도록 유도하는 것 수능 1회",
+        "translation": "복잡성을 지향하도록 유도하는 것",
         "appearance": "oriented"
     },
     "531": {
         "word": "overwhelm",
         "meaning": "압도하다",
         "sentence": [
-            "Causing them to be",
-            "toward the complexities"
+            "people feel an",
+            "need to fill it"
         ],
-        "translation": "복잡성을 지향하도록 유도하는 것 수능 1회",
-        "appearance": "oriented"
+        "translation": "사람들은 이를 채울 압도적인 필요성을 느낍니다.",
+        "appearance": "overwhelming"
     },
     "532": {
         "word": "overtake",
@@ -5355,9 +5355,9 @@
         "meaning": "조직의",
         "sentence": [
             "The greater need to solve",
-            "problems 조직적인 문제들을 해결하려는 더 큰 수요"
+            "problems."
         ],
-        "translation": "수능 3회 평가원 3회",
+        "translation": "조직적인 문제들을 해결하려는 더 큰 수요.",
         "appearance": "organizational"
     },
     "537": {
@@ -5625,9 +5625,9 @@
         "meaning": "내면화하다",
         "sentence": [
             "Cultural norms that are",
-            "내재화 된 문화적 규범"
+            " "
         ],
-        "translation": "수능 1회 평가원 2회",
+        "translation": "내재화 된 문화적 규범",
         "appearance": "internalized"
     },
     "564": {
@@ -5684,11 +5684,11 @@
         "word": "innovative",
         "meaning": "혁신적인",
         "sentence": [
-            "Others’ creations often spark",
-            "that also leads to new ideas and innovation."
+            " ",
+            "process"
         ],
-        "translation": "수능 1회 평가원 3회",
-        "appearance": "inspiration"
+        "translation": "혁신적인 프로세스",
+        "appearance": "innovative"
     },
     "570": {
         "word": "initial",
@@ -5817,7 +5817,7 @@
             "Any social signal that indicates",
             "behavior"
         ],
-        "translation": "부적절한 행동을 의미하는 어떤 사회적 신호 수능 2회",
+        "translation": "부적절한 행동을 의미하는 어떤 사회적 신호",
         "appearance": "inappropriate"
     },
     "582": {
@@ -6484,11 +6484,11 @@
         "word": "corporate",
         "meaning": "기업의, 공동의",
         "sentence": [
-            "No wonder you’re",
-            "about your test results."
+            " ",
+            "social responsibility"
         ],
-        "translation": "수능 1회 평가원 5회",
-        "appearance": "curious"
+        "translation": "기업의 사회적 책임",
+        "appearance": "corporate"
     },
     "650": {
         "word": "cooperation",
@@ -6517,7 +6517,7 @@
             "An attempt to",
             "a subjective view on the world"
         ],
-        "translation": "세계에 대한 주관적인 견해를 전달하려는 시도 수능 4회",
+        "translation": "세계에 대한 주관적인 견해를 전달하려는 시도",
         "appearance": "convey"
     },
     "652": {
@@ -6614,10 +6614,10 @@
         "word": "component",
         "meaning": "요소",
         "sentence": [
-            "The critics",
-            "that classical music is no longer popular."
+            " ",
+            "of a task"
         ],
-        "translation": "수능 4회 평가원 11회",
+        "translation": "작업의 구성 요소들",
         "appearance": "conclude"
     },
     "663": {
@@ -6637,7 +6637,7 @@
             "The production of electronic merchandise in 2004 in",
             "with that of 2001"
         ],
-        "translation": "2001년 대비 2004년의 전자 제품 생산량 수능 3회",
+        "translation": "2001년 대비 2004년의 전자 제품 생산량",
         "appearance": "comparison"
     },
     "665": {
@@ -6747,7 +6747,7 @@
             "Laws or generalizations that are",
             "of subsuming all observable phenomena"
         ],
-        "translation": "모든 관측 가능한 현상을 포괄할 수 있는 법칙이나 일반화 수능 4회",
+        "translation": "모든 관측 가능한 현상을 포괄할 수 있는 법칙이나 일반화",
         "appearance": "capable"
     },
     "676": {
@@ -6835,9 +6835,9 @@
         "meaning": "인공의, 인위적인",
         "sentence": [
             "The greatest benefit of",
-            "intelligence 인공 지능의 가장 큰 이점"
+            "intelligence"
         ],
-        "translation": "수능 2회 평가원 8회",
+        "translation": "인공 지능의 가장 큰 이점",
         "appearance": "artificial"
     },
     "685": {
@@ -7134,11 +7134,11 @@
         "word": "simple",
         "meaning": "간단한",
         "sentence": [
-            "It makes me",
-            "of jazz guitarists."
+            " ",
+            "facts"
         ],
-        "translation": "수능 43회 평가원 81회",
-        "appearance": "think"
+        "translation": "간단한 사실들",
+        "appearance": "simple"
     },
     "715": {
         "word": "result",
@@ -7777,9 +7777,9 @@
         "meaning": "특별한",
         "sentence": [
             "Invitations to",
-            "lectures on natural history 자연사에 대한 특별한 강의로의 초대"
+            "lectures on natural history"
         ],
-        "translation": "수능 24회 평가원 38회",
+        "translation": "자연사에 대한 특강으로의 초대",
         "appearance": "special"
     },
     "779": {
@@ -8109,7 +8109,7 @@
             "The",
             "between the producer and the consumer of information"
         ],
-        "translation": "정보 생산자와 소비자 사이의 관계 수능 10회",
+        "translation": "정보 생산자와 소비자 사이의 관계",
         "appearance": "relation"
     },
     "808": {
@@ -8416,11 +8416,11 @@
         "word": "equally",
         "meaning": "동일하게",
         "sentence": [
-            "We may",
-            "only one aspect of a current flow of information."
+            " ",
+            "important value"
         ],
-        "translation": "수능 8회 평가원 8회",
-        "appearance": "note"
+        "translation": "똑같이 중요한 가치",
+        "appearance": "equally"
     },
     "843": {
         "word": "appropriate",
@@ -8707,9 +8707,9 @@
         "meaning": "젖은",
         "sentence": [
             "The fact that the ground is",
-            "땅이 젖는다는 사실"
+            " "
         ],
-        "translation": "수능 3회 평가원 6회",
+        "translation": "땅이 축축하다는 사실",
         "appearance": "wet"
     },
     "872": {
@@ -8779,7 +8779,7 @@
             "Roles of parental",
             "in children’s social skills development"
         ],
-        "translation": "어린이의 사회적 기술 개발에서 부모의 권위의 역할 수능 10회",
+        "translation": "어린이의 사회적 기술 개발에서 부모의 권위의 역할",
         "appearance": "authority"
     },
     "879": {
@@ -8797,9 +8797,9 @@
         "meaning": "중립의",
         "sentence": [
             "An attempt to be",
-            "and objective 중립적이고 객관적이려는 시도"
+            "and objective"
         ],
-        "translation": "수능 6회 평가원 3회",
+        "translation": "중립적이고 객관적이려는 시도",
         "appearance": "neutral"
     },
     "880": {
@@ -8949,7 +8949,7 @@
             "A",
             "effort to accomplish something difficult and worthwhile"
         ],
-        "translation": "어렵고 가치있는 것을 성취하려는 자발적인 노력 수능 4회",
+        "translation": "어렵고 가치있는 것을 성취하려는 자발적인 노력",
         "appearance": "voluntary"
     },
     "896": {
@@ -9016,11 +9016,11 @@
         "word": "restrict",
         "meaning": "제한하다",
         "sentence": [
-            "Faster music causes people to drive at faster speeds with",
-            "repeated structures."
+            " ",
+            "the power of environmental lawmakers"
         ],
-        "translation": "수능 5회 평가원 13회",
-        "appearance": "ongoing"
+        "translation": "환경 관련 법안 입법자들의 권력을 제한하는 것",
+        "appearance": "restricting"
     },
     "903": {
         "word": "mark",
@@ -9089,7 +9089,7 @@
             "The",
             "of past discoveries according to present-day standards"
         ],
-        "translation": "현재의 척도로 과거의 발견을 평가하는 것 수능 3회",
+        "translation": "현재의 척도로 과거의 발견을 평가하는 것",
         "appearance": "evaluation"
     },
     "910": {
@@ -9117,9 +9117,9 @@
         "meaning": "인지하는",
         "sentence": [
             "Judgements without being",
-            "인지하지 못한 판단"
+            " "
         ],
-        "translation": "수능 6회 평가원 15회",
+        "translation": "인지하지 못한 판단",
         "appearance": "aware"
     },
     "913": {
@@ -9287,9 +9287,9 @@
         "meaning": "의학의, 의료의",
         "sentence": [
             "Gilbert, who had opened a",
-            "clinic last year 작년에 병원을 개원한 Gilbert"
+            "clinic last year"
         ],
-        "translation": "수능 16회 평가원 20회",
+        "translation": "작년에 병원을 개원한 Gilbert",
         "appearance": "medical"
     },
     "931": {
@@ -9327,9 +9327,9 @@
         "meaning": "가능성, 기회",
         "sentence": [
             "A",
-            "of hitting a home run 홈런을 칠 가능성"
+            "of hitting a home run"
         ],
-        "translation": "2. 기회 2005년 수능",
+        "translation": "홈런을 칠 가능성",
         "appearance": "chance"
     },
     "930": {
@@ -9379,7 +9379,7 @@
             "Practical uses of scientific knowledge that",
             "our world"
         ],
-        "translation": "우리 세상을 채우는 과학 지식의 실용적인 활용 수능 19회",
+        "translation": "우리 세상을 채우는 과학 지식의 실용적인 활용",
         "appearance": "fill"
     },
     "938": {
@@ -9516,11 +9516,11 @@
         "word": "massive",
         "meaning": "거대한, 대규모의",
         "sentence": [
-            "He started as a",
-            "photographer in 1959."
+            " ",
+            "investment"
         ],
-        "translation": "수능 8회 평가원 9회",
-        "appearance": "professional"
+        "translation": "대규모 투자",
+        "appearance": "massive"
     },
     "953": {
         "word": "describe",
@@ -9767,9 +9767,9 @@
         "meaning": "심리적인",
         "sentence": [
             "A",
-            "reason 심리적인 이유"
+            "reason"
         ],
-        "translation": "수능 4회 평가원 10회",
+        "translation": "심리적인 이유",
         "appearance": "psychological"
     },
     "979": {
@@ -9914,12 +9914,12 @@
     },
     "994": {
         "word": "conduct",
-        "meaning": "행동",
+        "meaning": "행동, 행동하다, 지휘하다",
         "sentence": [
             "A",
-            "of an organism 유기체의 행동"
+            "of an organism "
         ],
-        "translation": "2. 행동하다, 지휘하다 수능 5회",
+        "translation": "유기체의 행동",
         "appearance": "conduct"
     },
     "995": {
@@ -10037,9 +10037,9 @@
         "meaning": "즉각적인",
         "sentence": [
             "The aura of undeserved",
-            "credibility 과분한 즉각적인 신뢰 분위기"
+            "credibility "
         ],
-        "translation": "수능 6회 평가원 8회",
+        "translation": "과분한 즉각적인 신뢰 분위기",
         "appearance": "instant"
     },
     "1003": {
@@ -10067,9 +10067,9 @@
         "meaning": "결함",
         "sentence": [
             "A",
-            "in its products 제품의 결함"
+            "in its products"
         ],
-        "translation": "수능 4회 평가원 2회",
+        "translation": "제품의 결함",
         "appearance": "defect"
     },
     "1009": {
@@ -10127,9 +10127,9 @@
         "meaning": "기술의, 기술적인",
         "sentence": [
             "Some hope-for",
-            "solution 기대되는 몇 가지 기술적인 해결책"
+            "solution"
         ],
-        "translation": "수능 10회 평가원 9회",
+        "translation": "기대되는 몇 가지 기술적인 해결책",
         "appearance": "technological"
     },
     "1013": {
@@ -10269,7 +10269,7 @@
             "The",
             "amount of time required to copy a scroll or book by hand"
         ],
-        "translation": "두루말이나 책을 손으로 복사하는 데 걸리는 믿기지 않는 시간소요 수능 5회",
+        "translation": "두루말이나 책을 손으로 복사하는 데 걸리는 믿기지 않는 시간소요",
         "appearance": "incredible"
     },
     "1029": {
@@ -10289,7 +10289,7 @@
             "Separate perceptual",
             "due to differences in the quality of sound"
         ],
-        "translation": "음질의 차이로 인한 구분된 인지 정보의 흐름 수능 2회",
+        "translation": "음질의 차이로 인한 구분된 인지 정보의 흐름",
         "appearance": "streams"
     },
     "1027": {
@@ -10297,9 +10297,9 @@
         "meaning": "가게, 저장하다",
         "sentence": [
             "Memorizing and",
-            "a rich structured database 풍부하게 구조화된 데이터베이스를 암기하고 저장하는 것"
+            "a rich structured database"
         ],
-        "translation": "수능 19회 평가원 63회",
+        "translation": "풍부하게 구조화된 데이터베이스를 암기하고 저장하는 것",
         "appearance": "storing"
     },
     "1032": {
@@ -10356,11 +10356,11 @@
         "word": "destruction",
         "meaning": "파괴",
         "sentence": [
-            "I was shocked to find out that it could",
-            "something negative."
+            " ",
+            "of their natural habitats"
         ],
-        "translation": "수능 6회 평가원 5회",
-        "appearance": "imply"
+        "translation": "자연 서식지의 파괴",
+        "appearance": "destruction"
     },
     "1037": {
         "word": "desperate",
@@ -10507,11 +10507,11 @@
         "word": "tip",
         "meaning": "끝, 조언",
         "sentence": [
-            "At first, only men and women of the",
-            "classes wore it."
+            "Gardening",
+            "for planting flower"
         ],
-        "translation": "수능 3회 평가원 7회",
-        "appearance": "upper"
+        "translation": "꽃을 심기 위한 정원 관리 조언",
+        "appearance": "tips"
     },
     "1054": {
         "word": "tie",
@@ -10698,9 +10698,9 @@
         "meaning": "상급자, 졸업 학년, 마지막 학년 학생",
         "sentence": [
             "The end of their",
-            "year 졸업 학년의 마지막"
+            "year"
         ],
-        "translation": "수능 3회 평가원 5회",
+        "translation": "졸업 학년의 마지막",
         "appearance": "senior"
     },
     "1071": {
@@ -10748,9 +10748,9 @@
         "meaning": "혁명적인, 획기적인, 혁명가",
         "sentence": [
             "A new",
-            "nutrient 획기적인 새로운 영양소"
+            "nutrient"
         ],
-        "translation": "2. 혁명가 수능 2회",
+        "translation": "획기적인 새로운 영양소",
         "appearance": "revolutionary"
     },
     "1080": {
@@ -10955,12 +10955,12 @@
     },
     "1096": {
         "word": "pleasant",
-        "meaning": "기분 좋게 하는, 쾌적한, 즐겁게 하는, 예의 바른",
+        "meaning": "쾌적한, 즐겁게 하는, 예의 바른",
         "sentence": [
             "A",
-            "reminder 기꺼운 알림"
+            "reminder"
         ],
-        "translation": "2. 예의 바른 수능 3회",
+        "translation": "기꺼운 알림",
         "appearance": "pleasant"
     },
     "1097": {
@@ -11088,9 +11088,9 @@
         "meaning": "상표, 라벨, 딱지, 라벨을 붙이다",
         "sentence": [
             "A box",
-            "“This is where you belong.” “여기가 네가 있을 곳이야!”라는 딱지가 붙은 상자"
+            "“This is where you belong.”"
         ],
-        "translation": "수능 5회 평가원 7회",
+        "translation": "“여기가 네가 있을 곳이야!”라는 딱지가 붙은 상자",
         "appearance": "labeled"
     },
     "1110": {
@@ -11120,7 +11120,7 @@
             "The negative impact on local wildlife",
             "areas"
         ],
-        "translation": "토종 야생 동물이 거주하는 지역에 대한 부정적인 영향 수능 1회",
+        "translation": "토종 야생 동물이 거주하는 지역에 대한 부정적인 영향",
         "appearance": "inhabiting"
     },
     "1115": {
@@ -11130,7 +11130,7 @@
             "The salesperson who was",
             "to a potential customer’s needs"
         ],
-        "translation": "잠재적인 고객의 요구에 무관심한 영업 사원 수능 6회",
+        "translation": "잠재적인 고객의 요구에 무관심한 영업 사원",
         "appearance": "indifferent"
     },
     "1112": {
@@ -11150,7 +11150,7 @@
             "Our basic",
             "to sleep each day to recharge our physical batteries"
         ],
-        "translation": "신체적 배터리를 재충전하기 위해 매일 잠을자는 기본 본능 수능 4회",
+        "translation": "신체적 배터리를 재충전하기 위해 매일 잠을자는 기본 본능",
         "appearance": "instinct"
     },
     "1116": {
@@ -11188,9 +11188,9 @@
         "meaning": "이상적인",
         "sentence": [
             "An",
-            "container for a bunch of roses 장미꽃을 잔뜩 꽂아둘만한 이상적인 통"
+            "container for a bunch of roses"
         ],
-        "translation": "수능 5회 평가원 13회",
+        "translation": "장미꽃을 잔뜩 꽂아둘만한 이상적인 통",
         "appearance": "ideal"
     },
     "1119": {
@@ -11198,9 +11198,9 @@
         "meaning": "동일한, 똑같은",
         "sentence": [
             "The",
-            "claim expressed in two social contexts 두 가지 사회적 맥락에서 제시된 동일한 주장"
+            "claim expressed in two social contexts"
         ],
-        "translation": "수능 3회 평가원 5회",
+        "translation": "두 가지 사회적 맥락에서 제시된 동일한 주장",
         "appearance": "identical"
     },
     "1124": {
@@ -11268,9 +11268,9 @@
         "meaning": "해로운",
         "sentence": [
             "The",
-            "effects of unpredictable noise 예측이 되지 않는 소음의 유해한 효과들"
+            "effects of unpredictable noise"
         ],
-        "translation": "수능 3회 평가원 14회",
+        "translation": "예측이 되지 않는 소음의 유해한 효과들",
         "appearance": "harmful"
     },
     "1129": {
@@ -11398,9 +11398,9 @@
         "meaning": "극도로",
         "sentence": [
             "Individuals from",
-            "diverse backgrounds 매우 다양한 배경을 가진 개인"
+            "diverse backgrounds"
         ],
-        "translation": "수능 8회 평가원 19회",
+        "translation": "매우 다양한 배경을 가진 개인",
         "appearance": "extremely"
     },
     "1141": {
@@ -11770,7 +11770,7 @@
             "A school program that",
             "the end of the school year"
         ],
-        "translation": "학년 말을 기념하는 학교의 프로그램 수능 3회",
+        "translation": "학년 말을 기념하는 학교의 프로그램",
         "appearance": "celebrates"
     },
     "1178": {
@@ -11938,9 +11938,9 @@
         "meaning": "살아 있는, 생생한, 가득한",
         "sentence": [
             "The combustion of oxygen that keeps us",
-            "우리를 살아있게 하는 산소의 연소"
+            " "
         ],
-        "translation": "2. 가득한 수능 4회",
+        "translation": "우리를 살아있게 하는 산소의 연소",
         "appearance": "alive"
     },
     "1195": {
@@ -12148,9 +12148,9 @@
         "meaning": "우수한",
         "sentence": [
             "The highly",
-            "and imaginative child 매우 우수하고 상상력이 풍부한 아이"
+            "and imaginative child이"
         ],
-        "translation": "수능 6회 평가원 26회",
+        "translation": "매우 우수하고 상상력이 풍부한 아",
         "appearance": "superior"
     },
     "1216": {
@@ -12500,17 +12500,17 @@
             "Doing so would",
             "cause us to suffer."
         ],
-        "translation": "그렇게 하는 것은 결국에는 우리가 고통받게 할 것이다. 수능 5회 평가원 8회",
+        "translation": "그렇게 하는 것은 결국에는 우리가 고통받게 할 것이다.",
         "appearance": "ultimately"
     },
     "1251": {
         "word": "trend",
         "meaning": "동향, 추세",
         "sentence": [
-            "Doing so would",
-            "cause us to suffer."
+            " ",
+            "in modern art arount the world"
         ],
-        "translation": "수능 2회 평가원 8회",
+        "translation": "전 세계의 현대 미술 동향",
         "appearance": "ultimately"
     },
     "1252": {
@@ -12667,11 +12667,11 @@
         "word": "route",
         "meaning": "길, 국도",
         "sentence": [
-            "Those who have low self-monitoring are not very",
-            "to signals"
+            " ",
+            "9 in a place between Keene and Portsmouth"
         ],
-        "translation": "Keene와 Portsmouth 사이에 있는 9번 국도 수능 1회",
-        "appearance": "sensitive"
+        "translation": "Keene와 Portsmouth 사이에 있는 9번 국도",
+        "appearance": "route"
     },
     "1267": {
         "word": "sacrifice",
