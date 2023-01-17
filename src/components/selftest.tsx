@@ -13,10 +13,6 @@ Modal.setAppElement('#root')
 const num_words = [0, 692, 223, 280, 105]
 
 
-const clip = (): void => {
-  navigator.clipboard.writeText(window.location.href);
-}
-
 const renderTime_ready = () => {
   return (
     <div className="timer">
@@ -463,6 +459,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -477,6 +474,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }            
@@ -491,6 +489,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -505,6 +504,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -543,6 +543,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -557,6 +558,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -571,6 +573,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -585,6 +588,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -623,6 +627,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -637,6 +642,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -651,6 +657,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -665,6 +672,7 @@ function SelfTest () {
               }
               if (currentIdx >= numQ) {
                 setShowResult(true)
+                setCountDown_60s(false)
               } else {
                 setCurrentIdx(currentIdx + 1)
               }
@@ -889,7 +897,7 @@ function SelfTest () {
           </div>
         </div>
       )
-    } else if (countDown_60s) { // 60초동안 퀴즈 푸는화면
+    } else if (countDown_60s && !showResult) { // 60초동안 퀴즈 푸는화면
       return (
         <div className="quizContainer">
           <div className="quizGenerator">
