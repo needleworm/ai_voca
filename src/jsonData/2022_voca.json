@@ -3832,13 +3832,13 @@
     },
     "384": {
         "word": "refer",
-        "meaning": "인용하다, 참고하다, 조회하다, ~의 탓으로 하다, ~라는 뜻으로 하다, ~에 속하는 것으로",
+        "meaning": "인용하다, 참고하다, ~의 탓으로 하다, ~에 속하는 것으로",
         "sentence": [
-            "You leap to the",
-            "that the man in the black jacket has robbed the bank."
+            "Duration",
+            "to the time that events last."
         ],
-        "translation": "당신은 까만 재킷을 입은 남자가 은행을 털었다는 결론에 도달합니다.",
-        "appearance": "conclusion"
+        "translation": "기간은 사건이 지속되는 시간을 나타냅니다.",
+        "appearance": "refers"
     },
     "385": {
         "word": "employee",
@@ -3854,21 +3854,21 @@
         "word": "trustworthy",
         "meaning": "신뢰할 수 있는",
         "sentence": [
-            "The",
-            "stopped complaining about the temperature."
+            "How much of the information is considered to be accurate or",
+            " ."
         ],
         "translation": "얼마나 그 정보가 정확하고 신뢰할 만 하다고 여겨지는지.",
-        "appearance": "employees"
+        "appearance": "trustworthy"
     },
     "387": {
         "word": "ritual",
         "meaning": "(종교 등의) 의식, 의례, 제사",
         "sentence": [
-            "The",
-            "stopped complaining about the temperature."
+            "The building provides the physical environment and setting for a particular social",
+            " ."
         ],
         "translation": "건물은 물리적 환경과 특정한 사회적인 의식을 위한 배경을 제공합니다.",
-        "appearance": "employees"
+        "appearance": "ritual"
     },
     "388": {
         "word": "resolution",
@@ -3984,11 +3984,11 @@
         "word": "guarantee",
         "meaning": "보장, 보증",
         "sentence": [
-            "I want",
-            "action to solve this urgent problem."
+            "Our service is",
+            "to improve the quality of your living environment."
         ],
-        "translation": "이 긴급한 문제를 해결하기 위해 즉각적인 조치를 원합니다.",
-        "appearance": "immediate"
+        "translation": "우리 서비스는 당신 삶의 질을 향상시켜 드릴 것을 보장합니다.",
+        "appearance": "guaranteed"
     },
     "400": {
         "word": "fame",
@@ -4114,11 +4114,11 @@
         "word": "progress",
         "meaning": "나아가다, 발전, 진보, 진척도",
         "sentence": [
-            "Why don’t we",
-            "the program this year?"
+            " ",
+            "in the sciences is the ongoing process of achieving ever greater precision."
         ],
         "translation": "과학적 진보는 더 높은 정밀도를 달성해나가는 과정입니다.",
-        "appearance": "cancel"
+        "appearance": "progress"
     },
     "412": {
         "word": "pollute",
@@ -4164,11 +4164,11 @@
         "word": "vulnerable",
         "meaning": "취약한, 연약한",
         "sentence": [
-            "Cora walked in like a",
-            "soldier."
+            "As safety features are added to vehicles and roads, drivers feel less",
+            " ."
         ],
         "translation": "안전 기능이 차량 및 도로에 추가됨에 따라 운전자는 덜 취약하다고 느낍니다.",
-        "appearance": "wounded"
+        "appearance": "vulnerable"
     },
     "419": {
         "word": "routine",
