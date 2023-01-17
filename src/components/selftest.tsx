@@ -522,14 +522,14 @@ function SelfTest () {
     let word = word_data[sampleNo[currentIdx-1]]
 
     let samples = [
-      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
-      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
-      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
-      word.appearance
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].word,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].word,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].word,
+      word.word
     ]
     
     samples.sort(() => Math.random() - 0.5);
-    const correct: number = samples.indexOf(word.appearance) + 1
+    const correct: number = samples.indexOf(word.word) + 1
 
     return (
       <div className="singleQuiz_selfTest">
@@ -613,7 +613,7 @@ function SelfTest () {
     ]
     
     samples.sort(() => Math.random() - 0.5);
-    const correct: number = samples.indexOf(word.appearance) + 1
+    const correct: number = samples.indexOf(word.meaning) + 1
 
     return (
       <div className="singleQuiz_selfTest">

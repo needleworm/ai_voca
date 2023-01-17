@@ -26,6 +26,11 @@ CountdownCircleTimer{
   margin-right:auto;
 }
 
+.quizGenerator{
+  max-width: 120mm;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 .singleQuizSelectorModal{
     position: absolute;
