@@ -396,7 +396,7 @@ function SelfTest () {
         onClick={
           function(e){
             setMode("voca_2022")
-            axios.get("https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/jsonData/2022_voca.json")
+            axios.get("https://raw.githubusercontent.com/needleworm/ai_voca/main/src/jsonData/2022_voca.json")
               .then(data => {
                   setWord_data(data.data)
                 }

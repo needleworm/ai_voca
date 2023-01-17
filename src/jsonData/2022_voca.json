@@ -194,11 +194,11 @@
         "word": "each",
         "meaning": "각각의",
         "sentence": [
-            "Others wish to",
-            "capital from one area to another."
+            " ",
+            "daughter cell is smaller than the mother cell."
         ],
         "translation": "각각의 딸세포는 모세포보다 더 작다.",
-        "appearance": "move"
+        "appearance": "each"
     },
     "21": {
         "word": "according",
@@ -244,11 +244,11 @@
         "word": "both",
         "meaning": "둘 다",
         "sentence": [
-            "Do you want to",
-            "more professional-looking photos?"
+            " ",
+            "eyes and camera have a lens that focuses light rays from the outside world into an image."
         ],
         "translation": "눈과 카메라 둘 다 외부의 빛을 받아들여 상을 비추는 렌즈를 가집니다.",
-        "appearance": "create"
+        "appearance": "both"
     },
     "26": {
         "word": "require",
@@ -12927,11 +12927,11 @@
         "word": "distraction",
         "meaning": "주의를 산만하게 하는 것",
         "sentence": [
-            "The smartest of our deep ancestors would have stored their",
-            "meat."
+            "Working at home can free you from these",
+            " ."
         ],
         "translation": "집에서 일하는 것은 이러한 산만함으로부터 벗어날 수 있게 해줍니다.",
-        "appearance": "excess"
+        "appearance": "distractions"
     },
     "1294": {
         "word": "cope",
@@ -12997,10 +12997,10 @@
         "word": "accomplish",
         "meaning": "달성하다",
         "sentence": [
-            "The overlapping of song may be an",
-            "response."
+            "They do what is necessary to",
+            "it."
         ],
-        "translation": "노래를 겹치게 부르는 것은 공격적인 반응일 수도 있습니다.",
-        "appearance": "aggressive"
+        "translation": "그들은 그것을 다성하기 위해 필요한 것들을 합니다.",
+        "appearance": "accomplish"
     }
 }
