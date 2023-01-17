@@ -111,4 +111,55 @@ h1 {
   text-align: center;
   font-size: 16px;
 }
-  
+
+.fit_in{
+  width:100%;
+}
+
+.singleQuiz_selfTest{
+  margin-bottom:20px;
+}
+
+.hubos_vertical{
+  margin-top:40px;
+  font-size:5mm;
+  display:grid;
+  padding-left:10mm;
+  grid-template-rows: 8mm 8mm 8mm 8mm;
+}
+
+.quizContainer {
+  display:block; 
+  margin-top: 10px; 
+  width:90%; 
+  margin-left:auto; 
+  margin-right:auto;
+  height: 60vh;
+}
+
+.quizHead{
+  margin-bottom: 10mm;
+}
+
+.quizResultSummary {
+  margin-top: 15mm;
+}
+
+
+.resultChartArea{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+@media (min-width:800px){
+  .chartGrid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+  }
+}
+

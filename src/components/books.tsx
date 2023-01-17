@@ -10,7 +10,7 @@ function Books() {
 
   const drawBooks = () => {
     let bookSection1 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/19.png" alt="book1" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/19.jpg" alt="book1" className="bookCoverImage"/>
       <h5>AI족집게 수능영단어</h5>
       <p className="bookDescription">2023.2. 생능북스</p>
       <ul className="list-inline">

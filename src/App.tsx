@@ -151,7 +151,7 @@ function App() {
           }
         }
       >
-        <i className="fa-solid fa-pencil"></i>&nbsp;매일매일 Quiz Quiz!
+        <i className="fa-solid fa-pencil"></i>&nbsp;Quiz Quiz!
       </a>
     </li>
 

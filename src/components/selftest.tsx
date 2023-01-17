@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './selfTest.css';
 import axios from 'axios';
-import { TextField, MenuItem } from "@mui/material"
+import { TextField, MenuItem } from "@mui/material";
+import { Doughnut, PolarArea } from 'react-chartjs-2';
+import 'chart.js/auto';
 import Modal from 'react-modal';
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
@@ -10,6 +12,10 @@ Modal.setAppElement('#root')
 
 const num_words = [0, 692, 223, 280, 105]
 
+
+const clip = (): void => {
+  navigator.clipboard.writeText(window.location.href);
+}
 
 const renderTime_ready = () => {
   return (
@@ -42,23 +48,25 @@ function SelfTest () {
   }
 
 
-  const [mode, setMode] = useState("main")    /*  main
-                                          voca_2022
-                                          voca_2022_type_1
-                                          voca_2022_type_2
-                                        */
-  const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 60]) // from, min, to, max, maxQ
-  const [numQ, setNumQ] = useState(30) // numQ 
-  const [select_mode, setSelect_Mode] = useState("total") // total, part, day
-  const [word_data, setWord_data] = useState<WordDataType>({})
-  const [options, setOptions] = useState([false, false, false, false]) // false false false false
-  const [sample_no, setSampleNo] = useState<number[]>([])
-  const [showModal, setShowModal] = useState(false) //false
-  const [quizStart, setQuizStart] = useState(false) //false
-  const [countDown_Ready, setCountDown_Ready] = useState(false) //false
-  const [countDown_60s, setCountDown_60s] = useState(false) //false
-  const [showResult, setShowResult] = useState(false) //false
-  const [numCorrectAnswer, setNumCorrectAnswer] = useState(0) // numQ 
+  const [mode, setMode] = useState("main")  /*  main  <- default
+                                                voca_2022
+                                                voca_2022_type_1
+                                                voca_2022_type_2
+                                            */
+  const [question_range, setQuestion_range] = useState([1, 1, 1300, 1300, 60]) // from, min, to, max, maxQ [default : [1, 1, 1300, 1300, 60]]
+  const [numQ, setNumQ] = useState(60) // numQ 
+  const [select_mode, setSelect_Mode] = useState("total") // total, part, day [default : ["total"]]
+  const [word_data, setWord_data] = useState<WordDataType>({})// [default : {}]
+  const [sampleNo, setSampleNo] = useState<number[]>([]) // [default : []]
+  const [showModal, setShowModal] = useState(false) //false [default : false]
+  const [quizStart, setQuizStart] = useState(false) //false [default : false]
+  const [countDown_Ready, setCountDown_Ready] = useState(false) //false [default : false]
+  const [countDown_60s, setCountDown_60s] = useState(false) //false [default : false]
+  const [showResult, setShowResult] = useState(false) //false if test Done? [default : false]
+  const [numCorrectAnswer1, setNumCorrectAnswer1] = useState(0) // num correct  [default : 0]
+  const [numCorrectAnswer2, setNumCorrectAnswer2] = useState(0) // num correct [default : 0] 
+  const [numCorrectAnswer3, setNumCorrectAnswer3] = useState(0) // num correct [default : 0]
+  const [currentIdx, setCurrentIdx] = useState(1) // current quiz idx [default : 1]
   
 
   const closeModal = () => {
@@ -121,44 +129,15 @@ function SelfTest () {
       )
     }
 
-    let sample_q: number[] = []
-
     totalSamples.sort(() => Math.random() - 0.5);
 
     if (numQ > question_range[4]) { // numQ > maxQ
-      totalSamples = totalSamples.concat(totalSamples.slice(0, question_range[5] - question_range[4]))
+      totalSamples = totalSamples.concat(totalSamples.slice(0, numQ - question_range[4]))
     } else {
-      totalSamples = totalSamples.slice(0, question_range[5])
+      totalSamples = totalSamples.slice(0, question_range[4])
     }
 
-    let ticket: number[] = []
-    if (options[0]){
-      ticket.push(1)
-    }if (options[1]){
-      ticket.push(2)
-    }if (options[2]){
-      ticket.push(3)
-    }if (options[3]){
-      ticket.push(4)
-    }
-    
-    let tk = 0
-    totalSamples.map(function(idx){
-      tk = ticket[Math.trunc(Math.random() * ticket.length)]
-      console.log(tk)
-      if (tk === 1){
-        sample_q.push(idx)
-      } else if (tk === 2){
-        sample_q.push(idx)
-      }  else if (tk === 3){
-        sample_q.push(idx)
-      }  else if (tk === 4){
-        sample_q.push(idx)
-      } 
-      return null
-    })
-
-    setSampleNo(sample_q)
+    setSampleNo(totalSamples)
   }
 
   const draw_rangeSelector_2022voca = () => {
@@ -282,6 +261,7 @@ function SelfTest () {
       onClick={
         function(e){
           setQuizStart(true)
+          generate_quiz_set()
           setCountDown_Ready(true)
           closeModal()
         }
@@ -310,14 +290,20 @@ function SelfTest () {
             <button className="submitButton"
               onClick={
                 function(e){
-                    setMode("none")
-                    setQuestion_range([1, 1, 1300, 1300, 1300, 30]) // from, question_range[1], to, max, question_range[4], question_range[5]  
+                    setMode("main")
+                    setQuestion_range([1, 1, 1300, 1300, 60]) // from, question_range[1], to, max, question_range[4], numQ  
+                    setNumQ(30)
+                    setSelect_Mode("total")
                     setWord_data({})
-                    setOptions([false, false, false, false])
                     setSampleNo([])
+                    setShowModal(false)
                     setQuizStart(false)
-                    setShowResult(false)
+                    setCountDown_Ready(false)
                     setCountDown_60s(false)
+                    setShowResult(false)
+                    setNumCorrectAnswer1(0)
+                    setNumCorrectAnswer2(0)
+                    setNumCorrectAnswer3(0)
                 }
               }
             >처음으로</button>
@@ -345,6 +331,15 @@ function SelfTest () {
                     setMode("voca_2022")
                     setQuizStart(false)
                     setShowResult(false)
+                    setQuestion_range([1, 1, 1300, 1300, 60]) // from, question_range[1], to, max, question_range[4], numQ  
+                    setNumQ(30)
+                    setSelect_Mode("total")
+                    setCountDown_Ready(false)
+                    setCountDown_60s(false)
+                    setShowResult(false)
+                    setNumCorrectAnswer1(0)
+                    setNumCorrectAnswer2(0)
+                    setNumCorrectAnswer3(0)
                 }
               }
             >이전으로</button>
@@ -355,14 +350,23 @@ function SelfTest () {
       return(
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="section-heading subpageHeading">타임어택 챌린지</h2>
-            <p>30개의 퀴즈를 최대한 빠른 시간 안에 풀어보세요!</p>
+            <h2 className="section-heading subpageHeading">무한한 시간</h2>
+            <p>{numQ}개의 퀴즈를 시간 제한 없이 풀어보세요!</p>
             <button className="submitButton"
               onClick={
                 function(e){
                     setMode("voca_2022")
                     setQuizStart(false)
                     setShowResult(false)
+                    setQuestion_range([1, 1, 1300, 1300, 60]) // from, question_range[1], to, max, question_range[4], numQ  
+                    setNumQ(30)
+                    setSelect_Mode("total")
+                    setCountDown_Ready(false)
+                    setCountDown_60s(false)
+                    setShowResult(false)
+                    setNumCorrectAnswer1(0)
+                    setNumCorrectAnswer2(0)
+                    setNumCorrectAnswer3(0)
                 }
               }
             >이전으로</button>
@@ -415,7 +419,7 @@ function SelfTest () {
               AI가 족집게처럼 골라 준 단어만 공부하자!<br/>
               오늘은 몇 문제나 맞출 수 있을까? 조마조마한 단어 퀴즈 타임어택!<br/>
               책에 수록된 단어를 바탕으로 퀴즈 문제가 자동으로 생성됩니다.<br/>
-              <strong>제공 모드</strong>: 1분의 벽, 타임어택 챌린지
+              <strong>제공 모드</strong>: 1분의 벽, 무한한 시간
             </p>
           </div>
         </div>
@@ -430,27 +434,352 @@ function SelfTest () {
     )
   }
 
-  const draw_2022_type_1_single_question = (idx: number | string) => {
-    let word = word_data[String(idx)]
+  const draw_2022_single_question_type1 = () => { // 문장 내 빈칸 채우기
+    let word = word_data[sampleNo[currentIdx-1]]
+
+    let samples = [
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word.appearance
+    ]
+    
+    samples.sort(() => Math.random() - 0.5);
+    const correct: number = samples.indexOf(word.appearance) + 1
 
     return (
-      <li className="singleQuiz">
-        <span className="testText">{word.word} : &nbsp;&nbsp;
+      <div className="singleQuiz_selfTest">
+        <div className="testText fit_in">{word.translation}</div>
+        <div className="testText fit_in">{word.sentence[0]} &nbsp;&nbsp;
         <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </span>
-      </li>
+          &nbsp;&nbsp;
+          {word.sentence[1]}
+        </div>
+        <div className="hubos_vertical">
+          <span className="citation" onClick={
+            function(){
+              if (correct === 1){
+                setNumCorrectAnswer1(numCorrectAnswer1 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (1) {samples[0]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 2){
+                setNumCorrectAnswer1(numCorrectAnswer1 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }            
+            }
+          }>
+            (2) {samples[1]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 3){
+                setNumCorrectAnswer1(numCorrectAnswer1 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (3) {samples[2]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 4){
+                setNumCorrectAnswer1(numCorrectAnswer1 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (4) {samples[3]}
+          </span>
+        </div>
+      </div>
     )
   }
 
-  const draw_2022_type_2_single_question= (idx: number | string) => {
-    let word = word_data[idx]
+  const draw_2022_single_question_type2 = () => { // 의미 보고 빈 칸 채우기
+    let word = word_data[sampleNo[currentIdx-1]]
+
+    let samples = [
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].appearance,
+      word.appearance
+    ]
+    
+    samples.sort(() => Math.random() - 0.5);
+    const correct: number = samples.indexOf(word.appearance) + 1
 
     return (
-      <li className="singleQuiz">
-        <span className="testText">{word.meaning} : &nbsp;&nbsp;
-        <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div className="singleQuiz_selfTest">
+        <span className="testText  fit_in">{word.meaning} : &nbsp;&nbsp;
+          <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </span>
-      </li>
+        <div className="hubos_vertical">
+          <span className="citation" onClick={
+            function(){
+              if (correct === 1){
+                setNumCorrectAnswer2(numCorrectAnswer2 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (1) {samples[0]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 2){
+                setNumCorrectAnswer2(numCorrectAnswer2 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (2) {samples[1]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 3){
+                setNumCorrectAnswer2(numCorrectAnswer2 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (3) {samples[2]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 4){
+                setNumCorrectAnswer2(numCorrectAnswer2 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (4) {samples[3]}
+          </span>
+        </div>
+      </div>
+    )
+  }
+
+  const draw_2022_single_question_type3 = () => { // 단어 보고 의미 찾기
+    let word = word_data[sampleNo[currentIdx-1]]
+
+    let samples = [
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].meaning,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].meaning,
+      word_data[Math.trunc(Math.random() * Object.keys(word_data).length) + 1].meaning,
+      word.meaning
+    ]
+    
+    samples.sort(() => Math.random() - 0.5);
+    const correct: number = samples.indexOf(word.appearance) + 1
+
+    return (
+      <div className="singleQuiz_selfTest">
+        <span className="testText fit_in">{word.word} : &nbsp;&nbsp;
+          <span className="underlineBox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </span>
+        <div className="hubos_vertical">
+          <span className="citation" onClick={
+            function(){
+              if (correct === 1){
+                setNumCorrectAnswer3(numCorrectAnswer3 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (1) {samples[0]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 2){
+                setNumCorrectAnswer3(numCorrectAnswer3 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (2) {samples[1]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 3){
+                setNumCorrectAnswer3(numCorrectAnswer3 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (3) {samples[2]}
+          </span>
+          <span className="citation" onClick={
+            function(){
+              if (correct === 4){
+                setNumCorrectAnswer3(numCorrectAnswer3 + 1)
+              }
+              if (currentIdx >= numQ) {
+                setShowResult(true)
+              } else {
+                setCurrentIdx(currentIdx + 1)
+              }
+            }
+          }>
+            (4) {samples[3]}
+          </span>
+        </div>
+      </div>
+    )
+  }
+
+  const draw_quiz_series_2022 = () => {
+    if (currentIdx % 3 === 0) {
+      return (
+        <div className="singleQuizOnPage">
+          {draw_2022_single_question_type1()}
+        </div>
+      )
+    } else if (currentIdx % 3 === 1) {
+      return (
+        <div className="singleQuizOnPage">
+          {draw_2022_single_question_type2()}
+        </div>
+      )
+    } else if (currentIdx % 3 === 2) {
+      return (
+        <div className="singleQuizOnPage">
+          {draw_2022_single_question_type3()}
+        </div>
+      )
+    }
+  }
+
+  const drawToSNSButton = () => {
+
+  }
+
+  const draw_test_result = () => {
+    const options1 = {
+      legend:{
+        display: true,
+        position: "bottom"
+      },
+      elements:{
+        arc:{
+          borderWidth: 2
+        }
+      }
+    }
+
+    const data1 = {
+      labels: [
+        '정답', 
+        '오답', 
+      ],
+      datasets: [
+        {
+          data: [numCorrectAnswer1 + numCorrectAnswer2 + numCorrectAnswer3, currentIdx - (numCorrectAnswer1 + numCorrectAnswer2 + numCorrectAnswer3)],
+          backgroundColor: [
+            'rgba(255, 206, 86, 0.5)',
+            'gray',
+          ],
+          borderWidth: 5,
+        },
+      ],
+    }
+
+    const options2 = {
+      legend:{
+        display: true,
+        position: "bottom"
+      },
+      elements:{
+        arc:{
+          borderWidth: 2
+        }
+      }
+    }
+
+    const data2 = {
+      labels: [
+        '단어 찾기', 
+        '의미 찾기',
+        '문장 완성', 
+      ],
+      datasets: [
+        {
+          data: [numCorrectAnswer1, numCorrectAnswer2, numCorrectAnswer3],
+          borderWidth: 5,
+        },
+      ],
+    }
+
+
+    const resultChart = <div className="resultChartArea">
+      <Doughnut data={data1} options={options1}/>
+      정답률 {Math.trunc((numCorrectAnswer1 + numCorrectAnswer2 + numCorrectAnswer3) / currentIdx * 100)}%
+    </div>
+
+    const areaChart = <div className="resultChartArea">
+      <PolarArea data={data2} options={options2}/>
+      유형별 정답 개수
+    </div>
+
+
+    return(
+      <div className="quizResultSummary">
+        <h4>테스트 종료!</h4>
+        <p>60초 동안 {currentIdx -1} 문제를 풀었습니다!</p>
+        <div className="chartGrid">
+          {resultChart}
+          {areaChart}
+        </div>
+      </div>
     )
   }
 
@@ -470,12 +799,14 @@ function SelfTest () {
       onClick={
         function(e){
           setQuizStart(true)
+          generate_quiz_set()
           setCountDown_Ready(true)
         }
       }
     >Quick Start!</button>
 
     const countdown_3s = <div className="countdown_3s">
+      <div className="quizHead"></div>
       <CountdownCircleTimer
         isPlaying
         duration={3}
@@ -497,8 +828,27 @@ function SelfTest () {
       <CountdownCircleTimer
         isPlaying
         duration={60}
-        colors={["#004777", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000"]}
-        colorsTime={[60, 50, 40, 30, 20, 10, 0]}
+        colors={[
+          "#004777", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", 
+          "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", 
+          "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", 
+          "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801",
+          "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", 
+          "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", 
+          "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", 
+          "#A30000", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000", "#F7B801", "#A30000", "#F7B801", 
+          "#A30000"]}
+        colorsTime={[
+          60, 59.5,  59, 58.5,  58, 57.5,  57, 56.5,  56, 55.5,
+          55, 54.5,  54, 53.5,  53, 52.5,  52, 51.5,  51, 50.5,
+          50,   49,  48,   47,  46,   45,  44,   43,  42,   41,
+          40,   39,  38,   37,  36,   35,  34,   33,  32,   31,
+          30,   29,  28,   27,  26,   25,  24,   23,  22,   21,
+          20,   19,  18,   17,  16,   15,  14,   13,  12,   11,
+          10,  9.5,   9,  8.5,   8,  7.5,   7,  6.5,   6,  5.5, 
+           5,  4.5,   4,  3.5,   3,  2.5,   2,  1.5,   1,  0.5,
+           0
+        ]}
         onComplete={() => {
           setCountDown_Ready(false)
           setCountDown_60s(false)
@@ -513,8 +863,8 @@ function SelfTest () {
     </div>
 
     
-    if (!quizStart){
-      return (
+    if (!quizStart){// 퀴즈 세부값 세팅 모달
+      return ( 
         <div className="codeContainer">
           <div className="quizGenerator">
             <div className="col-lg-12 text-center">
@@ -529,34 +879,33 @@ function SelfTest () {
           </div>
         </div>
       )
-    } else if (countDown_Ready) {
+    } else if (countDown_Ready) { // 레디!
       return (
-        <div className="codeContainer">
+        <div className="quizContainer">
           <div className="quizGenerator">
-            <div className="col-lg-12 text-center">
+            <div className="col-lg-12 text-center ">
               {countdown_3s}
             </div>
           </div>
         </div>
       )
-    } else if (countDown_60s) {
+    } else if (countDown_60s) { // 60초동안 퀴즈 푸는화면
       return (
-        <div className="codeContainer">
+        <div className="quizContainer">
           <div className="quizGenerator">
-            <div className="col-lg-12 text-center">
-              {countdown_60s}
+            <div className="col-lg-12">
+              <div className="quizHead">
+                {countdown_60s}
+              </div>
+              {draw_quiz_series_2022()}
             </div>
           </div>
         </div>
       )
-    } else {
+    } else if (showResult) { // 결과창
       return (
-        <div className="codeContainer">
-          <div className="quizGenerator">
-            <div className="col-lg-12 text-center">
-              여기에 시험 결과
-            </div>
-          </div>
+        <div className="quizHead  text-center ">
+          {draw_test_result()}
         </div>
       )
     }
@@ -569,6 +918,7 @@ function SelfTest () {
         function(e){
           openModal()
           setQuizStart(false)
+          setShowResult(false)
         }
       }
     >Custom Range!</button>
@@ -577,13 +927,33 @@ function SelfTest () {
       onClick={
         function(e){
           setQuizStart(true)
+          generate_quiz_set()
           setCountDown_Ready(true)
         }
       }
     >Quick Start!</button>
-    
-    if (quizStart){
-      return (
+
+    const countdown_3s = <div className="countdown_3s">
+      <div className="quizHead"></div>
+      <CountdownCircleTimer
+        isPlaying
+        duration={3}
+        colors={["#004777", "#F7B801", "#A30000", "#F7B801", "#004777", "#F7B801", "#A30000"]}
+        colorsTime={[3, 2.5, 2, 1.5, 1, 0.5, 0]}
+        onComplete={() => {
+          setCountDown_Ready(false)
+        }}
+        size={250}
+        strokeWidth={30}
+        trailStrokeWidth={30}
+      >
+        { renderTime_ready }
+      </CountdownCircleTimer>
+    </div>
+
+
+    if (!quizStart){// 퀴즈 세부값 세팅 모달
+      return ( 
         <div className="codeContainer">
           <div className="quizGenerator">
             <div className="col-lg-12 text-center">
@@ -598,18 +968,37 @@ function SelfTest () {
           </div>
         </div>
       )
-    } else {
+    } else if (countDown_Ready) { // 레디!
       return (
-        <div className="codeContainer">
+        <div className="quizContainer">
           <div className="quizGenerator">
-            <div className="col-lg-12 text-center">
-              여기에 퀴즈
+            <div className="col-lg-12 text-center ">
+              {countdown_3s}
             </div>
           </div>
         </div>
       )
-    }
+    } else if (!showResult) { // 시간제한없이 퀴즈 푸는화면
+      return (
+        <div className="quizContainer">
+          <div className="quizGenerator">
+            <div className="col-lg-12">
+              <div className="quizHead">
+              </div>
+              {draw_quiz_series_2022()}
+            </div>
+          </div>
+        </div>
+      )
+    } else if (showResult) { // 결과창
+      return (
+        <div className="quizHead  text-center ">
+          {draw_test_result()}
+        </div>
+      )
+    } 
   }
+
 
   const draw_voca_2022 = () => {
 
@@ -633,10 +1022,11 @@ function SelfTest () {
               function(e){
                 setMode("voca_2022_type_2")
                 setQuizStart(false)
+                setNumQ(30)
               }
           }>
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/student_menu/type_2.jpg" alt="quiz_type 2"/>
-          <span>타임어택 챌린지</span>
+          <span>무한한 시간</span>
         </div>
       </div>
     </div>
