@@ -4614,31 +4614,31 @@
         "word": "uncertainty",
         "meaning": "불확실성",
         "sentence": [
-            "Felix could concentrate on the lesson, at least",
-            "Sean came back."
+            "Minorities can create social conflict, doubt and",
+            " ."
         ],
         "translation": "소수 집단이 사회적 갈등이나 의심, 그리고 불확실성을 유발할 수 있습니다.",
-        "appearance": "till"
+        "appearance": "uncertainty"
     },
     "462": {
         "word": "trait",
         "meaning": "특성",
         "sentence": [
-            "Felix could concentrate on the lesson, at least",
-            "Sean came back."
+            "We automatically assign to good-looking individuals such favorable",
+            " ."
         ],
         "translation": "우리는 잘 생긴 사람들에게 호의적인 특성을 저절로 부여한다.",
-        "appearance": "till"
+        "appearance": "trait"
     },
     "463": {
         "word": "trace",
         "meaning": "자취, 흔적",
         "sentence": [
-            "Felix could concentrate on the lesson, at least",
-            "Sean came back."
+            " ",
+            "of mercury can appear in lakes far removed from any such industrial discharge."
         ],
         "translation": "산업적 배출부터 멀리 떨어진 호수에서도 수은의 흔적이 검출될 수 있습니다.",
-        "appearance": "till"
+        "appearance": "trace "
     },
     "464": {
         "word": "tough",
@@ -4744,11 +4744,11 @@
         "word": "steep",
         "meaning": "가파른, 급격한, 터무니없이 비싼",
         "sentence": [
-            "The disabling neurological symptoms were",
-            "called Minamata disease."
+            " ",
+            "gasoline taxes and other policies have produced relatively compact cities."
         ],
         "translation": "터무니없이 비싼 유류세와 다른 정책들은 상대적으로 밀집된 도시들을 만 들었습니다.",
-        "appearance": "subsequently"
+        "appearance": "steep"
     },
     "476": {
         "word": "starve",
@@ -5014,11 +5014,11 @@
         "word": "reflection",
         "meaning": "반사, 반영, 심사숙고",
         "sentence": [
-            "It’s never too late to start building up muscle strength,",
-            "of your age."
+            " ",
+            "requires solitude."
         ],
         "translation": "깊은 생각에는 고독이 필요합니다.",
-        "appearance": "regardless"
+        "appearance": "reflection"
     },
     "503": {
         "word": "refine",
