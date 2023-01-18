@@ -10717,21 +10717,21 @@
         "word": "score",
         "meaning": "점수",
         "sentence": [
-            "Technology can",
-            "respond instantaneously."
+            "Luckily, I got a high",
+            "."
         ],
         "translation": "운이 좋게도, 높은 점수를 받았어.",
-        "appearance": "seldom"
+        "appearance": "score"
     },
     "1074": {
         "word": "rough",
         "meaning": "거친, 대략적인, 대충의",
         "sentence": [
-            "Technology can",
-            "respond instantaneously."
+            " ",
+            "ground"
         ],
-        "translation": "3. 초고, 초안, 밑그림 4. 거칠게, 난폭하게",
-        "appearance": "seldom"
+        "translation": "거친 땅",
+        "appearance": "rough"
     },
     "1073": {
         "word": "save",
@@ -10787,11 +10787,11 @@
         "word": "relax",
         "meaning": "완화하다, 안정을 취하다",
         "sentence": [
-            "You have to",
-            "your driver’s license."
+            "Most people have their best ideas when they are",
+            "."
         ],
         "translation": "대부분의 사람들은 안정을 취할 때, 최고의 아이디어를 냅니다.",
-        "appearance": "renew"
+        "appearance": "relaxed"
     },
     "1078": {
         "word": "reliable",
@@ -11005,13 +11005,13 @@
     },
     "1104": {
         "word": "merchandise",
-        "meaning": "상품",
+        "meaning": "상품, 판매하다",
         "sentence": [
-            "This system",
-            "at all temperature."
+            "Each of the five countries produced more electronic",
+            "."
         ],
-        "translation": "이 시스템은 모든 온도에서 작동합니다.",
-        "appearance": "operates"
+        "translation": "5개 국가 모두는 더 많은 전자제품을 생산했습니다.",
+        "appearance": "merchandise"
     },
     "1105": {
         "word": "maximize",
@@ -11057,20 +11057,20 @@
         "word": "manufacture",
         "meaning": "제조",
         "sentence": [
-            "When I was feeling somewhat",
-            "and sad, I started taping myself."
+            "I believe the machine’s failure is caused by a",
+            "defect."
         ],
-        "translation": "약간 비참하고 슬프다고 느낄 때, 나는 테이프에 스스로를 녹음했다.",
-        "appearance": "miserable"
+        "translation": "나는 그 기계의 고장은 제조 결함으로 인해 발생했다고 믿습니다.",
+        "appearance": "manufacturing"
     },
     "1107": {
         "word": "link",
-        "meaning": "관계, 연결, 접속, 관련짓다, 관련되다",
+        "meaning": "관계, 연결, 관련짓다, 관련되다",
         "sentence": [
             "A",
-            "between myself and other people 나 자신과 다른 사람들 사이의 연결"
+            "between myself and other people "
         ],
-        "translation": "2. 관련짓다, 관련되다 3. 연결하다, 접속하다",
+        "translation": "나 자신과 다른 사람들 사이의 연결",
         "appearance": "link"
     },
     "1108": {
@@ -11177,11 +11177,11 @@
         "word": "imagine",
         "meaning": "상상하다",
         "sentence": [
-            "It can provide the necessary",
-            "for selfreflection."
+            " ",
+            "yourself driving down the highway."
         ],
         "translation": "고속도로를 운전하는 자신을 상상해보십시오.",
-        "appearance": "incentive"
+        "appearance": "imagine"
     },
     "1120": {
         "word": "ideal",
@@ -11227,11 +11227,11 @@
         "word": "humanity",
         "meaning": "인류, 인간성",
         "sentence": [
-            "Some people find it",
-            "to work gently at driving the world."
+            "Science majors need a strong background in",
+            "."
         ],
         "translation": "과학 전공자들은 인문학에 대한 강력한 배경지식이 필요합니다.",
-        "appearance": "helpful"
+        "appearance": "humanities"
     },
     "1122": {
         "word": "honest",
@@ -11637,21 +11637,21 @@
         "word": "criticism",
         "meaning": "비판",
         "sentence": [
-            "My friend was disappointed that scientific progress has not",
-            "the world’s ills."
+            "If you want to be a mathematician, you had better expose your new ideas to the",
+            "."
         ],
         "translation": "수학자가 되고 싶다면, 너의 아이디어를 비판에 노출시키는 것이 좋을거야.",
-        "appearance": "cured"
+        "appearance": "criticism"
     },
     "1163": {
         "word": "creature",
         "meaning": "생물, 피조물",
         "sentence": [
-            "My friend was disappointed that scientific progress has not",
-            "the world’s ills."
+            "We are biological",
+            "."
         ],
         "translation": "우리는 생물학적 피조물입니다.",
-        "appearance": "cured"
+        "appearance": "creatures"
     },
     "1166": {
         "word": "costly",
@@ -11707,11 +11707,11 @@
         "word": "compensate",
         "meaning": "보상하다",
         "sentence": [
-            "Knowledge of writing was",
-            "to professionals who worked for the king or temple."
+            "Our understanding of context",
+            "for lack of detail."
         ],
         "translation": "글쓰기에 대한 지식은 왕가나 사원을 위해 일하는 전문가에게만 국한되었 습니다.",
-        "appearance": "confined"
+        "appearance": "compensates"
     },
     "1174": {
         "word": "combine",
@@ -11817,11 +11817,11 @@
         "word": "belong",
         "meaning": "소속감을 느끼다",
         "sentence": [
-            "The frequency is far",
-            "the range of human ears."
+            "All members of the school community feel as though they",
+            "."
         ],
         "translation": "학교 공동체의 모든 구성원은 마치 자신이 소속된 것처럼 느낍니다.",
-        "appearance": "below"
+        "appearance": "belong"
     },
     "1181": {
         "word": "budget",
@@ -11837,11 +11837,11 @@
         "word": "broadcast",
         "meaning": "방송하다",
         "sentence": [
-            "Although her",
-            "was tight, Anna bought Cora a taekwondo uniform."
+            "Baseball is one of the most popular sports frequently",
+            "on TV."
         ],
-        "translation": "예산이 빠듯했지만, Anna는 Cora에게 태권도 유니폼을 사줬습니다.",
-        "appearance": "budget"
+        "translation": "야구는 TV에서 자주 방송되는 가장 인기있는 스포츠 중 하나입니다.",
+        "appearance": "broadcast"
     },
     "1183": {
         "word": "bright",
@@ -11897,11 +11897,11 @@
         "word": "appreciate",
         "meaning": "고마워하다",
         "sentence": [
-            "He came across an",
-            "in a scientific journal."
+            "We truly",
+            "your help."
         ],
-        "translation": "그는 과학 저널의 기사 하나를 우연히 접했습니다.",
-        "appearance": "article"
+        "translation": "우리는 당신의 도움에 진심으로 감사드립니다.",
+        "appearance": "appreciate"
     },
     "1191": {
         "word": "anticipate",
@@ -12047,11 +12047,11 @@
         "word": "sink",
         "meaning": "가라앉다",
         "sentence": [
-            "We learn more about what our existence in this",
-            "means for us."
+            "A piece of wood tossed into water floats instead of",
+            "."
         ],
         "translation": "물에 던져진 나무 조각은 가라앉는 대신 떠오른다.",
-        "appearance": "universe"
+        "appearance": "sinking"
     },
     "1206": {
         "word": "sequence",
@@ -12117,11 +12117,11 @@
         "word": "overcome",
         "meaning": "극복하다",
         "sentence": [
-            "That’s why the ability to",
-            "quickly is so important."
+            "To",
+            "disadvantages of their size, small animals have developed useful weapons"
         ],
-        "translation": "그게 바로 빠르게 회복하는 역량이 중요한 이유죠.",
-        "appearance": "recover"
+        "translation": "크기의 단점을 극복하기 위해, 작은 동물은 유용한 무기를 개발했습니다.",
+        "appearance": "overcome"
     },
     "1212": {
         "word": "violence",
@@ -12167,11 +12167,11 @@
         "word": "withdraw",
         "meaning": "물러나다, 인출하다",
         "sentence": [
-            "Mediated entertainment has been able to stimulate our",
-            "senses with sounds."
+            "If the consumer were to",
+            "from the deal, he might foster the rather undesirable impression."
         ],
         "translation": "매체에 의한 오락거리는 소리로 우리의 청각을 자극할 수 있습니다.",
-        "appearance": "auditory"
+        "appearance": "withdraw"
     },
     "1217": {
         "word": "overall",
@@ -12207,11 +12207,11 @@
         "word": "stuff",
         "meaning": "일, 물건",
         "sentence": [
-            "It is easy to",
-            "your failure."
+            "He didn’t want to find himself working just to pay for more space and the",
+            "."
         ],
         "translation": "그는 더 많은 공간과 물건을 구매하기 위해 일하는 자신을 보고 싶지 않았습니다.",
-        "appearance": "justify"
+        "appearance": "stuff"
     },
     "1222": {
         "word": "ship",
@@ -12307,11 +12307,11 @@
         "word": "anxiety",
         "meaning": "불안",
         "sentence": [
-            "A couple more",
-            "still might taste good."
+            " ",
+            "also sabotages academic performance of all kinds."
         ],
         "translation": "불안은 또한 모든 종류의 학문적 성과를 방해합니다.",
-        "appearance": "bites"
+        "appearance": "anxiety"
     },
     "1232": {
         "word": "acceptable",
@@ -12385,13 +12385,13 @@
     },
     "1239": {
         "word": "static",
-        "meaning": "고정된, 정적인, 물리적으로 정지한 상태의, 잡음",
+        "meaning": "고정된, 정적인, 잡음",
         "sentence": [
-            "Their papers are designed to",
-            "further discussion."
+            "Most people reported that there was",
+            "."
         ],
         "translation": "대부분의 사람들은 잡음이 있었다고 보고했습니다.",
-        "appearance": "stimulate"
+        "appearance": "static"
     },
     "1240": {
         "word": "satisfaction",
@@ -12477,11 +12477,11 @@
         "word": "undermine",
         "meaning": "약화시키다",
         "sentence": [
-            "The person will tend to feel guilty when his or her own conduct",
-            "that principle."
+            "Anxiety",
+            "the intellect."
         ],
-        "translation": "사람은 자신의 행동이 그 원칙을 위반할 때 죄책감을 느끼는 경향이 있습니다.",
-        "appearance": "violates"
+        "translation": "불안은 지성을 약화시킵니다.",
+        "appearance": "undermines"
     },
     "1249": {
         "word": "ultimate",
@@ -12511,7 +12511,7 @@
             "in modern art arount the world"
         ],
         "translation": "전 세계의 현대 미술 동향",
-        "appearance": "ultimately"
+        "appearance": "trends"
     },
     "1252": {
         "word": "tremble",
@@ -12567,11 +12567,11 @@
         "word": "suppress",
         "meaning": "제압하다, 진압하다, 억누르다, 억제하다",
         "sentence": [
-            "Parents are",
-            "and distrustful when she goes out at night."
+            "The only way to prevent this effect is to",
+            "such representations."
         ],
         "translation": "그녀가 밤에 외출하면 부모님은 의심스러워 하고 불신합니다.",
-        "appearance": "suspicious"
+        "appearance": "suppress"
     },
     "1258": {
         "word": "suitable",
@@ -12647,11 +12647,11 @@
         "word": "smooth",
         "meaning": "매끄러운, 부드러운",
         "sentence": [
-            "The fact that information is conveyed",
-            "adds authority to what is conveyed."
+            "Should you buy",
+            "-textured strawberry jam or the one with less sugar?"
         ],
         "translation": "부드러운 질감의 딸기 잼을 살 건가요 아니면 저당 잼을 살 건가요?",
-        "appearance": "somehow"
+        "appearance": "smooth"
     },
     "1266": {
         "word": "sensitive",
@@ -12707,11 +12707,11 @@
         "word": "remote",
         "meaning": "먼, 원격의, 멀리 떨어진",
         "sentence": [
-            "The densely structured wood is",
-            "to invasion by insects."
+            "A",
+            "village"
         ],
-        "translation": "조밀한 구조의 목재는 벌레의 침투에 대한 대한 저항력이 있습니다.",
-        "appearance": "resistant"
+        "translation": "외딴 마을.",
+        "appearance": "remote"
     },
     "1272": {
         "word": "reject",
@@ -12737,11 +12737,11 @@
         "word": "recommend",
         "meaning": "추천",
         "sentence": [
-            "Then, I’d like to get a",
-            "for this ticket."
+            "Can you",
+            "a place to visit in Seoul?"
         ],
-        "translation": "그러면, 이 티켓을 환불받고 싶네요.",
-        "appearance": "refund"
+        "translation": "서울에서 방문해 볼 장소를 추천해 주겠어요?",
+        "appearance": "recommend"
     },
     "1275": {
         "word": "recognition",
