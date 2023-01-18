@@ -306,7 +306,7 @@ function Quizgen () {
         />
     
     let numQSelector = <div className="separ2">
-      <strong className="col-lg-12 text-center">총 몇 문제를 출제할까요?</strong><br/><br/>
+      <strong className="col-lg-12 text-center">총 몇 문제를 출제할까요?</strong><br/><br/><br/><br/>
       최대 <u>{question_range[4]}</u> 개의 문제를 출제할 수 있습니다.
       <TextField type="number" label="문항 개수" className="itemSelectorBox" value={question_range[5]}
           onChange={
@@ -318,7 +318,7 @@ function Quizgen () {
         />
       <br/><br/><br/><br/>
 
-      <strong className="col-lg-12 text-center">시험지 제목을 입력해주세요</strong><br/><br/>
+      <strong className="col-lg-12 text-center">시험지 제목을 입력해주세요</strong><br/><br/><br/><br/>
       <TextField type="text" label="시험지 제목" className="itemSelectorBox" value={title}
           onChange={
             function(e){
@@ -343,7 +343,7 @@ function Quizgen () {
       return (
         <div className="selectorForTestGen">
           <strong className="col-lg-12 text-center">출제 범위를 선택해주세요</strong><br/><br/>
-          {question_range[1]}부터 {question_range[3]}까지 선택하실 수 있습니다.<br/><br/>
+          {question_range[1]}부터 {question_range[3]}까지 선택하실 수 있습니다.<br/><br/><br/><br/>
           <div className="separ">
             {selector1}
             {selector2}
@@ -539,6 +539,8 @@ function Quizgen () {
     let login = <div className="quizGenerator">
       <div className="col-lg-12 text-center">
         <p>도서와 함께 제공된 시리얼을 입력하세요</p>
+        <br/><br/>
+        <br/><br/>
         <TextField label="XXXX-XXXX-XXXX-XXXX" className="getSerial"
           onChange={
             function(e){
@@ -612,7 +614,7 @@ function Quizgen () {
               setOptions([options[0], options[1], !options[2], options[3]])
             }
           }/>
-          <label htmlFor="checker1_3">문장 내 빈칸채우기 (객관식)</label>
+          <label htmlFor="checker1_3">빈 칸 채우기<br/>(객관식)</label>
         </div>
         <div className="text-center checkOptions">
           <img className="testSelectorItem" src="https://cdn.jsdelivr.net/gh/needleworm/ai_voca/src/images/teacher_menu/type_4.jpg" alt="quiz_type 4"
@@ -627,7 +629,7 @@ function Quizgen () {
               setOptions([options[0], options[1], options[2], !options[3]])
             }
           }/>
-          <label htmlFor="checker1_4">문장 내 빈칸채우기 (주관식)</label>
+          <label htmlFor="checker1_4">빈 칸 채우기<br/>(주관식)</label>
         </div>
       </div>
     </div>

@@ -36,25 +36,25 @@
 }
 
 }
-@media (min-width:1000px)
-{.singleProjectCard
-{display:grid;grid-template-columns:200px 1fr;margin-bottom:60px}
-.projectImage
-{width:180px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
-.projectIcons
-{display:grid;grid-template-columns:1fr 2fr}
-.projectText
-{margin-top:10px}
+@media (min-width:1000px){
+    .singleProjectCard {
+        display:grid;grid-template-columns:200px 1fr;margin-bottom:60px
+    }
+    .projectImage
+    {width:180px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
+    .projectIcons
+    {display:grid;grid-template-columns:1fr 2fr}
+    .projectText
+    {margin-top:10px}
 
-.testTypeSelector1{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width:80%;;
-    margin-bottom:50px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
+    .testTypeSelector1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:90%;
+        margin-bottom:50px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 @media (min-width:1166px)
 {.singleProjectCard
@@ -92,7 +92,7 @@
 }
 
 .testSelectorItem{
-    height:200px;
+    height:150px;
     margin-left:auto;
     margin-right:auto;
     display:block;
