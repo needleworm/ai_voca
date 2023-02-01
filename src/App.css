@@ -808,17 +808,6 @@ i {
     margin:1em auto
 }
 
-.navigation-wrapper {
-    display:none;
-    position:fixed;
-    top:42px;
-    right:0;
-    left:0;
-    width:100%;
-    padding:20px 0;
-    background:rgba(0, 0, 0,.6);
-    border-bottom:1px solid rgba(255,255,255,.15)
-}
 
 .navigation-wrapper.visible {
     display:block
@@ -924,5 +913,7 @@ i {
     position:relative;
     width:250px;
     height:250px;
+    max-width:30vw;
+    max-height:30vw;
     border-radius:100%;
 }

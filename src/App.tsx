@@ -151,7 +151,7 @@ function App() {
           }
         }
       >
-        <i className="fa-solid fa-pencil"></i>&nbsp;Quiz Quiz!
+        <i className="fa-solid fa-pencil"></i>&nbsp;Quiz!
       </a>
     </li>
 
@@ -189,7 +189,7 @@ function App() {
           }
         }
       >
-        <i className="fa-solid fa-chalkboard-user"></i>&nbsp;교사용 메뉴
+        <i className="fa-solid fa-chalkboard-user"></i>&nbsp;교사용
       </a>
     </li>
 
@@ -207,7 +207,7 @@ function App() {
             }
           }
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;연구성과
+        <i className="fas fa-graduation-cap"></i>&nbsp;R&D
       </a>
     </li>
 
@@ -250,7 +250,6 @@ function App() {
 
     return(
       <header className="panel-cover">
-        {mobileButtenMenu}
         <div className="panel-main">
           <div className="panel-main__inner panel-inverted">
             <div className="panel-main__content">
